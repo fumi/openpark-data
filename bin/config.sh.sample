@@ -1,0 +1,7 @@
+ISQL=/usr/local/virtuoso-opensource/bin/isql
+DATA_DIR=/home/datameti.go.jp/datameti-rdf-data/data
+SCHEME_DIR=${DATA_DIR}/scheme
+LOD_DIR=${DATA_DIR}/lod
+HOSTNAME=localhost:1111
+V_USER=dba
+V_PASS=
