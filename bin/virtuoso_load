@@ -2,7 +2,7 @@
 
 . ./config.sh
 
-IMPORT_DIR=/Users/fumi/lodi/openpark/data/import
+IMPORT_DIR=/Users/fumi/lodi/openpark-data/import
 
 function import_turtle {
   FILE=$1
