@@ -10,7 +10,7 @@ require 'securerandom'
 INPUT_FILE="../original/23-kz-park_utf8.csv"
 OUTPUT_FILE="../ttl/23-kz-park.ttl"
 
-PARK = RDF::Vocabulary.new("http://kanazawa.openpark.jp/parks/")
+PARK = RDF::Vocabulary.new("http://yokohama.openpark.jp/parks/")
 IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/210#")
 
 PREFIXES = {
