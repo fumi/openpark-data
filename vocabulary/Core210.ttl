@@ -1,0 +1,2114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ic: <http://imi.ipa.go.jp/ns/core/210#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uncefactCode: <urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCode:9#> .
+@prefix uncefactDuration: <urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeDuration:4#> .
+@prefix uncefactISO4217: <urn:un:unece:uncefact:codelist:standard:ISO:ISO3AlphaCurrencyCode:2012-08-31#> .
+@prefix uncefactLinear: <urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeLinear:4#> .
+@prefix uncefactVolume: <urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeVolume:4#> .
+@prefix uncefactWeight: <urn:un:unece:uncefact:codelist:standard:UNECE:MeasurementUnitCommonCodeWeight:4#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://imi.ipa.go.jp/ns/core/210> a owl:Ontology ;
+    rdfs:label "IMI Core Vocabulary"@en,
+        "共通語彙基盤コア語彙"@ja ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:creator [ foaf:homepage <http://www.ipa.go.jp/> ;
+            foaf:name "Information-technology Promotion Agency, Japan."@en,
+                "IPA 独立行政法人情報処理推進機構"@ja ],
+        [ foaf:homepage <http://www.meti.go.jp/> ;
+            foaf:name "Ministry of Economy, Trade and Industry"@en,
+                "経済産業省"@ja ] ;
+    dct:issued "2014-09-11"^^xsd:date ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:title "IMI Core Vocabulary"@en,
+        "共通語彙基盤コア語彙"@ja ;
+    rdfs:comment "IMI Core Vocabulary"@en,
+        "コア語彙は、共通語彙基盤の基礎をなすもので、氏名、住所、組織等、あらゆる社会活動で使用される中核的な用語の集合です。多くのシステム間で情報交換のための基礎となる語彙で、データ交換、オープンデータの二次利用等の効率化に役立つものです。"@ja ;
+    owl:versionInfo "2.10" .
+
+ic:人 a rdfs:Class ;
+    rdfs:label "人"@ja ;
+    rdfs:comment "人の情報を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:実体 .
+
+ic:人_氏名 a rdf:Property ;
+    rdfs:label "氏名"@ja ;
+    rdfs:comment "氏名"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:氏名 .
+
+ic:人_性別 a rdf:Property ;
+    rdfs:label "性別"@ja ;
+    rdfs:comment "性別の名称"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range xsd:string .
+
+ic:人_性別-コード a rdf:Property ;
+    rdfs:label "性別(コード)"@ja ;
+    rdfs:comment "性別コード"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:コード .
+
+ic:人_生年月日 a rdf:Property ;
+    rdfs:label "生年月日"@ja ;
+    rdfs:comment "生年月日"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:日時 .
+
+ic:人_死亡年月日 a rdf:Property ;
+    rdfs:label "死亡年月日"@ja ;
+    rdfs:comment "死亡年月日"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:日時 .
+
+ic:人_住所 a rdf:Property ;
+    rdfs:label "住所"@ja ;
+    rdfs:comment "現住所"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:住所 .
+
+ic:人_本籍 a rdf:Property ;
+    rdfs:label "本籍"@ja ;
+    rdfs:comment "本籍"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:住所 .
+
+ic:人_連絡先 a rdf:Property ;
+    rdfs:label "連絡先"@ja ;
+    rdfs:comment "連絡先"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:連絡先 .
+
+ic:人_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "ID"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:ID .
+
+ic:人_国籍 a rdf:Property ;
+    rdfs:label "国籍"@ja ;
+    rdfs:comment "国籍の名称"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range xsd:string .
+
+ic:人_国籍-コード a rdf:Property ;
+    rdfs:label "国籍(コード)"@ja ;
+    rdfs:comment "住民基本台帳で利用されている国籍コード"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:コード .
+
+ic:人_出生国 a rdf:Property ;
+    rdfs:label "出生国"@ja ;
+    rdfs:comment "生まれた国"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range xsd:string .
+
+ic:人_出生国-コード a rdf:Property ;
+    rdfs:label "出生国(コード)"@ja ;
+    rdfs:comment "生まれた国のコード"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:コード .
+
+ic:人_出生地 a rdf:Property ;
+    rdfs:label "出生地"@ja ;
+    rdfs:comment "生まれた場所"@ja ;
+    rdfs:domain ic:人 ;
+    rdfs:range ic:場所 .
+
+ic:名称 a rdfs:Class ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "組織や地点等の名称を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:名称_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "名称の種類"@ja ;
+    rdfs:domain ic:名称 ;
+    rdfs:range xsd:string .
+
+ic:名称_表記 a rdf:Property ;
+    rdfs:label "表記"@ja ;
+    rdfs:comment "日本語による表記"@ja ;
+    rdfs:domain ic:名称 ;
+    rdfs:range xsd:string .
+
+ic:名称_表記-カナ a rdf:Property ;
+    rdfs:label "表記(カナ)"@ja ;
+    rdfs:comment "カタカナ表記"@ja ;
+    rdfs:domain ic:名称 ;
+    rdfs:range xsd:string .
+
+ic:名称_表記-ローマ字 a rdf:Property ;
+    rdfs:label "表記(ローマ字)"@ja ;
+    rdfs:comment "ローマ字表記"@ja ;
+    rdfs:domain ic:名称 ;
+    rdfs:range xsd:string .
+
+ic:氏名 a rdfs:Class ;
+    rdfs:label "氏名"@ja ;
+    rdfs:comment "人の氏名を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:氏名_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "氏名の種類"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_姓名 a rdf:Property ;
+    rdfs:label "姓名"@ja ;
+    rdfs:comment "氏名（姓、名）"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_姓名-カナ a rdf:Property ;
+    rdfs:label "姓名(カナ)"@ja ;
+    rdfs:comment "氏名（姓、名）のカナ表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_姓名-ローマ字 a rdf:Property ;
+    rdfs:label "姓名(ローマ字)"@ja ;
+    rdfs:comment "氏名（姓、名）のアルファベット表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_姓 a rdf:Property ;
+    rdfs:label "姓"@ja ;
+    rdfs:comment "姓"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_姓-カナ a rdf:Property ;
+    rdfs:label "姓(カナ)"@ja ;
+    rdfs:comment "姓のカナ表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_姓-ローマ字 a rdf:Property ;
+    rdfs:label "姓(ローマ字)"@ja ;
+    rdfs:comment "姓のローマ表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_名 a rdf:Property ;
+    rdfs:label "名"@ja ;
+    rdfs:comment "名"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_名-カナ a rdf:Property ;
+    rdfs:label "名(カナ)"@ja ;
+    rdfs:comment "名のカナ表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_名-ローマ字 a rdf:Property ;
+    rdfs:label "名(ローマ字)"@ja ;
+    rdfs:comment "名のローマ字表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_ミドルネーム a rdf:Property ;
+    rdfs:label "ミドルネーム"@ja ;
+    rdfs:comment "ミドルネーム"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_ミドルネーム-カナ a rdf:Property ;
+    rdfs:label "ミドルネーム(カナ)"@ja ;
+    rdfs:comment "ミドルネームのカナ表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:氏名_ミドルネーム-ローマ字 a rdf:Property ;
+    rdfs:label "ミドルネーム(ローマ字)"@ja ;
+    rdfs:comment "ミドルネームのローマ字表記"@ja ;
+    rdfs:domain ic:氏名 ;
+    rdfs:range xsd:string .
+
+ic:住所 a rdfs:Class ;
+    rdfs:label "住所"@ja ;
+    rdfs:comment "住所を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:住所_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "住所の種類"@ja ;
+    rdfs:domain ic:住所 ;
+    rdfs:range xsd:string .
+
+ic:住所_表記 a rdf:Property ;
+    rdfs:label "表記"@ja ;
+    rdfs:comment "住所の全文"@ja ;
+    rdfs:domain ic:住所 ;
+    rdfs:range xsd:string .
+
+ic:住所_表記-定型 a rdf:Property ;
+    rdfs:label "表記(定型)"@ja ;
+    rdfs:comment "要素化された住所"@ja ;
+    rdfs:domain ic:住所 ;
+    rdfs:range ic:定型住所 .
+
+ic:住所_郵便番号 a rdf:Property ;
+    rdfs:label "郵便番号"@ja ;
+    rdfs:comment "郵便番号"@ja ;
+    rdfs:domain ic:住所 ;
+    rdfs:range xsd:string .
+
+ic:住所_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "住所及び土地に割り振られるID"@ja ;
+    rdfs:domain ic:住所 ;
+    rdfs:range ic:ID .
+
+ic:住所_住所コード a rdf:Property ;
+    rdfs:label "住所コード"@ja ;
+    rdfs:comment "LASDEC全国町字コード等の利用を想定。住所のコード化が必要な範囲に応じて自治体で個別に設定する"@ja ;
+    rdfs:domain ic:住所 ;
+    rdfs:range ic:コード .
+
+ic:定型住所 a rdfs:Class ;
+    rdfs:label "定型住所"@ja ;
+    rdfs:comment "要素化された住所を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:定型住所_国 a rdf:Property ;
+    rdfs:label "国"@ja ;
+    rdfs:comment "国"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_国-コード a rdf:Property ;
+    rdfs:label "国(コード)"@ja ;
+    rdfs:comment "国のコード"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range ic:コード .
+
+ic:定型住所_都道府県 a rdf:Property ;
+    rdfs:label "都道府県"@ja ;
+    rdfs:comment "都道府県"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_都道府県-コード a rdf:Property ;
+    rdfs:label "都道府県(コード)"@ja ;
+    rdfs:comment "都道府県のコード"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range ic:コード .
+
+ic:定型住所_市区町村 a rdf:Property ;
+    rdfs:label "市区町村"@ja ;
+    rdfs:comment "市区町村"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_区 a rdf:Property ;
+    rdfs:label "区"@ja ;
+    rdfs:comment "政令指定都市の区"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_市区町村-コード a rdf:Property ;
+    rdfs:label "市区町村(コード)"@ja ;
+    rdfs:comment "市区町村のコード"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range ic:コード .
+
+ic:定型住所_町名 a rdf:Property ;
+    rdfs:label "町名"@ja ;
+    rdfs:comment "町域、または市区町村の下の行政区分"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_丁目 a rdf:Property ;
+    rdfs:label "丁目"@ja ;
+    rdfs:comment "丁目の表示"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_番地補足 a rdf:Property ;
+    rdfs:label "番地補足"@ja ;
+    rdfs:comment "番地の前の、「東」「北」「浜」「甲」「イ」等の文字"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_番地 a rdf:Property ;
+    rdfs:label "番地"@ja ;
+    rdfs:comment "番、街区の表示"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_号 a rdf:Property ;
+    rdfs:label "号"@ja ;
+    rdfs:comment "号、住居番号の表示"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_ビル名 a rdf:Property ;
+    rdfs:label "ビル名"@ja ;
+    rdfs:comment "ビル名"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_ビル番号 a rdf:Property ;
+    rdfs:label "ビル番号"@ja ;
+    rdfs:comment "号棟"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_部屋番号 a rdf:Property ;
+    rdfs:label "部屋番号"@ja ;
+    rdfs:comment "階数、号室"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:定型住所_方書 a rdf:Property ;
+    rdfs:label "方書"@ja ;
+    rdfs:comment "方書 (私書箱も含む)"@ja ;
+    rdfs:domain ic:定型住所 ;
+    rdfs:range xsd:string .
+
+ic:連絡先 a rdfs:Class ;
+    rdfs:label "連絡先"@ja ;
+    rdfs:comment "連絡先を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:連絡先_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "連絡先の種別"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:string .
+
+ic:連絡先_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "連絡先名"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:名称 .
+
+ic:連絡先_組織 a rdf:Property ;
+    rdfs:label "組織"@ja ;
+    rdfs:comment "連絡先が他組織に委任等されているときに記載"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:組織 .
+
+ic:連絡先_担当者役職 a rdf:Property ;
+    rdfs:label "担当者役職"@ja ;
+    rdfs:comment "連絡先担当者の役職"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:string .
+
+ic:連絡先_担当者名 a rdf:Property ;
+    rdfs:label "担当者名"@ja ;
+    rdfs:comment "連絡先担当者の氏名"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:氏名 .
+
+ic:連絡先_Eメールアドレス a rdf:Property ;
+    rdfs:label "Eメールアドレス"@ja ;
+    rdfs:comment "連絡先のメールアドレス"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:string .
+
+ic:連絡先_住所 a rdf:Property ;
+    rdfs:label "住所"@ja ;
+    rdfs:comment "住所"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:住所 .
+
+ic:連絡先_送付先 a rdf:Property ;
+    rdfs:label "送付先"@ja ;
+    rdfs:comment "送付先の住所、私書箱など"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:string .
+
+ic:連絡先_電話番号 a rdf:Property ;
+    rdfs:label "電話番号"@ja ;
+    rdfs:comment "連絡先の電話番号"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:電話番号 .
+
+ic:連絡先_内線番号 a rdf:Property ;
+    rdfs:label "内線番号"@ja ;
+    rdfs:comment "連絡先の内線番号"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:string .
+
+ic:連絡先_FAX番号 a rdf:Property ;
+    rdfs:label "FAX番号"@ja ;
+    rdfs:comment "連絡先のFAX番号"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:電話番号 .
+
+ic:連絡先_携帯電話番号 a rdf:Property ;
+    rdfs:label "携帯電話番号"@ja ;
+    rdfs:comment "連絡先の携帯電話番号"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:電話番号 .
+
+ic:連絡先_Webサイト a rdf:Property ;
+    rdfs:label "Webサイト"@ja ;
+    rdfs:comment "WebサイトのURL"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:anyURI .
+
+ic:連絡先_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "WebサイトのURL"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range ic:ID .
+
+ic:連絡先_対応言語 a rdf:Property ;
+    rdfs:label "対応言語"@ja ;
+    rdfs:comment "連絡先との連絡の際に利用可能な言語"@ja ;
+    rdfs:domain ic:連絡先 ;
+    rdfs:range xsd:string .
+
+ic:電話番号 a rdfs:Class ;
+    rdfs:label "電話番号"@ja ;
+    rdfs:comment "電話番号を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:電話番号_国番号 a rdf:Property ;
+    rdfs:label "国番号"@ja ;
+    rdfs:comment "国際電話の際に使用する国番号"@ja ;
+    rdfs:domain ic:電話番号 ;
+    rdfs:range xsd:decimal .
+
+ic:電話番号_表記 a rdf:Property ;
+    rdfs:label "表記"@ja ;
+    rdfs:comment "電話番号"@ja ;
+    rdfs:domain ic:電話番号 ;
+    rdfs:range xsd:string .
+
+ic:組織 a rdfs:Class ;
+    rdfs:label "組織"@ja ;
+    rdfs:comment "組織を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:実体 .
+
+ic:組織_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "組織名称。組合以外は、組織分類を省略して記載"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:名称 .
+
+ic:組織_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "組織に発行されている識別子"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:ID .
+
+ic:組織_略称アルファベット a rdf:Property ;
+    rdfs:label "略称アルファベット"@ja ;
+    rdfs:comment "頭文字などによる略称"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range xsd:string .
+
+ic:組織_通称 a rdf:Property ;
+    rdfs:label "通称"@ja ;
+    rdfs:comment "組織の通称名"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range xsd:string .
+
+ic:組織_活動状況 a rdf:Property ;
+    rdfs:label "活動状況"@ja ;
+    rdfs:comment "組織の状況。倒産、破産等"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:状況 .
+
+ic:組織_概要 a rdf:Property ;
+    rdfs:label "概要"@ja ;
+    rdfs:comment "組織の活動内容"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range xsd:string .
+
+ic:組織_連絡先 a rdf:Property ;
+    rdfs:label "連絡先"@ja ;
+    rdfs:comment "組織の連絡先（本社、コールセンター等）"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:連絡先 .
+
+ic:組織_関連組織 a rdf:Property ;
+    rdfs:label "関連組織"@ja ;
+    rdfs:comment "支店等、関連組織"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:組織関連 .
+
+ic:組織_地点 a rdf:Property ;
+    rdfs:label "地点"@ja ;
+    rdfs:comment "組織に関連する地点や施設、建物"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:地点 .
+
+ic:組織_住所 a rdf:Property ;
+    rdfs:label "住所"@ja ;
+    rdfs:comment "組織に関係する住所。登記上の住所など"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:住所 .
+
+ic:組織_代表者 a rdf:Property ;
+    rdfs:label "代表者"@ja ;
+    rdfs:comment "組織の代表者"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:構成員 .
+
+ic:組織_設立日 a rdf:Property ;
+    rdfs:label "設立日"@ja ;
+    rdfs:comment "設立日。支店や事業所は設置日"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range ic:日時 .
+
+ic:組織_備考 a rdf:Property ;
+    rdfs:label "備考"@ja ;
+    rdfs:comment "補足情報などがある場合に記述"@ja ;
+    rdfs:domain ic:組織 ;
+    rdfs:range xsd:string .
+
+ic:業務組織 a rdfs:Class ;
+    rdfs:label "業務組織"@ja ;
+    rdfs:comment "組織を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:組織 .
+
+ic:業務組織_事業種目 a rdf:Property ;
+    rdfs:label "事業種目"@ja ;
+    rdfs:comment "事業の種類。（販売業等）"@ja ;
+    rdfs:domain ic:業務組織 ;
+    rdfs:range xsd:string .
+
+ic:業務組織_事業年度開始日 a rdf:Property ;
+    rdfs:label "事業年度開始日"@ja ;
+    rdfs:comment "事業年度の開始日"@ja ;
+    rdfs:domain ic:業務組織 ;
+    rdfs:range ic:日時 .
+
+ic:業務組織_構成員数 a rdf:Property ;
+    rdfs:label "構成員数"@ja ;
+    rdfs:comment "構成員の人数"@ja ;
+    rdfs:domain ic:業務組織 ;
+    rdfs:range xsd:nonNegativeInteger .
+
+ic:業務組織_代理人 a rdf:Property ;
+    rdfs:label "代理人"@ja ;
+    rdfs:comment "代理人"@ja ;
+    rdfs:domain ic:業務組織 ;
+    rdfs:range ic:組織関連 .
+
+ic:法人 a rdfs:Class ;
+    rdfs:label "法人"@ja ;
+    rdfs:comment "組織を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:業務組織 .
+
+ic:法人_組織分類位置 a rdf:Property ;
+    rdfs:label "組織分類位置"@ja ;
+    rdfs:comment "株式会社等の組織分類の前後位置"@ja ;
+    rdfs:domain ic:法人 ;
+    rdfs:range xsd:string .
+
+ic:法人_組織分類 a rdf:Property ;
+    rdfs:label "組織分類"@ja ;
+    rdfs:comment "組織の分類。（株式会社等）"@ja ;
+    rdfs:domain ic:法人 ;
+    rdfs:range ic:コード .
+
+ic:法人_資本金 a rdf:Property ;
+    rdfs:label "資本金"@ja ;
+    rdfs:comment "資本金。（前決算時）"@ja ;
+    rdfs:domain ic:法人 ;
+    rdfs:range ic:金額 .
+
+ic:法人_従業員数 a rdf:Property ;
+    rdfs:label "従業員数"@ja ;
+    rdfs:comment "従業員数。（前決算時）"@ja ;
+    rdfs:domain ic:法人 ;
+    rdfs:range ic:従業員数 .
+
+ic:従業員数 a rdfs:Class ;
+    rdfs:label "従業員数"@ja ;
+    rdfs:comment ""@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:従業員数_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "従業員の種別"@ja ;
+    rdfs:domain ic:従業員数 ;
+    rdfs:range xsd:string .
+
+ic:従業員数_人数 a rdf:Property ;
+    rdfs:label "人数"@ja ;
+    rdfs:comment "従業員の人数"@ja ;
+    rdfs:domain ic:従業員数 ;
+    rdfs:range xsd:nonNegativeInteger .
+
+ic:構成員 a rdfs:Class ;
+    rdfs:label "構成員"@ja ;
+    rdfs:comment "組織等を構成する人を表現するデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:構成員_役割 a rdf:Property ;
+    rdfs:label "役割"@ja ;
+    rdfs:comment "構成員の役割"@ja ;
+    rdfs:domain ic:構成員 ;
+    rdfs:range xsd:string .
+
+ic:構成員_構成員 a rdf:Property ;
+    rdfs:label "構成員"@ja ;
+    rdfs:comment "構成員"@ja ;
+    rdfs:domain ic:構成員 ;
+    rdfs:range ic:人 .
+
+ic:組織関連 a rdfs:Class ;
+    rdfs:label "組織関連"@ja ;
+    rdfs:comment "組織の関連を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:組織関連_役割 a rdf:Property ;
+    rdfs:label "役割"@ja ;
+    rdfs:comment "組織の役割"@ja ;
+    rdfs:domain ic:組織関連 ;
+    rdfs:range xsd:string .
+
+ic:組織関連_組織 a rdf:Property ;
+    rdfs:label "組織"@ja ;
+    rdfs:comment "関連組織"@ja ;
+    rdfs:domain ic:組織関連 ;
+    rdfs:range ic:組織 .
+
+ic:場所 a rdfs:Class ;
+    rdfs:label "場所"@ja ;
+    rdfs:comment "場所を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:場所_地名 a rdf:Property ;
+    rdfs:label "地名"@ja ;
+    rdfs:comment "地名"@ja ;
+    rdfs:domain ic:場所 ;
+    rdfs:range xsd:string .
+
+ic:場所_通称 a rdf:Property ;
+    rdfs:label "通称"@ja ;
+    rdfs:comment "正式な地名以外の場所の通称"@ja ;
+    rdfs:domain ic:場所 ;
+    rdfs:range xsd:string .
+
+ic:場所_地理識別子 a rdf:Property ;
+    rdfs:label "地理識別子"@ja ;
+    rdfs:comment "場所の識別子"@ja ;
+    rdfs:domain ic:場所 ;
+    rdfs:range ic:ID .
+
+ic:場所_住所 a rdf:Property ;
+    rdfs:label "住所"@ja ;
+    rdfs:comment "場所の住所"@ja ;
+    rdfs:domain ic:場所 ;
+    rdfs:range ic:住所 .
+
+ic:場所_地理座標 a rdf:Property ;
+    rdfs:label "地理座標"@ja ;
+    rdfs:comment "場所の経緯度座標"@ja ;
+    rdfs:domain ic:場所 ;
+    rdfs:range ic:座標 .
+
+ic:座標 a rdfs:Class ;
+    rdfs:label "座標"@ja ;
+    rdfs:comment "座標を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:座標_座標参照系 a rdf:Property ;
+    rdfs:label "座標参照系"@ja ;
+    rdfs:comment "座標の参照系"@ja ;
+    rdfs:domain ic:座標 ;
+    rdfs:range ic:ID .
+
+ic:座標_緯度 a rdf:Property ;
+    rdfs:label "緯度"@ja ;
+    rdfs:comment "緯度。-90から+90で記載"@ja ;
+    rdfs:domain ic:座標 ;
+    rdfs:range ic:度分秒 .
+
+ic:座標_経度 a rdf:Property ;
+    rdfs:label "経度"@ja ;
+    rdfs:comment "経度。-180から+180で記載"@ja ;
+    rdfs:domain ic:座標 ;
+    rdfs:range ic:度分秒 .
+
+ic:座標_測地高度 a rdf:Property ;
+    rdfs:label "測地高度"@ja ;
+    rdfs:comment "高さ"@ja ;
+    rdfs:domain ic:座標 ;
+    rdfs:range ic:長さ .
+
+ic:度分秒 a rdfs:Class ;
+    rdfs:label "度分秒"@ja ;
+    rdfs:comment "経緯度座標系を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:度分秒_書式 a rdf:Property ;
+    rdfs:label "書式"@ja ;
+    rdfs:comment "度、分、秒の書式。書式はiso6709に準拠する"@ja ;
+    rdfs:domain ic:度分秒 ;
+    rdfs:range xsd:string .
+
+ic:度分秒_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "度、分、秒の値"@ja ;
+    rdfs:domain ic:度分秒 ;
+    rdfs:range xsd:string .
+
+ic:ID a rdfs:Class ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "識別子を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:ID_体系 a rdf:Property ;
+    rdfs:label "体系"@ja ;
+    rdfs:comment "IDの種別"@ja ;
+    rdfs:domain ic:ID ;
+    rdfs:range ic:ID体系 .
+
+ic:ID_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "識別のためのID"@ja ;
+    rdfs:domain ic:ID ;
+    rdfs:range xsd:string .
+
+ic:ID体系 a rdfs:Class ;
+    rdfs:label "ID体系"@ja ;
+    rdfs:comment "IDの種別を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:ID体系_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "コードの名前"@ja ;
+    rdfs:domain ic:ID体系 ;
+    rdfs:range xsd:string .
+
+ic:ID体系_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "コードを表すID"@ja ;
+    rdfs:domain ic:ID体系 ;
+    rdfs:range ic:ID .
+
+ic:ID体系_発行者 a rdf:Property ;
+    rdfs:label "発行者"@ja ;
+    rdfs:comment "コードの発行主体"@ja ;
+    rdfs:domain ic:ID体系 ;
+    rdfs:range xsd:string .
+
+ic:ID体系_発行者-ID a rdf:Property ;
+    rdfs:label "発行者(ID)"@ja ;
+    rdfs:comment "コードの発行主体のID"@ja ;
+    rdfs:domain ic:ID体系 ;
+    rdfs:range ic:ID .
+
+ic:ID体系_バージョン a rdf:Property ;
+    rdfs:label "バージョン"@ja ;
+    rdfs:comment "コードのバージョン"@ja ;
+    rdfs:domain ic:ID体系 ;
+    rdfs:range xsd:string .
+
+ic:ID体系_URI a rdf:Property ;
+    rdfs:label "URI"@ja ;
+    rdfs:comment "コードや発行者の参照先"@ja ;
+    rdfs:domain ic:ID体系 ;
+    rdfs:range xsd:anyURI .
+
+ic:製品 a rdfs:Class ;
+    rdfs:label "製品"@ja ;
+    rdfs:comment "物を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:製品_分類 a rdf:Property ;
+    rdfs:label "分類"@ja ;
+    rdfs:comment "物の分類"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_分類-コード a rdf:Property ;
+    rdfs:label "分類(コード)"@ja ;
+    rdfs:comment "物の分類"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:コード .
+
+ic:製品_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "物の名前"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:名称 .
+
+ic:製品_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "物に割り当てられたID"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:ID .
+
+ic:製品_自動認識ID a rdf:Property ;
+    rdfs:label "自動認識ID"@ja ;
+    rdfs:comment "バーコードや二次元コード等の自動認識IDの画像等"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:anyURI .
+
+ic:製品_価格 a rdf:Property ;
+    rdfs:label "価格"@ja ;
+    rdfs:comment "物の価格"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:価格 .
+
+ic:製品_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "物の説明"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_使用方法 a rdf:Property ;
+    rdfs:label "使用方法"@ja ;
+    rdfs:comment "使用方法"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_製造者 a rdf:Property ;
+    rdfs:label "製造者"@ja ;
+    rdfs:comment "販売業者によって割り当てられたID"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_製造者-ID a rdf:Property ;
+    rdfs:label "製造者(ID)"@ja ;
+    rdfs:comment "販売業者によって割り当てられたID"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:ID .
+
+ic:製品_販売業者 a rdf:Property ;
+    rdfs:label "販売業者"@ja ;
+    rdfs:comment "販売業者によって割り当てられたID"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_販売業者-ID a rdf:Property ;
+    rdfs:label "販売業者(ID)"@ja ;
+    rdfs:comment "販売業者によって割り当てられたID"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:ID .
+
+ic:製品_入数 a rdf:Property ;
+    rdfs:label "入数"@ja ;
+    rdfs:comment "物の数量"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:数量 .
+
+ic:製品_形態 a rdf:Property ;
+    rdfs:label "形態"@ja ;
+    rdfs:comment "物の形態"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_重量 a rdf:Property ;
+    rdfs:label "重量"@ja ;
+    rdfs:comment "物の重量"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:重量 .
+
+ic:製品_サイズ a rdf:Property ;
+    rdfs:label "サイズ"@ja ;
+    rdfs:comment "物のサイズ"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_幅 a rdf:Property ;
+    rdfs:label "幅"@ja ;
+    rdfs:comment "物の幅"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:長さ .
+
+ic:製品_高さ a rdf:Property ;
+    rdfs:label "高さ"@ja ;
+    rdfs:comment "物の高さ"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:長さ .
+
+ic:製品_長さ a rdf:Property ;
+    rdfs:label "長さ"@ja ;
+    rdfs:comment "物の長さ"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:長さ .
+
+ic:製品_色 a rdf:Property ;
+    rdfs:label "色"@ja ;
+    rdfs:comment "物の色"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_原産国 a rdf:Property ;
+    rdfs:label "原産国"@ja ;
+    rdfs:comment "物の原産国"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品_原産国-コード a rdf:Property ;
+    rdfs:label "原産国(コード)"@ja ;
+    rdfs:comment "物の原産国を表すコード"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range ic:コード .
+
+ic:製品_規制情報 a rdf:Property ;
+    rdfs:label "規制情報"@ja ;
+    rdfs:comment "取り扱い上の注意等の規制に関する情報"@ja ;
+    rdfs:domain ic:製品 ;
+    rdfs:range xsd:string .
+
+ic:製品個品 a rdfs:Class ;
+    rdfs:label "製品個品"@ja ;
+    rdfs:comment "製品を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:製品 .
+
+ic:製品個品_製造日 a rdf:Property ;
+    rdfs:label "製造日"@ja ;
+    rdfs:comment "製造日"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:日時 .
+
+ic:製品個品_ロット番号 a rdf:Property ;
+    rdfs:label "ロット番号"@ja ;
+    rdfs:comment "製造ロットの番号"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range xsd:string .
+
+ic:製品個品_消費期限 a rdf:Property ;
+    rdfs:label "消費期限"@ja ;
+    rdfs:comment "消費期限"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:日時 .
+
+ic:製品個品_使用期限 a rdf:Property ;
+    rdfs:label "使用期限"@ja ;
+    rdfs:comment "使用期限"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:日時 .
+
+ic:製品個品_賞味期限 a rdf:Property ;
+    rdfs:label "賞味期限"@ja ;
+    rdfs:comment "賞味期限"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:日時 .
+
+ic:製品個品_シリアル番号 a rdf:Property ;
+    rdfs:label "シリアル番号"@ja ;
+    rdfs:comment "シリアル番号"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:ID .
+
+ic:製品個品_状態 a rdf:Property ;
+    rdfs:label "状態"@ja ;
+    rdfs:comment "物の状態。新品、中古など"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range xsd:string .
+
+ic:製品個品_所有者 a rdf:Property ;
+    rdfs:label "所有者"@ja ;
+    rdfs:comment "所有者"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:実体 .
+
+ic:製品個品_購入価格 a rdf:Property ;
+    rdfs:label "購入価格"@ja ;
+    rdfs:comment "購入価格"@ja ;
+    rdfs:domain ic:製品個品 ;
+    rdfs:range ic:金額 .
+
+ic:地点 a rdfs:Class ;
+    rdfs:label "地点"@ja ;
+    rdfs:comment "施設や建物など、参照対象となる地点を表すためのデータ型 "@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:地点_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "識別するためのID"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:ID .
+
+ic:地点_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "名称"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:名称 .
+
+ic:地点_通称 a rdf:Property ;
+    rdfs:label "通称"@ja ;
+    rdfs:comment "一般的に使用されている通称"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range xsd:string .
+
+ic:地点_場所 a rdf:Property ;
+    rdfs:label "場所"@ja ;
+    rdfs:comment "所在地"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:場所 .
+
+ic:地点_要約 a rdf:Property ;
+    rdfs:label "要約"@ja ;
+    rdfs:comment "概要説明。100文字以内"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range xsd:string .
+
+ic:地点_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "説明"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range xsd:string .
+
+ic:地点_アクセス a rdf:Property ;
+    rdfs:label "アクセス"@ja ;
+    rdfs:comment "アクセス方法"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:アクセス .
+
+ic:地点_参照 a rdf:Property ;
+    rdfs:label "参照"@ja ;
+    rdfs:comment "追加情報等の参照先"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range xsd:anyURI .
+
+ic:地点_画像 a rdf:Property ;
+    rdfs:label "画像"@ja ;
+    rdfs:comment "画像の参照先"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range xsd:anyURI .
+
+ic:地点_連絡先 a rdf:Property ;
+    rdfs:label "連絡先"@ja ;
+    rdfs:comment "連絡先"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:連絡先 .
+
+ic:地点_設備 a rdf:Property ;
+    rdfs:label "設備"@ja ;
+    rdfs:comment "定常的に備わっている設備"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:設備 .
+
+ic:地点_管理者 a rdf:Property ;
+    rdfs:label "管理者"@ja ;
+    rdfs:comment "管理者"@ja ;
+    rdfs:domain ic:地点 ;
+    rdfs:range ic:実体 .
+
+ic:施設 a rdfs:Class ;
+    rdfs:label "施設"@ja ;
+    rdfs:comment "特定のサービスをする提供する施設を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:地点 .
+
+ic:施設_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "施設の種別"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range xsd:string .
+
+ic:施設_種別-コード a rdf:Property ;
+    rdfs:label "種別(コード)"@ja ;
+    rdfs:comment "施設の種別"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:コード .
+
+ic:施設_利用可能時間 a rdf:Property ;
+    rdfs:label "利用可能時間"@ja ;
+    rdfs:comment "施設の利用可能日、開始、終了時間"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:スケジュール .
+
+ic:施設_料金 a rdf:Property ;
+    rdfs:label "料金"@ja ;
+    rdfs:comment "施設の料金"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:価格一覧 .
+
+ic:施設_収容人数 a rdf:Property ;
+    rdfs:label "収容人数"@ja ;
+    rdfs:comment "収容数"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:数量 .
+
+ic:施設_駐車場 a rdf:Property ;
+    rdfs:label "駐車場"@ja ;
+    rdfs:comment "施設が利用する駐車場"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:駐車場 .
+
+ic:施設_建物 a rdf:Property ;
+    rdfs:label "建物"@ja ;
+    rdfs:comment "施設が利用する建物"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:建物 .
+
+ic:施設_関連施設 a rdf:Property ;
+    rdfs:label "関連施設"@ja ;
+    rdfs:comment "上位施設、下位施設等の関連施設"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range ic:施設関連 .
+
+ic:施設_備考 a rdf:Property ;
+    rdfs:label "備考"@ja ;
+    rdfs:comment "補足情報などがある場合に記述"@ja ;
+    rdfs:domain ic:施設 ;
+    rdfs:range xsd:string .
+
+ic:施設関連 a rdfs:Class ;
+    rdfs:label "施設関連"@ja ;
+    rdfs:comment "施設の関連を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:施設関連_役割 a rdf:Property ;
+    rdfs:label "役割"@ja ;
+    rdfs:comment "施設の役割"@ja ;
+    rdfs:domain ic:施設関連 ;
+    rdfs:range xsd:string .
+
+ic:施設関連_施設 a rdf:Property ;
+    rdfs:label "施設"@ja ;
+    rdfs:comment "関連施設"@ja ;
+    rdfs:domain ic:施設関連 ;
+    rdfs:range ic:施設 .
+
+ic:建物 a rdfs:Class ;
+    rdfs:label "建物"@ja ;
+    rdfs:comment "具体的な建物をｊ表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:地点 .
+
+ic:建物_敷地面積 a rdf:Property ;
+    rdfs:label "敷地面積"@ja ;
+    rdfs:comment "敷地面積"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range ic:面積 .
+
+ic:建物_主要用途 a rdf:Property ;
+    rdfs:label "主要用途"@ja ;
+    rdfs:comment "建物の主要用途"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range xsd:string .
+
+ic:建物_建築面積 a rdf:Property ;
+    rdfs:label "建築面積"@ja ;
+    rdfs:comment "建築面積"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range ic:面積 .
+
+ic:建物_延べ面積 a rdf:Property ;
+    rdfs:label "延べ面積"@ja ;
+    rdfs:comment "延べ面積"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range ic:面積 .
+
+ic:建物_最高の高さ a rdf:Property ;
+    rdfs:label "最高の高さ"@ja ;
+    rdfs:comment "建物の最高点の高さ"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range ic:長さ .
+
+ic:建物_地上階数 a rdf:Property ;
+    rdfs:label "地上階数"@ja ;
+    rdfs:comment "建物の地上階数"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range xsd:decimal .
+
+ic:建物_地下階数 a rdf:Property ;
+    rdfs:label "地下階数"@ja ;
+    rdfs:comment "建物の地下階数"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range xsd:decimal .
+
+ic:建物_構造 a rdf:Property ;
+    rdfs:label "構造"@ja ;
+    rdfs:comment "建物の構造"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range xsd:string .
+
+ic:建物_竣工日 a rdf:Property ;
+    rdfs:label "竣工日"@ja ;
+    rdfs:comment "建物の竣工日"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range ic:日時 .
+
+ic:建物_施設 a rdf:Property ;
+    rdfs:label "施設"@ja ;
+    rdfs:comment "建物を利用する施設"@ja ;
+    rdfs:domain ic:建物 ;
+    rdfs:range ic:施設 .
+
+ic:駐車場 a rdfs:Class ;
+    rdfs:label "駐車場"@ja ;
+    rdfs:comment "駐車場を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:施設 .
+
+ic:駐車場_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "駐車場の種別"@ja ;
+    rdfs:domain ic:駐車場 ;
+    rdfs:range xsd:string .
+
+ic:駐車場_収容台数 a rdf:Property ;
+    rdfs:label "収容台数"@ja ;
+    rdfs:comment "駐車場の収容可能台数"@ja ;
+    rdfs:domain ic:駐車場 ;
+    rdfs:range xsd:decimal .
+
+ic:設備 a rdfs:Class ;
+    rdfs:label "設備"@ja ;
+    rdfs:comment "施設や建物等に備わっている設備を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:設備_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "設備のIDを記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:ID .
+
+ic:設備_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "設備名を記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:名称 .
+
+ic:設備_設置地点 a rdf:Property ;
+    rdfs:label "設置地点"@ja ;
+    rdfs:comment "受付横等、設置場所を示す内容を記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:地点 .
+
+ic:設備_設置位置 a rdf:Property ;
+    rdfs:label "設置位置"@ja ;
+    rdfs:comment "受付横等、設置場所を示す内容を記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:string .
+
+ic:設備_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "設備の説明"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:string .
+
+ic:設備_利用可能時間 a rdf:Property ;
+    rdfs:label "利用可能時間"@ja ;
+    rdfs:comment "利用可能日とそれぞれの利用可能時間を記入する"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:スケジュール .
+
+ic:設備_料金 a rdf:Property ;
+    rdfs:label "料金"@ja ;
+    rdfs:comment "設備の利用料金"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:価格一覧 .
+
+ic:設備_外部利用可否 a rdf:Property ;
+    rdfs:label "外部利用可否"@ja ;
+    rdfs:comment "設備の外部利用可否を記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:string .
+
+ic:設備_利用者 a rdf:Property ;
+    rdfs:label "利用者"@ja ;
+    rdfs:comment "利用者に限定条件がある場合に条件を記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:string .
+
+ic:設備_設置日 a rdf:Property ;
+    rdfs:label "設置日"@ja ;
+    rdfs:comment "施設の設置日を記入"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:日時 .
+
+ic:設備_写真 a rdf:Property ;
+    rdfs:label "写真"@ja ;
+    rdfs:comment "設備の位置が遠景からもわかる写真を添付"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:anyURI .
+
+ic:設備_Webサイト a rdf:Property ;
+    rdfs:label "Webサイト"@ja ;
+    rdfs:comment "関連ホームページがある際に記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:anyURI .
+
+ic:設備_設置者 a rdf:Property ;
+    rdfs:label "設置者"@ja ;
+    rdfs:comment "自治体名や組織名を記載。株式会社等も省略しないで記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:組織 .
+
+ic:設備_管理者 a rdf:Property ;
+    rdfs:label "管理者"@ja ;
+    rdfs:comment "組織名を記載。株式会社等も省略しないで記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:組織 .
+
+ic:設備_連絡先 a rdf:Property ;
+    rdfs:label "連絡先"@ja ;
+    rdfs:comment "連絡先の電話番号を記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range ic:連絡先 .
+
+ic:設備_バリアフリー a rdf:Property ;
+    rdfs:label "バリアフリー"@ja ;
+    rdfs:comment "バリアフリーに関する情報がある場合に記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:string .
+
+ic:設備_備考 a rdf:Property ;
+    rdfs:label "備考"@ja ;
+    rdfs:comment "全体としての補足情報がある場合に記述"@ja ;
+    rdfs:domain ic:設備 ;
+    rdfs:range xsd:string .
+
+ic:イベント a rdfs:Class ;
+    rdfs:label "イベント"@ja ;
+    rdfs:comment "イベントを表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:イベント_関連組織 a rdf:Property ;
+    rdfs:label "関連組織"@ja ;
+    rdfs:comment "イベントに関連する組織"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:組織関連 .
+
+ic:イベント_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "イベントの名称"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:名称 .
+
+ic:イベント_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "イベントを識別するためのID"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:ID .
+
+ic:イベント_分類 a rdf:Property ;
+    rdfs:label "分類"@ja ;
+    rdfs:comment "イベント内容の分類"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range xsd:string .
+
+ic:イベント_地点 a rdf:Property ;
+    rdfs:label "地点"@ja ;
+    rdfs:comment "イベント場所"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:地点 .
+
+ic:イベント_期間 a rdf:Property ;
+    rdfs:label "期間"@ja ;
+    rdfs:comment "イベントの期間"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:スケジュール .
+
+ic:イベント_参加方法 a rdf:Property ;
+    rdfs:label "参加方法"@ja ;
+    rdfs:comment "イベントの参加方法"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range xsd:string .
+
+ic:イベント_連絡先 a rdf:Property ;
+    rdfs:label "連絡先"@ja ;
+    rdfs:comment "イベントへの連絡方法"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:連絡先 .
+
+ic:イベント_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "イベントの説明"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range xsd:string .
+
+ic:イベント_要約 a rdf:Property ;
+    rdfs:label "要約"@ja ;
+    rdfs:comment "イベントの概要。100文字以内"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range xsd:string .
+
+ic:イベント_関連イベント a rdf:Property ;
+    rdfs:label "関連イベント"@ja ;
+    rdfs:comment "関連するイベント"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:イベント .
+
+ic:イベント_対象者 a rdf:Property ;
+    rdfs:label "対象者"@ja ;
+    rdfs:comment "イベントの参加対象者"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range xsd:string .
+
+ic:イベント_人数 a rdf:Property ;
+    rdfs:label "人数"@ja ;
+    rdfs:comment "イベントの参加者、定員"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:数量 .
+
+ic:イベント_キーワード a rdf:Property ;
+    rdfs:label "キーワード"@ja ;
+    rdfs:comment "イベントのキーワード"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range xsd:string .
+
+ic:イベント_料金 a rdf:Property ;
+    rdfs:label "料金"@ja ;
+    rdfs:comment "イベントに参加するための料金"@ja ;
+    rdfs:domain ic:イベント ;
+    rdfs:range ic:価格一覧 .
+
+ic:測定値 a rdfs:Class ;
+    rdfs:label "測定値"@ja ;
+    rdfs:comment "測定単位及び方法を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:測定値_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:測定値 ;
+    rdfs:range xsd:decimal .
+
+ic:測定値_測定名称 a rdf:Property ;
+    rdfs:label "測定名称"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:測定値 ;
+    rdfs:range xsd:string .
+
+ic:測定値_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "測定の単位"@ja ;
+    rdfs:domain ic:測定値 ;
+    rdfs:range xsd:string .
+
+ic:数量 a rdfs:Class ;
+    rdfs:label "数量"@ja ;
+    rdfs:comment "数量を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:数量_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:数量 ;
+    rdfs:range xsd:decimal .
+
+ic:数量_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "1：個、2：人分、3：人日分"@ja ;
+    rdfs:domain ic:数量 ;
+    rdfs:range xsd:string .
+
+ic:容量 a rdfs:Class ;
+    rdfs:label "容量"@ja ;
+    rdfs:comment "容量を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:容量_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:容量 ;
+    rdfs:range xsd:decimal .
+
+ic:容量_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "容量の単位"@ja ;
+    rdfs:domain ic:容量 ;
+    rdfs:range uncefactVolume:MeasurementUnitCommonCodeVolumeContentType .
+
+ic:面積 a rdfs:Class ;
+    rdfs:label "面積"@ja ;
+    rdfs:comment "面積を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:面積_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:面積 ;
+    rdfs:range xsd:decimal .
+
+ic:面積_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "面積の単位"@ja ;
+    rdfs:domain ic:面積 ;
+    rdfs:range uncefactCode:MeasurementUnitCommonCodeContentType .
+
+ic:重量 a rdfs:Class ;
+    rdfs:label "重量"@ja ;
+    rdfs:comment "重量を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:重量_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:重量 ;
+    rdfs:range xsd:decimal .
+
+ic:重量_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "重量の単位"@ja ;
+    rdfs:domain ic:重量 ;
+    rdfs:range uncefactWeight:MeasurementUnitCommonCodeWeightContentType .
+
+ic:長さ a rdfs:Class ;
+    rdfs:label "長さ"@ja ;
+    rdfs:comment "長さを表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:長さ_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:長さ ;
+    rdfs:range xsd:decimal .
+
+ic:長さ_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "長さの単位"@ja ;
+    rdfs:domain ic:長さ ;
+    rdfs:range uncefactLinear:MeasurementUnitCommonCodeLinearContentType .
+
+ic:時間 a rdfs:Class ;
+    rdfs:label "時間"@ja ;
+    rdfs:comment "時間の長さを表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:時間_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "測定数値"@ja ;
+    rdfs:domain ic:時間 ;
+    rdfs:range xsd:decimal .
+
+ic:時間_単位 a rdf:Property ;
+    rdfs:label "単位"@ja ;
+    rdfs:comment "時間の単位"@ja ;
+    rdfs:domain ic:時間 ;
+    rdfs:range uncefactDuration:MeasurementUnitCommonCodeDurationContentType .
+
+ic:金額 a rdfs:Class ;
+    rdfs:label "金額"@ja ;
+    rdfs:comment "金額を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:金額_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "通貨コード"@ja ;
+    rdfs:domain ic:金額 ;
+    rdfs:range xsd:decimal .
+
+ic:金額_通貨 a rdf:Property ;
+    rdfs:label "通貨"@ja ;
+    rdfs:comment "通貨名"@ja ;
+    rdfs:domain ic:金額 ;
+    rdfs:range xsd:string .
+
+ic:金額_通貨-コード a rdf:Property ;
+    rdfs:label "通貨(コード)"@ja ;
+    rdfs:comment "通貨コード"@ja ;
+    rdfs:domain ic:金額 ;
+    rdfs:range uncefactISO4217:ISO3AlphaCurrencyCodeContentType .
+
+ic:価格一覧 a rdfs:Class ;
+    rdfs:label "価格一覧"@ja ;
+    rdfs:comment "価格の一覧を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:価格一覧_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "価格の発生するサービスなど"@ja ;
+    rdfs:domain ic:価格一覧 ;
+    rdfs:range xsd:string .
+
+ic:価格一覧_価格 a rdf:Property ;
+    rdfs:label "価格"@ja ;
+    rdfs:comment "価格"@ja ;
+    rdfs:domain ic:価格一覧 ;
+    rdfs:range ic:価格 .
+
+ic:価格 a rdfs:Class ;
+    rdfs:label "価格"@ja ;
+    rdfs:comment "価格を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:価格_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "価格の単位や種別"@ja ;
+    rdfs:domain ic:価格 ;
+    rdfs:range xsd:string .
+
+ic:価格_金額 a rdf:Property ;
+    rdfs:label "金額"@ja ;
+    rdfs:comment "価格の金額"@ja ;
+    rdfs:domain ic:価格 ;
+    rdfs:range ic:金額 .
+
+ic:実体 a rdfs:Class ;
+    rdfs:label "実体"@ja ;
+    rdfs:comment "実体を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:状況 a rdfs:Class ;
+    rdfs:label "状況"@ja ;
+    rdfs:comment "状況を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:状況_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "状況"@ja ;
+    rdfs:domain ic:状況 ;
+    rdfs:range ic:名称 .
+
+ic:状況_発生日 a rdf:Property ;
+    rdfs:label "発生日"@ja ;
+    rdfs:comment "状況の発生日時"@ja ;
+    rdfs:domain ic:状況 ;
+    rdfs:range ic:日時 .
+
+ic:状況_詳細 a rdf:Property ;
+    rdfs:label "詳細"@ja ;
+    rdfs:comment "状況の詳細"@ja ;
+    rdfs:domain ic:状況 ;
+    rdfs:range xsd:string .
+
+ic:状況_関係者 a rdf:Property ;
+    rdfs:label "関係者"@ja ;
+    rdfs:comment "状況を発生させた人及び組織"@ja ;
+    rdfs:domain ic:状況 ;
+    rdfs:range ic:実体 .
+
+ic:日時 a rdfs:Class ;
+    rdfs:label "日時"@ja ;
+    rdfs:comment "日付を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:日時_表記 a rdf:Property ;
+    rdfs:label "表記"@ja ;
+    rdfs:comment "日時"@ja ;
+    rdfs:domain ic:日時 ;
+    rdfs:range xsd:dateTime .
+
+ic:日時_表記-定型 a rdf:Property ;
+    rdfs:label "表記(定型)"@ja ;
+    rdfs:comment "要素化された西暦日時"@ja ;
+    rdfs:domain ic:日時 ;
+    rdfs:range ic:定型日時 .
+
+ic:日時_表記-定型和暦 a rdf:Property ;
+    rdfs:label "表記(定型和暦)"@ja ;
+    rdfs:comment "要素化された和暦日時"@ja ;
+    rdfs:domain ic:日時 ;
+    rdfs:range ic:定型和暦日時 .
+
+ic:定型日時 a rdfs:Class ;
+    rdfs:label "定型日時"@ja ;
+    rdfs:comment "日付を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:定型日時_年 a rdf:Property ;
+    rdfs:label "年"@ja ;
+    rdfs:comment "年の値"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型日時_月 a rdf:Property ;
+    rdfs:label "月"@ja ;
+    rdfs:comment "月の値"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型日時_日 a rdf:Property ;
+    rdfs:label "日"@ja ;
+    rdfs:comment "日の値"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型日時_時 a rdf:Property ;
+    rdfs:label "時"@ja ;
+    rdfs:comment "時の値"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型日時_分 a rdf:Property ;
+    rdfs:label "分"@ja ;
+    rdfs:comment "分の値"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型日時_秒 a rdf:Property ;
+    rdfs:label "秒"@ja ;
+    rdfs:comment "秒の値"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型日時_時間帯 a rdf:Property ;
+    rdfs:label "時間帯"@ja ;
+    rdfs:comment "時間帯。協定世界時からの時間差"@ja ;
+    rdfs:domain ic:定型日時 ;
+    rdfs:range xsd:string .
+
+ic:定型和暦日時 a rdfs:Class ;
+    rdfs:label "定型和暦日時"@ja ;
+    rdfs:comment "日付を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:定型和暦日時_年号 a rdf:Property ;
+    rdfs:label "年号"@ja ;
+    rdfs:comment "元号"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:string .
+
+ic:定型和暦日時_年 a rdf:Property ;
+    rdfs:label "年"@ja ;
+    rdfs:comment "年の値"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型和暦日時_月 a rdf:Property ;
+    rdfs:label "月"@ja ;
+    rdfs:comment "月の値"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型和暦日時_日 a rdf:Property ;
+    rdfs:label "日"@ja ;
+    rdfs:comment "日の値"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型和暦日時_時 a rdf:Property ;
+    rdfs:label "時"@ja ;
+    rdfs:comment "時の値"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型和暦日時_分 a rdf:Property ;
+    rdfs:label "分"@ja ;
+    rdfs:comment "分の値"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型和暦日時_秒 a rdf:Property ;
+    rdfs:label "秒"@ja ;
+    rdfs:comment "秒の値"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:decimal .
+
+ic:定型和暦日時_時間帯 a rdf:Property ;
+    rdfs:label "時間帯"@ja ;
+    rdfs:comment "時間帯。協定世界時からの時間差"@ja ;
+    rdfs:domain ic:定型和暦日時 ;
+    rdfs:range xsd:string .
+
+ic:期間 a rdfs:Class ;
+    rdfs:label "期間"@ja ;
+    rdfs:comment "期間を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:期間_開始日時 a rdf:Property ;
+    rdfs:label "開始日時"@ja ;
+    rdfs:comment "開始日"@ja ;
+    rdfs:domain ic:期間 ;
+    rdfs:range ic:日時 .
+
+ic:期間_終了日時 a rdf:Property ;
+    rdfs:label "終了日時"@ja ;
+    rdfs:comment "終了日"@ja ;
+    rdfs:domain ic:期間 ;
+    rdfs:range ic:日時 .
+
+ic:期間_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "期間の説明や例外など"@ja ;
+    rdfs:domain ic:期間 ;
+    rdfs:range xsd:string .
+
+ic:スケジュール a rdfs:Class ;
+    rdfs:label "スケジュール"@ja ;
+    rdfs:comment "スケジュールを表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:イベントスケジュール a rdfs:Class ;
+    rdfs:label "イベントスケジュール"@ja ;
+    rdfs:comment "施設等のオープン日とオープン時間を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:スケジュール .
+
+ic:イベントスケジュール_開催日 a rdf:Property ;
+    rdfs:label "開催日"@ja ;
+    rdfs:comment "一日だけの開催の場合の開催日。列挙可"@ja ;
+    rdfs:domain ic:イベントスケジュール ;
+    rdfs:range ic:日時 .
+
+ic:イベントスケジュール_開始日 a rdf:Property ;
+    rdfs:label "開始日"@ja ;
+    rdfs:comment "イベントが開始する日"@ja ;
+    rdfs:domain ic:イベントスケジュール ;
+    rdfs:range ic:日時 .
+
+ic:イベントスケジュール_終了日 a rdf:Property ;
+    rdfs:label "終了日"@ja ;
+    rdfs:comment "イベントが終了する日"@ja ;
+    rdfs:domain ic:イベントスケジュール ;
+    rdfs:range ic:日時 .
+
+ic:イベントスケジュール_開始時間 a rdf:Property ;
+    rdfs:label "開始時間"@ja ;
+    rdfs:comment "場所やサービスの開始時間"@ja ;
+    rdfs:domain ic:イベントスケジュール ;
+    rdfs:range xsd:time .
+
+ic:イベントスケジュール_終了時間 a rdf:Property ;
+    rdfs:label "終了時間"@ja ;
+    rdfs:comment "場所やサービスの終了時間"@ja ;
+    rdfs:domain ic:イベントスケジュール ;
+    rdfs:range xsd:time .
+
+ic:イベントスケジュール_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "スケジュールの説明や例外など"@ja ;
+    rdfs:domain ic:イベントスケジュール ;
+    rdfs:range xsd:string .
+
+ic:定期スケジュール a rdfs:Class ;
+    rdfs:label "定期スケジュール"@ja ;
+    rdfs:comment "施設等のオープン日とオープン時間を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:スケジュール .
+
+ic:定期スケジュール_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "スケジュールの種別。「週間」「月間」「年間」などを指定する"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range xsd:string .
+
+ic:定期スケジュール_開催日 a rdf:Property ;
+    rdfs:label "開催日"@ja ;
+    rdfs:comment "このスケジュールが有効となる日。「週間」スケジュールの場合は曜日を指定し、「月間」スケジュールの場合は月の中の日を指定し、「年間」スケジュールの場合は年の中の月日を指定する"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range xsd:string .
+
+ic:定期スケジュール_有効開始日時 a rdf:Property ;
+    rdfs:label "有効開始日時"@ja ;
+    rdfs:comment "このスケジュールが有効になる日時"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range ic:日時 .
+
+ic:定期スケジュール_有効終了日時 a rdf:Property ;
+    rdfs:label "有効終了日時"@ja ;
+    rdfs:comment "このスケジュールが無効になる日時"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range ic:日時 .
+
+ic:定期スケジュール_開始時間 a rdf:Property ;
+    rdfs:label "開始時間"@ja ;
+    rdfs:comment "指定された曜日に場所やサービスが開始する時間"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range xsd:time .
+
+ic:定期スケジュール_終了時間 a rdf:Property ;
+    rdfs:label "終了時間"@ja ;
+    rdfs:comment "指定された曜日に場所やサービスが終了する時間"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range xsd:time .
+
+ic:定期スケジュール_説明 a rdf:Property ;
+    rdfs:label "説明"@ja ;
+    rdfs:comment "スケジュールの説明や例外など"@ja ;
+    rdfs:domain ic:定期スケジュール ;
+    rdfs:range xsd:string .
+
+ic:詳細スケジュール a rdfs:Class ;
+    rdfs:label "詳細スケジュール"@ja ;
+    rdfs:comment """（将来的に整備する予定）
+施設等のオープン日とオープン時間を表現するためのデータ型。複数のスケジュールが列挙された場合はそれらの和を取るものとする"""@ja ;
+    rdfs:subClassOf ic:スケジュール .
+
+ic:詳細スケジュール規則 a rdfs:Class ;
+    rdfs:label "詳細スケジュール規則"@ja ;
+    rdfs:comment """（将来的に整備する予定）
+繰り返し型のスケジュールを定義するための規則"""@ja ;
+    rdfs:subClassOf ic:スケジュール .
+
+ic:コード a rdfs:Class ;
+    rdfs:label "コード"@ja ;
+    rdfs:comment "コードを表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:コード_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "コードの種別"@ja ;
+    rdfs:domain ic:コード ;
+    rdfs:range ic:コードリスト .
+
+ic:コード_値 a rdf:Property ;
+    rdfs:label "値"@ja ;
+    rdfs:comment "コードの値"@ja ;
+    rdfs:domain ic:コード ;
+    rdfs:range xsd:string .
+
+ic:コードリスト a rdfs:Class ;
+    rdfs:label "コードリスト"@ja ;
+    rdfs:comment "コードの種別を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:コードリスト_名称 a rdf:Property ;
+    rdfs:label "名称"@ja ;
+    rdfs:comment "コードの名前"@ja ;
+    rdfs:domain ic:コードリスト ;
+    rdfs:range xsd:string .
+
+ic:コードリスト_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "コードを表すID"@ja ;
+    rdfs:domain ic:コードリスト ;
+    rdfs:range ic:ID .
+
+ic:コードリスト_発行者 a rdf:Property ;
+    rdfs:label "発行者"@ja ;
+    rdfs:comment "コードの発行主体"@ja ;
+    rdfs:domain ic:コードリスト ;
+    rdfs:range xsd:string .
+
+ic:コードリスト_発行者-ID a rdf:Property ;
+    rdfs:label "発行者(ID)"@ja ;
+    rdfs:comment "コードの発行主体のID"@ja ;
+    rdfs:domain ic:コードリスト ;
+    rdfs:range ic:ID .
+
+ic:コードリスト_バージョン a rdf:Property ;
+    rdfs:label "バージョン"@ja ;
+    rdfs:comment "コードのバージョン"@ja ;
+    rdfs:domain ic:コードリスト ;
+    rdfs:range xsd:string .
+
+ic:コードリスト_URI a rdf:Property ;
+    rdfs:label "URI"@ja ;
+    rdfs:comment "コードや発行者の参照先"@ja ;
+    rdfs:domain ic:コードリスト ;
+    rdfs:range xsd:anyURI .
+
+ic:アクセス a rdfs:Class ;
+    rdfs:label "アクセス"@ja ;
+    rdfs:comment "地点等へのアクセスを表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:アクセス_ID a rdf:Property ;
+    rdfs:label "ID"@ja ;
+    rdfs:comment "アクセス方法を表すID"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range ic:ID .
+
+ic:アクセス_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "最寄地点からのアクセス手段。鉄道、バス、徒歩、など"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range xsd:string .
+
+ic:アクセス_始点 a rdf:Property ;
+    rdfs:label "始点"@ja ;
+    rdfs:comment "アクセス方法の始点（出発地点）"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range ic:地点 .
+
+ic:アクセス_始点備考 a rdf:Property ;
+    rdfs:label "始点備考"@ja ;
+    rdfs:comment "アクセス方法の始点についての備考"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range xsd:string .
+
+ic:アクセス_終点 a rdf:Property ;
+    rdfs:label "終点"@ja ;
+    rdfs:comment "アクセス方法の終点（目的地点）"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range ic:地点 .
+
+ic:アクセス_終点備考 a rdf:Property ;
+    rdfs:label "終点備考"@ja ;
+    rdfs:comment "アクセス方法の終点についての備考"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range xsd:string .
+
+ic:アクセス_アクセス区間 a rdf:Property ;
+    rdfs:label "アクセス区間"@ja ;
+    rdfs:comment "アクセス方法の各区間の一覧"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range ic:アクセス区間 .
+
+ic:アクセス_時間 a rdf:Property ;
+    rdfs:label "時間"@ja ;
+    rdfs:comment "始点から終点までのアクセス時間"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range ic:測定値 .
+
+ic:アクセス_地図 a rdf:Property ;
+    rdfs:label "地図"@ja ;
+    rdfs:comment "地図"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range xsd:anyURI .
+
+ic:アクセス_備考 a rdf:Property ;
+    rdfs:label "備考"@ja ;
+    rdfs:comment "その他の補足情報。"@ja ;
+    rdfs:domain ic:アクセス ;
+    rdfs:range xsd:string .
+
+ic:アクセス区間 a rdfs:Class ;
+    rdfs:label "アクセス区間"@ja ;
+    rdfs:comment "アクセス含まれる各区間を表現するためのデータ型"@ja ;
+    rdfs:subClassOf ic:事物 .
+
+ic:アクセス区間_種別 a rdf:Property ;
+    rdfs:label "種別"@ja ;
+    rdfs:comment "最寄地点からのアクセス手段。鉄道、バス、徒歩、など"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range xsd:string .
+
+ic:アクセス区間_始点 a rdf:Property ;
+    rdfs:label "始点"@ja ;
+    rdfs:comment "アクセス方法の始点（出発地点）"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range ic:地点 .
+
+ic:アクセス区間_始点備考 a rdf:Property ;
+    rdfs:label "始点備考"@ja ;
+    rdfs:comment "アクセス方法の始点についての備考"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range xsd:string .
+
+ic:アクセス区間_路線 a rdf:Property ;
+    rdfs:label "路線"@ja ;
+    rdfs:comment "アクセスに用いる交通の事業者及び路線名、バス系統など"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range xsd:string .
+
+ic:アクセス区間_終点 a rdf:Property ;
+    rdfs:label "終点"@ja ;
+    rdfs:comment "アクセス方法の終点（目的地点）"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range ic:地点 .
+
+ic:アクセス区間_終点備考 a rdf:Property ;
+    rdfs:label "終点備考"@ja ;
+    rdfs:comment "アクセス方法の終点についての備考"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range xsd:string .
+
+ic:アクセス区間_時間 a rdf:Property ;
+    rdfs:label "時間"@ja ;
+    rdfs:comment "始点から終点までのアクセス時間"@ja ;
+    rdfs:domain ic:アクセス区間 ;
+    rdfs:range ic:測定値 .
+
+ic:事物 a rdfs:Class ;
+    rdfs:label "事物"@ja ;
+    rdfs:comment "全ての型のベースとなる基本型。"@ja .
+
+ic:id
+    a rdf:Property ;
+    rdfs:comment ""@ja ;
+    rdfs:domain ic:事物 ;
+    rdfs:label "id"@ja ;
+    rdfs:range xsd:ID .
+
+ic:ref
+    a rdf:Property ;
+    rdfs:comment ""@ja ;
+    rdfs:domain ic:事物 ;
+    rdfs:label "ref"@ja ;
+    rdfs:range xsd:IDREF .
