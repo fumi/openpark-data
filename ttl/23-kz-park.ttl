@@ -1,17 +1,20 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix ic: <http://imi.ipa.go.jp/ns/core/210#> .
-@prefix park: <http://yokohama.openpark.jp/parks/> .
+@prefix park: <http://yokohama.openpark.jp/ns/park#> .
+@prefix park_resource: <http://yokohama.openpark.jp/parks/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-park:のりべか公園 a schema:Park,
+park_resource:のりべか公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "のりべか公園"@ja;
    ic:地点_名称 "のりべか公園"@ja;
    ic:地点_場所 [
@@ -19,27 +22,29 @@ park:のりべか公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木二丁目4"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7127";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木二丁目4"@ja
+     schema:streetAddress "金沢区並木二丁目4"@ja
    ];
    geo:lat "35.366093"^^xsd:float;
    geo:long "139.638"^^xsd:float .
 
-park:はなむしろ公園 a schema:Park,
+park_resource:はなむしろ公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "はなむしろ公園"@ja;
    ic:地点_名称 "はなむしろ公園"@ja;
    ic:地点_場所 [
@@ -47,27 +52,29 @@ park:はなむしろ公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西五丁目16"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7134";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西五丁目16"@ja
+     schema:streetAddress "金沢区釜利谷西五丁目16"@ja
    ];
    geo:lat "35.34156"^^xsd:float;
    geo:long "139.59436"^^xsd:float .
 
-park:まつかぜ公園 a schema:Park,
+park_resource:まつかぜ公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "まつかぜ公園"@ja;
    ic:地点_名称 "まつかぜ公園"@ja;
    ic:地点_場所 [
@@ -75,27 +82,29 @@ park:まつかぜ公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区寺前二丁目27"@ja;
-       ic:住所_郵便番号 "236-0014"@ja
+       ic:住所_郵便番号 "236-0014"
      ]
    ];
    dcterms:identifier "P7022";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0014";
-     schema:streetAddress "寺前二丁目27"@ja
+     schema:streetAddress "金沢区寺前二丁目27"@ja
    ];
    geo:lat "35.3395"^^xsd:float;
    geo:long "139.632278"^^xsd:float .
 
-park:イガイ根公園 a schema:Park,
+park_resource:イガイ根公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "イガイ根公園"@ja;
    ic:地点_名称 "イガイ根公園"@ja;
    ic:地点_場所 [
@@ -103,27 +112,29 @@ park:イガイ根公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木三丁目9"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7028";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木三丁目9"@ja
+     schema:streetAddress "金沢区並木三丁目9"@ja
    ];
    geo:lat "35.355473"^^xsd:float;
    geo:long "139.642471"^^xsd:float .
 
-park:イド藻公園 a schema:Park,
+park_resource:イド藻公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "イド藻公園"@ja;
    ic:地点_名称 "イド藻公園"@ja;
    ic:地点_場所 [
@@ -131,27 +142,29 @@ park:イド藻公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木三丁目3"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7030";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木三丁目3"@ja
+     schema:streetAddress "金沢区並木三丁目3"@ja
    ];
    geo:lat "35.359913"^^xsd:float;
    geo:long "139.639908"^^xsd:float .
 
-park:カゼ場公園 a schema:Park,
+park_resource:カゼ場公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "カゼ場公園"@ja;
    ic:地点_名称 "カゼ場公園"@ja;
    ic:地点_場所 [
@@ -159,27 +172,29 @@ park:カゼ場公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木一丁目12"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7036";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木一丁目12"@ja
+     schema:streetAddress "金沢区並木一丁目12"@ja
    ];
    geo:lat "35.370407"^^xsd:float;
    geo:long "139.641678"^^xsd:float .
 
-park:カメギ根公園 a schema:Park,
+park_resource:カメギ根公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "カメギ根公園"@ja;
    ic:地点_名称 "カメギ根公園"@ja;
    ic:地点_場所 [
@@ -187,27 +202,29 @@ park:カメギ根公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柴町364"@ja;
-       ic:住所_郵便番号 "236-0012"@ja
+       ic:住所_郵便番号 "236-0012"
      ]
    ];
    dcterms:identifier "P7055";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0012";
-     schema:streetAddress "柴町364"@ja
+     schema:streetAddress "金沢区柴町364"@ja
    ];
    geo:lat "35.346149"^^xsd:float;
    geo:long "139.639069"^^xsd:float .
 
-park:サルダの鼻公園 a schema:Park,
+park_resource:サルダの鼻公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "サルダの鼻公園"@ja;
    ic:地点_名称 "サルダの鼻公園"@ja;
    ic:地点_場所 [
@@ -215,27 +232,29 @@ park:サルダの鼻公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木二丁目1"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7060";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木二丁目1"@ja
+     schema:streetAddress "金沢区並木二丁目1"@ja
    ];
    geo:lat "35.364582"^^xsd:float;
    geo:long "139.640778"^^xsd:float .
 
-park:マサキの鼻公園 a schema:Park,
+park_resource:マサキの鼻公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "マサキの鼻公園"@ja;
    ic:地点_名称 "マサキの鼻公園"@ja;
    ic:地点_場所 [
@@ -243,27 +262,29 @@ park:マサキの鼻公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柴町380"@ja;
-       ic:住所_郵便番号 "236-0012"@ja
+       ic:住所_郵便番号 "236-0012"
      ]
    ];
    dcterms:identifier "P7146";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0012";
-     schema:streetAddress "柴町380"@ja
+     schema:streetAddress "金沢区柴町380"@ja
    ];
    geo:lat "35.344116"^^xsd:float;
    geo:long "139.643036"^^xsd:float .
 
-park:下ノ浜公園 a schema:Park,
+park_resource:下ノ浜公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "下ノ浜公園"@ja;
    ic:地点_名称 "下ノ浜公園"@ja;
    ic:地点_場所 [
@@ -271,27 +292,29 @@ park:下ノ浜公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東四丁目10"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7068";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東四丁目10"@ja
+     schema:streetAddress "金沢区富岡東四丁目10"@ja
    ];
    geo:lat "35.367931"^^xsd:float;
    geo:long "139.633759"^^xsd:float .
 
-park:並木十二天公園 a schema:Park,
+park_resource:並木十二天公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "並木十二天公園"@ja;
    ic:地点_名称 "並木十二天公園"@ja;
    ic:地点_場所 [
@@ -299,27 +322,29 @@ park:並木十二天公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木一丁目8"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7113";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木一丁目8"@ja
+     schema:streetAddress "金沢区並木一丁目8"@ja
    ];
    geo:lat "35.372181"^^xsd:float;
    geo:long "139.638824"^^xsd:float .
 
-park:中藻公園 a schema:Park,
+park_resource:中藻公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "中藻公園"@ja;
    ic:地点_名称 "中藻公園"@ja;
    ic:地点_場所 [
@@ -327,27 +352,29 @@ park:中藻公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木二丁目11"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7109";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木二丁目11"@ja
+     schema:streetAddress "金沢区並木二丁目11"@ja
    ];
    geo:lat "35.36264"^^xsd:float;
    geo:long "139.640457"^^xsd:float .
 
-park:乙舳公園 a schema:Park,
+park_resource:乙舳公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "乙舳公園"@ja;
    ic:地点_名称 "乙舳公園"@ja;
    ic:地点_場所 [
@@ -355,27 +382,29 @@ park:乙舳公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区海の公園11"@ja;
-       ic:住所_郵便番号 "236-0013"@ja
+       ic:住所_郵便番号 "236-0013"
      ]
    ];
    dcterms:identifier "P7033";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0013";
-     schema:streetAddress "海の公園11"@ja
+     schema:streetAddress "金沢区海の公園11"@ja
    ];
    geo:lat "35.33252"^^xsd:float;
    geo:long "139.63385"^^xsd:float .
 
-park:乙舳第二公園 a schema:Park,
+park_resource:乙舳第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "乙舳第二公園"@ja;
    ic:地点_名称 "乙舳第二公園"@ja;
    ic:地点_場所 [
@@ -383,27 +412,29 @@ park:乙舳第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区乙舳町21-31"@ja;
-       ic:住所_郵便番号 "236-0024"@ja
+       ic:住所_郵便番号 "236-0024"
      ]
    ];
    dcterms:identifier "P7034";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0024";
-     schema:streetAddress "乙舳町21-31"@ja
+     schema:streetAddress "金沢区乙舳町21-31"@ja
    ];
    geo:lat "35.328541"^^xsd:float;
    geo:long "139.631256"^^xsd:float .
 
-park:伊賀山公園 a schema:Park,
+park_resource:伊賀山公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "伊賀山公園"@ja;
    ic:地点_名称 "伊賀山公園"@ja;
    ic:地点_場所 [
@@ -411,27 +442,29 @@ park:伊賀山公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区大道一丁目42"@ja;
-       ic:住所_郵便番号 "236-0035"@ja
+       ic:住所_郵便番号 "236-0035"
      ]
    ];
    dcterms:identifier "P7029";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0035";
-     schema:streetAddress "大道一丁目42"@ja
+     schema:streetAddress "金沢区大道一丁目42"@ja
    ];
    geo:lat "35.329834"^^xsd:float;
    geo:long "139.605423"^^xsd:float .
 
-park:八景公園 a schema:Park,
+park_resource:八景公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "八景公園"@ja;
    ic:地点_名称 "八景公園"@ja;
    ic:地点_場所 [
@@ -439,27 +472,29 @@ park:八景公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柳町1-10"@ja;
-       ic:住所_郵便番号 "236-0026"@ja
+       ic:住所_郵便番号 "236-0026"
      ]
    ];
    dcterms:identifier "P7132";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0026";
-     schema:streetAddress "柳町1-10"@ja
+     schema:streetAddress "金沢区柳町1-10"@ja
    ];
    geo:lat "35.328274"^^xsd:float;
    geo:long "139.625427"^^xsd:float .
 
-park:八景西公園 a schema:Park,
+park_resource:八景西公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "八景西公園"@ja;
    ic:地点_名称 "八景西公園"@ja;
    ic:地点_場所 [
@@ -467,27 +502,29 @@ park:八景西公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区大川7"@ja;
-       ic:住所_郵便番号 "236-0043"@ja
+       ic:住所_郵便番号 "236-0043"
      ]
    ];
    dcterms:identifier "P7133";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0043";
-     schema:streetAddress "大川7"@ja
+     schema:streetAddress "金沢区大川7"@ja
    ];
    geo:lat "35.335636"^^xsd:float;
    geo:long "139.612167"^^xsd:float .
 
-park:六浦あさがお公園 a schema:Park,
+park_resource:六浦あさがお公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦あさがお公園"@ja;
    ic:地点_名称 "六浦あさがお公園"@ja;
    ic:地点_場所 [
@@ -495,27 +532,29 @@ park:六浦あさがお公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南五丁目11"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7155";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南五丁目11"@ja
+     schema:streetAddress "金沢区六浦南五丁目11"@ja
    ];
    geo:lat "35.318939"^^xsd:float;
    geo:long "139.606277"^^xsd:float .
 
-park:六浦あざみ公園 a schema:Park,
+park_resource:六浦あざみ公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦あざみ公園"@ja;
    ic:地点_名称 "六浦あざみ公園"@ja;
    ic:地点_場所 [
@@ -523,27 +562,29 @@ park:六浦あざみ公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南三丁目26"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7156";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南三丁目26"@ja
+     schema:streetAddress "金沢区六浦南三丁目26"@ja
    ];
    geo:lat "35.317101"^^xsd:float;
    geo:long "139.610001"^^xsd:float .
 
-park:六浦しらゆり公園 a schema:Park,
+park_resource:六浦しらゆり公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦しらゆり公園"@ja;
    ic:地点_名称 "六浦しらゆり公園"@ja;
    ic:地点_場所 [
@@ -551,27 +592,29 @@ park:六浦しらゆり公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南三丁目11"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7161";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南三丁目11"@ja
+     schema:streetAddress "金沢区六浦南三丁目11"@ja
    ];
    geo:lat "35.317062"^^xsd:float;
    geo:long "139.612106"^^xsd:float .
 
-park:六浦ひなぎく公園 a schema:Park,
+park_resource:六浦ひなぎく公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦ひなぎく公園"@ja;
    ic:地点_名称 "六浦ひなぎく公園"@ja;
    ic:地点_場所 [
@@ -579,27 +622,29 @@ park:六浦ひなぎく公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南三丁目9"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7177";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南三丁目9"@ja
+     schema:streetAddress "金沢区六浦南三丁目9"@ja
    ];
    geo:lat "35.316376"^^xsd:float;
    geo:long "139.611252"^^xsd:float .
 
-park:六浦ひまわり公園 a schema:Park,
+park_resource:六浦ひまわり公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦ひまわり公園"@ja;
    ic:地点_名称 "六浦ひまわり公園"@ja;
    ic:地点_場所 [
@@ -607,27 +652,29 @@ park:六浦ひまわり公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南三丁目27"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7178";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南三丁目27"@ja
+     schema:streetAddress "金沢区六浦南三丁目27"@ja
    ];
    geo:lat "35.316132"^^xsd:float;
    geo:long "139.60936"^^xsd:float .
 
-park:六浦三艘第一公園 a schema:Park,
+park_resource:六浦三艘第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦三艘第一公園"@ja;
    ic:地点_名称 "六浦三艘第一公園"@ja;
    ic:地点_場所 [
@@ -635,27 +682,29 @@ park:六浦三艘第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南二丁目15"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7158";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南二丁目15"@ja
+     schema:streetAddress "金沢区六浦南二丁目15"@ja
    ];
    geo:lat "35.321293"^^xsd:float;
    geo:long "139.613861"^^xsd:float .
 
-park:六浦三艘第二公園 a schema:Park,
+park_resource:六浦三艘第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦三艘第二公園"@ja;
    ic:地点_名称 "六浦三艘第二公園"@ja;
    ic:地点_場所 [
@@ -663,27 +712,29 @@ park:六浦三艘第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南三丁目3"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7159";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南三丁目3"@ja
+     schema:streetAddress "金沢区六浦南三丁目3"@ja
    ];
    geo:lat "35.317043"^^xsd:float;
    geo:long "139.614929"^^xsd:float .
 
-park:六浦二丁目第一公園 a schema:Park,
+park_resource:六浦二丁目第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦二丁目第一公園"@ja;
    ic:地点_名称 "六浦二丁目第一公園"@ja;
    ic:地点_場所 [
@@ -691,27 +742,29 @@ park:六浦二丁目第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦二丁目8"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7152";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦二丁目8"@ja
+     schema:streetAddress "金沢区六浦二丁目8"@ja
    ];
    geo:lat "35.329231"^^xsd:float;
    geo:long "139.613937"^^xsd:float .
 
-park:六浦二丁目第三公園 a schema:Park,
+park_resource:六浦二丁目第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦二丁目第三公園"@ja;
    ic:地点_名称 "六浦二丁目第三公園"@ja;
    ic:地点_場所 [
@@ -719,27 +772,29 @@ park:六浦二丁目第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦二丁目1"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7154";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦二丁目1"@ja
+     schema:streetAddress "金沢区六浦二丁目1"@ja
    ];
    geo:lat "35.329296"^^xsd:float;
    geo:long "139.619247"^^xsd:float .
 
-park:六浦二丁目第二公園 a schema:Park,
+park_resource:六浦二丁目第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦二丁目第二公園"@ja;
    ic:地点_名称 "六浦二丁目第二公園"@ja;
    ic:地点_場所 [
@@ -747,27 +802,29 @@ park:六浦二丁目第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦二丁目7"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7153";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦二丁目7"@ja
+     schema:streetAddress "金沢区六浦二丁目7"@ja
    ];
    geo:lat "35.328728"^^xsd:float;
    geo:long "139.614868"^^xsd:float .
 
-park:六浦五丁目公園 a schema:Park,
+park_resource:六浦五丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦五丁目公園"@ja;
    ic:地点_名称 "六浦五丁目公園"@ja;
    ic:地点_場所 [
@@ -775,27 +832,29 @@ park:六浦五丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区金沢区六浦五丁目1667番6"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7188";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "金沢区六浦五丁目1667番6"@ja
+     schema:streetAddress "金沢区金沢区六浦五丁目1667番6"@ja
    ];
    geo:lat "35.344311"^^xsd:float;
    geo:long "139.628265"^^xsd:float .
 
-park:六浦公園 a schema:Park,
+park_resource:六浦公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦公園"@ja;
    ic:地点_名称 "六浦公園"@ja;
    ic:地点_場所 [
@@ -803,27 +862,29 @@ park:六浦公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦四丁目5"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7157";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦四丁目5"@ja
+     schema:streetAddress "金沢区六浦四丁目5"@ja
    ];
    geo:lat "35.327026"^^xsd:float;
    geo:long "139.618042"^^xsd:float .
 
-park:六浦南公園 a schema:Park,
+park_resource:六浦南公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦南公園"@ja;
    ic:地点_名称 "六浦南公園"@ja;
    ic:地点_場所 [
@@ -831,27 +892,29 @@ park:六浦南公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南二丁目4"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7179";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南二丁目4"@ja
+     schema:streetAddress "金沢区六浦南二丁目4"@ja
    ];
    geo:lat "35.322601"^^xsd:float;
    geo:long "139.612"^^xsd:float .
 
-park:六浦大道公園 a schema:Park,
+park_resource:六浦大道公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦大道公園"@ja;
    ic:地点_名称 "六浦大道公園"@ja;
    ic:地点_場所 [
@@ -859,27 +922,29 @@ park:六浦大道公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈一丁目26"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7023";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈一丁目26"@ja
+     schema:streetAddress "金沢区東朝比奈一丁目26"@ja
    ];
    geo:lat "35.32534"^^xsd:float;
    geo:long "139.605042"^^xsd:float .
 
-park:六浦瀬ケ崎公園 a schema:Park,
+park_resource:六浦瀬ケ崎公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦瀬ケ崎公園"@ja;
    ic:地点_名称 "六浦瀬ケ崎公園"@ja;
    ic:地点_場所 [
@@ -887,27 +952,29 @@ park:六浦瀬ケ崎公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦東一丁目25"@ja;
-       ic:住所_郵便番号 "236-0037"@ja
+       ic:住所_郵便番号 "236-0037"
      ]
    ];
    dcterms:identifier "P7162";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0037";
-     schema:streetAddress "六浦東一丁目25"@ja
+     schema:streetAddress "金沢区六浦東一丁目25"@ja
    ];
    geo:lat "35.319481"^^xsd:float;
    geo:long "139.623093"^^xsd:float .
 
-park:六浦瀬ケ崎第二公園 a schema:Park,
+park_resource:六浦瀬ケ崎第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦瀬ケ崎第二公園"@ja;
    ic:地点_名称 "六浦瀬ケ崎第二公園"@ja;
    ic:地点_場所 [
@@ -915,27 +982,29 @@ park:六浦瀬ケ崎第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦東一丁目33"@ja;
-       ic:住所_郵便番号 "236-0037"@ja
+       ic:住所_郵便番号 "236-0037"
      ]
    ];
    dcterms:identifier "P7163";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0037";
-     schema:streetAddress "六浦東一丁目33"@ja
+     schema:streetAddress "金沢区六浦東一丁目33"@ja
    ];
    geo:lat "35.321239"^^xsd:float;
    geo:long "139.626129"^^xsd:float .
 
-park:六浦瀬戸公園 a schema:Park,
+park_resource:六浦瀬戸公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦瀬戸公園"@ja;
    ic:地点_名称 "六浦瀬戸公園"@ja;
    ic:地点_場所 [
@@ -943,27 +1012,29 @@ park:六浦瀬戸公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区瀬戸10"@ja;
-       ic:住所_郵便番号 "236-0027"@ja
+       ic:住所_郵便番号 "236-0027"
      ]
    ];
    dcterms:identifier "P7164";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0027";
-     schema:streetAddress "瀬戸10"@ja
+     schema:streetAddress "金沢区瀬戸10"@ja
    ];
    geo:lat "35.329281"^^xsd:float;
    geo:long "139.62117"^^xsd:float .
 
-park:六浦白梅公園 a schema:Park,
+park_resource:六浦白梅公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦白梅公園"@ja;
    ic:地点_名称 "六浦白梅公園"@ja;
    ic:地点_場所 [
@@ -971,27 +1042,29 @@ park:六浦白梅公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦五丁目10"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7160";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦五丁目10"@ja
+     schema:streetAddress "金沢区六浦五丁目10"@ja
    ];
    geo:lat "35.325401"^^xsd:float;
    geo:long "139.613998"^^xsd:float .
 
-park:六浦第七公園 a schema:Park,
+park_resource:六浦第七公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦第七公園"@ja;
    ic:地点_名称 "六浦第七公園"@ja;
    ic:地点_場所 [
@@ -999,27 +1072,29 @@ park:六浦第七公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦三丁目15"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7170";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦三丁目15"@ja
+     schema:streetAddress "金沢区六浦三丁目15"@ja
    ];
    geo:lat "35.330635"^^xsd:float;
    geo:long "139.612167"^^xsd:float .
 
-park:六浦第三公園 a schema:Park,
+park_resource:六浦第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦第三公園"@ja;
    ic:地点_名称 "六浦第三公園"@ja;
    ic:地点_場所 [
@@ -1027,27 +1102,29 @@ park:六浦第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦三丁目4"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7166";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦三丁目4"@ja
+     schema:streetAddress "金沢区六浦三丁目4"@ja
    ];
    geo:lat "35.329533"^^xsd:float;
    geo:long "139.612076"^^xsd:float .
 
-park:六浦第二公園 a schema:Park,
+park_resource:六浦第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦第二公園"@ja;
    ic:地点_名称 "六浦第二公園"@ja;
    ic:地点_場所 [
@@ -1055,27 +1132,29 @@ park:六浦第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦三丁目11"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7165";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦三丁目11"@ja
+     schema:streetAddress "金沢区六浦三丁目11"@ja
    ];
    geo:lat "35.329868"^^xsd:float;
    geo:long "139.612885"^^xsd:float .
 
-park:六浦第五公園 a schema:Park,
+park_resource:六浦第五公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦第五公園"@ja;
    ic:地点_名称 "六浦第五公園"@ja;
    ic:地点_場所 [
@@ -1083,27 +1162,29 @@ park:六浦第五公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦三丁目6"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7168";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦三丁目6"@ja
+     schema:streetAddress "金沢区六浦三丁目6"@ja
    ];
    geo:lat "35.328163"^^xsd:float;
    geo:long "139.61235"^^xsd:float .
 
-park:六浦第六公園 a schema:Park,
+park_resource:六浦第六公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦第六公園"@ja;
    ic:地点_名称 "六浦第六公園"@ja;
    ic:地点_場所 [
@@ -1111,27 +1192,29 @@ park:六浦第六公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦二丁目10"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7169";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦二丁目10"@ja
+     schema:streetAddress "金沢区六浦二丁目10"@ja
    ];
    geo:lat "35.330795"^^xsd:float;
    geo:long "139.61467"^^xsd:float .
 
-park:六浦第四公園 a schema:Park,
+park_resource:六浦第四公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦第四公園"@ja;
    ic:地点_名称 "六浦第四公園"@ja;
    ic:地点_場所 [
@@ -1139,27 +1222,29 @@ park:六浦第四公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦三丁目41"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7167";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦三丁目41"@ja
+     schema:streetAddress "金沢区六浦三丁目41"@ja
    ];
    geo:lat "35.332466"^^xsd:float;
    geo:long "139.610336"^^xsd:float .
 
-park:六浦西第一公園 a schema:Park,
+park_resource:六浦西第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦西第一公園"@ja;
    ic:地点_名称 "六浦西第一公園"@ja;
    ic:地点_場所 [
@@ -1167,27 +1252,29 @@ park:六浦西第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈三丁目19"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7171";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈三丁目19"@ja
+     schema:streetAddress "金沢区東朝比奈三丁目19"@ja
    ];
    geo:lat "35.326771"^^xsd:float;
    geo:long "139.599854"^^xsd:float .
 
-park:六浦西第三公園 a schema:Park,
+park_resource:六浦西第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦西第三公園"@ja;
    ic:地点_名称 "六浦西第三公園"@ja;
    ic:地点_場所 [
@@ -1195,27 +1282,29 @@ park:六浦西第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈二丁目15"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7173";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈二丁目15"@ja
+     schema:streetAddress "金沢区東朝比奈二丁目15"@ja
    ];
    geo:lat "35.321621"^^xsd:float;
    geo:long "139.597916"^^xsd:float .
 
-park:六浦西第二公園 a schema:Park,
+park_resource:六浦西第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦西第二公園"@ja;
    ic:地点_名称 "六浦西第二公園"@ja;
    ic:地点_場所 [
@@ -1223,27 +1312,29 @@ park:六浦西第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈二丁目19"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7172";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈二丁目19"@ja
+     schema:streetAddress "金沢区東朝比奈二丁目19"@ja
    ];
    geo:lat "35.323841"^^xsd:float;
    geo:long "139.598679"^^xsd:float .
 
-park:六浦西第五公園 a schema:Park,
+park_resource:六浦西第五公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦西第五公園"@ja;
    ic:地点_名称 "六浦西第五公園"@ja;
    ic:地点_場所 [
@@ -1251,27 +1342,29 @@ park:六浦西第五公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦五丁目42"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7175";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦五丁目42"@ja
+     schema:streetAddress "金沢区六浦五丁目42"@ja
    ];
    geo:lat "35.322182"^^xsd:float;
    geo:long "139.608582"^^xsd:float .
 
-park:六浦西第六公園 a schema:Park,
+park_resource:六浦西第六公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦西第六公園"@ja;
    ic:地点_名称 "六浦西第六公園"@ja;
    ic:地点_場所 [
@@ -1279,27 +1372,29 @@ park:六浦西第六公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦五丁目30"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7176";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦五丁目30"@ja
+     schema:streetAddress "金沢区六浦五丁目30"@ja
    ];
    geo:lat "35.324181"^^xsd:float;
    geo:long "139.609695"^^xsd:float .
 
-park:六浦西第四公園 a schema:Park,
+park_resource:六浦西第四公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦西第四公園"@ja;
    ic:地点_名称 "六浦西第四公園"@ja;
    ic:地点_場所 [
@@ -1307,27 +1402,29 @@ park:六浦西第四公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈一丁目37"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7174";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈一丁目37"@ja
+     schema:streetAddress "金沢区東朝比奈一丁目37"@ja
    ];
    geo:lat "35.323338"^^xsd:float;
    geo:long "139.602707"^^xsd:float .
 
-park:六浦谷戸田公園 a schema:Park,
+park_resource:六浦谷戸田公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "六浦谷戸田公園"@ja;
    ic:地点_名称 "六浦谷戸田公園"@ja;
    ic:地点_場所 [
@@ -1335,27 +1432,29 @@ park:六浦谷戸田公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦町2431-33"@ja;
-       ic:住所_郵便番号 "236-0032"@ja
+       ic:住所_郵便番号 "236-0032"
      ]
    ];
    dcterms:identifier "P7180";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0032";
-     schema:streetAddress "六浦町2431-33"@ja
+     schema:streetAddress "金沢区六浦町2431-33"@ja
    ];
    geo:lat "35.318642"^^xsd:float;
    geo:long "139.600647"^^xsd:float .
 
-park:北之門公園 a schema:Park,
+park_resource:北之門公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "北之門公園"@ja;
    ic:地点_名称 "北之門公園"@ja;
    ic:地点_場所 [
@@ -1363,27 +1462,29 @@ park:北之門公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西四丁目5"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7056";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西四丁目5"@ja
+     schema:streetAddress "金沢区釜利谷西四丁目5"@ja
    ];
    geo:lat "35.346375"^^xsd:float;
    geo:long "139.595993"^^xsd:float .
 
-park:北谷公園 a schema:Park,
+park_resource:北谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "北谷公園"@ja;
    ic:地点_名称 "北谷公園"@ja;
    ic:地点_場所 [
@@ -1391,27 +1492,29 @@ park:北谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東五丁目9"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7057";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東五丁目9"@ja
+     schema:streetAddress "金沢区釜利谷東五丁目9"@ja
    ];
    geo:lat "35.348118"^^xsd:float;
    geo:long "139.60614"^^xsd:float .
 
-park:南丸公園 a schema:Park,
+park_resource:南丸公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "南丸公園"@ja;
    ic:地点_名称 "南丸公園"@ja;
    ic:地点_場所 [
@@ -1419,27 +1522,29 @@ park:南丸公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西六丁目31"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7150";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西六丁目31"@ja
+     schema:streetAddress "金沢区釜利谷西六丁目31"@ja
    ];
    geo:lat "35.336342"^^xsd:float;
    geo:long "139.591995"^^xsd:float .
 
-park:南川こども公園 a schema:Park,
+park_resource:南川こども公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "南川こども公園"@ja;
    ic:地点_名称 "南川こども公園"@ja;
    ic:地点_場所 [
@@ -1447,27 +1552,29 @@ park:南川こども公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南二丁目2"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7148";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南二丁目2"@ja
+     schema:streetAddress "金沢区六浦南二丁目2"@ja
    ];
    geo:lat "35.321526"^^xsd:float;
    geo:long "139.609451"^^xsd:float .
 
-park:南川公園 a schema:Park,
+park_resource:南川公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "南川公園"@ja;
    ic:地点_名称 "南川公園"@ja;
    ic:地点_場所 [
@@ -1475,27 +1582,29 @@ park:南川公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南二丁目19"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7147";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南二丁目19"@ja
+     schema:streetAddress "金沢区六浦南二丁目19"@ja
    ];
    geo:lat "35.321339"^^xsd:float;
    geo:long "139.611649"^^xsd:float .
 
-park:南川第二公園 a schema:Park,
+park_resource:南川第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "南川第二公園"@ja;
    ic:地点_名称 "南川第二公園"@ja;
    ic:地点_場所 [
@@ -1503,27 +1612,29 @@ park:南川第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南二丁目38"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7149";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南二丁目38"@ja
+     schema:streetAddress "金沢区六浦南二丁目38"@ja
    ];
    geo:lat "35.31889"^^xsd:float;
    geo:long "139.613708"^^xsd:float .
 
-park:城山台公園 a schema:Park,
+park_resource:城山台公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "城山台公園"@ja;
    ic:地点_名称 "城山台公園"@ja;
    ic:地点_場所 [
@@ -1531,27 +1642,29 @@ park:城山台公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区谷津町40-99"@ja;
-       ic:住所_郵便番号 "236-0016"@ja
+       ic:住所_郵便番号 "236-0016"
      ]
    ];
    dcterms:identifier "P7070";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0016";
-     schema:streetAddress "谷津町40-99"@ja
+     schema:streetAddress "金沢区谷津町40-99"@ja
    ];
    geo:lat "35.345024"^^xsd:float;
    geo:long "139.625641"^^xsd:float .
 
-park:堀口公園 a schema:Park,
+park_resource:堀口公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "堀口公園"@ja;
    ic:地点_名称 "堀口公園"@ja;
    ic:地点_場所 [
@@ -1559,27 +1672,29 @@ park:堀口公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区堀口18"@ja;
-       ic:住所_郵便番号 "236-0054"@ja
+       ic:住所_郵便番号 "236-0054"
      ]
    ];
    dcterms:identifier "P7144";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0054";
-     schema:streetAddress "堀口18"@ja
+     schema:streetAddress "金沢区堀口18"@ja
    ];
    geo:lat "35.357738"^^xsd:float;
    geo:long "139.629791"^^xsd:float .
 
-park:堀口第三公園 a schema:Park,
+park_resource:堀口第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "堀口第三公園"@ja;
    ic:地点_名称 "堀口第三公園"@ja;
    ic:地点_場所 [
@@ -1587,27 +1702,29 @@ park:堀口第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区堀口19"@ja;
-       ic:住所_郵便番号 "236-0054"@ja
+       ic:住所_郵便番号 "236-0054"
      ]
    ];
    dcterms:identifier "P7145";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0054";
-     schema:streetAddress "堀口19"@ja
+     schema:streetAddress "金沢区堀口19"@ja
    ];
    geo:lat "35.357719"^^xsd:float;
    geo:long "139.628983"^^xsd:float .
 
-park:堀口西公園 a schema:Park,
+park_resource:堀口西公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "堀口西公園"@ja;
    ic:地点_名称 "堀口西公園"@ja;
    ic:地点_場所 [
@@ -1615,27 +1732,29 @@ park:堀口西公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台東9"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7021";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台東9"@ja
+     schema:streetAddress "金沢区能見台東9"@ja
    ];
    geo:lat "35.357948"^^xsd:float;
    geo:long "139.623764"^^xsd:float .
 
-park:夏山東公園 a schema:Park,
+park_resource:夏山東公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "夏山東公園"@ja;
    ic:地点_名称 "夏山東公園"@ja;
    ic:地点_場所 [
@@ -1643,27 +1762,29 @@ park:夏山東公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西一丁目15"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7112";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西一丁目15"@ja
+     schema:streetAddress "金沢区釜利谷西一丁目15"@ja
    ];
    geo:lat "35.343624"^^xsd:float;
    geo:long "139.604782"^^xsd:float .
 
-park:夏山第一公園 a schema:Park,
+park_resource:夏山第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "夏山第一公園"@ja;
    ic:地点_名称 "夏山第一公園"@ja;
    ic:地点_場所 [
@@ -1671,27 +1792,29 @@ park:夏山第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西一丁目42"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7110";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西一丁目42"@ja
+     schema:streetAddress "金沢区釜利谷西一丁目42"@ja
    ];
    geo:lat "35.345039"^^xsd:float;
    geo:long "139.602188"^^xsd:float .
 
-park:夏山第二公園 a schema:Park,
+park_resource:夏山第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "夏山第二公園"@ja;
    ic:地点_名称 "夏山第二公園"@ja;
    ic:地点_場所 [
@@ -1699,27 +1822,29 @@ park:夏山第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西三丁目5"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7111";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西三丁目5"@ja
+     schema:streetAddress "金沢区釜利谷西三丁目5"@ja
    ];
    geo:lat "35.347401"^^xsd:float;
    geo:long "139.599655"^^xsd:float .
 
-park:大川公園 a schema:Park,
+park_resource:大川公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "大川公園"@ja;
    ic:地点_名称 "大川公園"@ja;
    ic:地点_場所 [
@@ -1727,27 +1852,29 @@ park:大川公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東二丁目1"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7031";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東二丁目1"@ja
+     schema:streetAddress "金沢区釜利谷東二丁目1"@ja
    ];
    geo:lat "35.340389"^^xsd:float;
    geo:long "139.620422"^^xsd:float .
 
-park:大道公園 a schema:Park,
+park_resource:大道公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "大道公園"@ja;
    ic:地点_名称 "大道公園"@ja;
    ic:地点_場所 [
@@ -1755,27 +1882,29 @@ park:大道公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区大道一丁目66"@ja;
-       ic:住所_郵便番号 "236-0035"@ja
+       ic:住所_郵便番号 "236-0035"
      ]
    ];
    dcterms:identifier "P7077";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0035";
-     schema:streetAddress "大道一丁目66"@ja
+     schema:streetAddress "金沢区大道一丁目66"@ja
    ];
    geo:lat "35.329582"^^xsd:float;
    geo:long "139.603821"^^xsd:float .
 
-park:奥座公園 a schema:Park,
+park_resource:奥座公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "奥座公園"@ja;
    ic:地点_名称 "奥座公園"@ja;
    ic:地点_場所 [
@@ -1783,27 +1912,29 @@ park:奥座公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西四丁目19"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7032";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西四丁目19"@ja
+     schema:streetAddress "金沢区釜利谷西四丁目19"@ja
    ];
    geo:lat "35.344437"^^xsd:float;
    geo:long "139.593384"^^xsd:float .
 
-park:姫の島公園 a schema:Park,
+park_resource:姫の島公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "姫の島公園"@ja;
    ic:地点_名称 "姫の島公園"@ja;
    ic:地点_場所 [
@@ -1811,27 +1942,29 @@ park:姫の島公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区泥亀一丁目26"@ja;
-       ic:住所_郵便番号 "236-0021"@ja
+       ic:住所_郵便番号 "236-0021"
      ]
    ];
    dcterms:identifier "P7140";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0021";
-     schema:streetAddress "泥亀一丁目26"@ja
+     schema:streetAddress "金沢区泥亀一丁目26"@ja
    ];
    geo:lat "35.334351"^^xsd:float;
    geo:long "139.623383"^^xsd:float .
 
-park:宮ノ前公園 a schema:Park,
+park_resource:宮ノ前公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "宮ノ前公園"@ja;
    ic:地点_名称 "宮ノ前公園"@ja;
    ic:地点_場所 [
@@ -1839,27 +1972,29 @@ park:宮ノ前公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木一丁目15"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7151";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木一丁目15"@ja
+     schema:streetAddress "金沢区並木一丁目15"@ja
    ];
    geo:lat "35.371037"^^xsd:float;
    geo:long "139.639175"^^xsd:float .
 
-park:富岡ひかりが丘公園 a schema:Park,
+park_resource:富岡ひかりが丘公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡ひかりが丘公園"@ja;
    ic:地点_名称 "富岡ひかりが丘公園"@ja;
    ic:地点_場所 [
@@ -1867,27 +2002,29 @@ park:富岡ひかりが丘公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西四丁目56"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7102";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西四丁目56"@ja
+     schema:streetAddress "金沢区富岡西四丁目56"@ja
    ];
    geo:lat "35.365456"^^xsd:float;
    geo:long "139.614594"^^xsd:float .
 
-park:富岡並木ふなだまり公園 a schema:Park,
+park_resource:富岡並木ふなだまり公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡並木ふなだまり公園"@ja;
    ic:地点_名称 "富岡並木ふなだまり公園"@ja;
    ic:地点_場所 [
@@ -1895,27 +2032,29 @@ park:富岡並木ふなだまり公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東四丁目13番"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7001";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東四丁目13番"@ja
+     schema:streetAddress "金沢区富岡東四丁目13番"@ja
    ];
    geo:lat "35.366619"^^xsd:float;
    geo:long "139.637711"^^xsd:float .
 
-park:富岡八幡公園 a schema:Park,
+park_resource:富岡八幡公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡八幡公園"@ja;
    ic:地点_名称 "富岡八幡公園"@ja;
    ic:地点_場所 [
@@ -1923,27 +2062,29 @@ park:富岡八幡公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東四丁目12"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7010";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東四丁目12"@ja
+     schema:streetAddress "金沢区富岡東四丁目12"@ja
    ];
    geo:lat "35.369736"^^xsd:float;
    geo:long "139.637466"^^xsd:float .
 
-park:富岡公園 a schema:Park,
+park_resource:富岡公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡公園"@ja;
    ic:地点_名称 "富岡公園"@ja;
    ic:地点_場所 [
@@ -1951,27 +2092,29 @@ park:富岡公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西一丁目46"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7015";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西一丁目46"@ja
+     schema:streetAddress "金沢区富岡西一丁目46"@ja
    ];
    geo:lat "35.370506"^^xsd:float;
    geo:long "139.623886"^^xsd:float .
 
-park:富岡大谷公園 a schema:Park,
+park_resource:富岡大谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡大谷公園"@ja;
    ic:地点_名称 "富岡大谷公園"@ja;
    ic:地点_場所 [
@@ -1979,27 +2122,29 @@ park:富岡大谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西三丁目9"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7094";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西三丁目9"@ja
+     schema:streetAddress "金沢区富岡西三丁目9"@ja
    ];
    geo:lat "35.369648"^^xsd:float;
    geo:long "139.625961"^^xsd:float .
 
-park:富岡大谷第二公園 a schema:Park,
+park_resource:富岡大谷第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡大谷第二公園"@ja;
    ic:地点_名称 "富岡大谷第二公園"@ja;
    ic:地点_場所 [
@@ -2007,27 +2152,29 @@ park:富岡大谷第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西三丁目1"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7095";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西三丁目1"@ja
+     schema:streetAddress "金沢区富岡西三丁目1"@ja
    ];
    geo:lat "35.367428"^^xsd:float;
    geo:long "139.625122"^^xsd:float .
 
-park:富岡川せせらぎ緑道 a schema:Park,
+park_resource:富岡川せせらぎ緑道 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡川せせらぎ緑道"@ja;
    ic:地点_名称 "富岡川せせらぎ緑道"@ja;
    ic:地点_場所 [
@@ -2035,27 +2182,29 @@ park:富岡川せせらぎ緑道 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西七丁目9-3"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7189";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西七丁目9-3"@ja
+     schema:streetAddress "金沢区富岡西七丁目9-3"@ja
    ];
    geo:lat "35.366271"^^xsd:float;
    geo:long "139.626789"^^xsd:float .
 
-park:富岡東一丁目公園 a schema:Park,
+park_resource:富岡東一丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡東一丁目公園"@ja;
    ic:地点_名称 "富岡東一丁目公園"@ja;
    ic:地点_場所 [
@@ -2063,27 +2212,29 @@ park:富岡東一丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東一丁目26"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7101";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東一丁目26"@ja
+     schema:streetAddress "金沢区富岡東一丁目26"@ja
    ];
    geo:lat "35.376266"^^xsd:float;
    geo:long "139.623032"^^xsd:float .
 
-park:富岡桜ヶ丘公園 a schema:Park,
+park_resource:富岡桜ヶ丘公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡桜ヶ丘公園"@ja;
    ic:地点_名称 "富岡桜ヶ丘公園"@ja;
    ic:地点_場所 [
@@ -2091,27 +2242,29 @@ park:富岡桜ヶ丘公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西七丁目38"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7096";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西七丁目38"@ja
+     schema:streetAddress "金沢区富岡西七丁目38"@ja
    ];
    geo:lat "35.364719"^^xsd:float;
    geo:long "139.627777"^^xsd:float .
 
-park:富岡第七公園 a schema:Park,
+park_resource:富岡第七公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡第七公園"@ja;
    ic:地点_名称 "富岡第七公園"@ja;
    ic:地点_場所 [
@@ -2119,27 +2272,29 @@ park:富岡第七公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西五丁目41"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7093";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西五丁目41"@ja
+     schema:streetAddress "金沢区富岡西五丁目41"@ja
    ];
    geo:lat "35.360062"^^xsd:float;
    geo:long "139.614609"^^xsd:float .
 
-park:富岡第三公園 a schema:Park,
+park_resource:富岡第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡第三公園"@ja;
    ic:地点_名称 "富岡第三公園"@ja;
    ic:地点_場所 [
@@ -2147,27 +2302,29 @@ park:富岡第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西四丁目49"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7089";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西四丁目49"@ja
+     schema:streetAddress "金沢区富岡西四丁目49"@ja
    ];
    geo:lat "35.366791"^^xsd:float;
    geo:long "139.617523"^^xsd:float .
 
-park:富岡第二公園 a schema:Park,
+park_resource:富岡第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡第二公園"@ja;
    ic:地点_名称 "富岡第二公園"@ja;
    ic:地点_場所 [
@@ -2175,27 +2332,29 @@ park:富岡第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西七丁目37"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7088";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西七丁目37"@ja
+     schema:streetAddress "金沢区富岡西七丁目37"@ja
    ];
    geo:lat "35.364887"^^xsd:float;
    geo:long "139.626373"^^xsd:float .
 
-park:富岡第五公園 a schema:Park,
+park_resource:富岡第五公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡第五公園"@ja;
    ic:地点_名称 "富岡第五公園"@ja;
    ic:地点_場所 [
@@ -2203,27 +2362,29 @@ park:富岡第五公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西五丁目7"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7091";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西五丁目7"@ja
+     schema:streetAddress "金沢区富岡西五丁目7"@ja
    ];
    geo:lat "35.363029"^^xsd:float;
    geo:long "139.616806"^^xsd:float .
 
-park:富岡第六公園 a schema:Park,
+park_resource:富岡第六公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡第六公園"@ja;
    ic:地点_名称 "富岡第六公園"@ja;
    ic:地点_場所 [
@@ -2231,27 +2392,29 @@ park:富岡第六公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西六丁目29"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7092";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西六丁目29"@ja
+     schema:streetAddress "金沢区富岡西六丁目29"@ja
    ];
    geo:lat "35.360199"^^xsd:float;
    geo:long "139.6194"^^xsd:float .
 
-park:富岡第四公園 a schema:Park,
+park_resource:富岡第四公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡第四公園"@ja;
    ic:地点_名称 "富岡第四公園"@ja;
    ic:地点_場所 [
@@ -2259,27 +2422,29 @@ park:富岡第四公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西四丁目16"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7090";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西四丁目16"@ja
+     schema:streetAddress "金沢区富岡西四丁目16"@ja
    ];
    geo:lat "35.365799"^^xsd:float;
    geo:long "139.61969"^^xsd:float .
 
-park:富岡総合公園 a schema:Park,
+park_resource:富岡総合公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡総合公園"@ja;
    ic:地点_名称 "富岡総合公園"@ja;
    ic:地点_場所 [
@@ -2287,27 +2452,29 @@ park:富岡総合公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東二丁目9"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7006";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東二丁目9"@ja
+     schema:streetAddress "金沢区富岡東二丁目9"@ja
    ];
    geo:lat "35.376331"^^xsd:float;
    geo:long "139.631699"^^xsd:float .
 
-park:富岡西ふれあいの辻公園 a schema:Park,
+park_resource:富岡西ふれあいの辻公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡西ふれあいの辻公園"@ja;
    ic:地点_名称 "富岡西ふれあいの辻公園"@ja;
    ic:地点_場所 [
@@ -2315,27 +2482,29 @@ park:富岡西ふれあいの辻公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西一丁目53"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7100";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西一丁目53"@ja
+     schema:streetAddress "金沢区富岡西一丁目53"@ja
    ];
    geo:lat "35.370472"^^xsd:float;
    geo:long "139.621231"^^xsd:float .
 
-park:富岡西一丁目公園 a schema:Park,
+park_resource:富岡西一丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡西一丁目公園"@ja;
    ic:地点_名称 "富岡西一丁目公園"@ja;
    ic:地点_場所 [
@@ -2343,27 +2512,29 @@ park:富岡西一丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西一丁目57"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7097";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西一丁目57"@ja
+     schema:streetAddress "金沢区富岡西一丁目57"@ja
    ];
    geo:lat "35.369434"^^xsd:float;
    geo:long "139.619736"^^xsd:float .
 
-park:富岡西七丁目公園 a schema:Park,
+park_resource:富岡西七丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡西七丁目公園"@ja;
    ic:地点_名称 "富岡西七丁目公園"@ja;
    ic:地点_場所 [
@@ -2371,27 +2542,29 @@ park:富岡西七丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西七丁目41"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7099";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西七丁目41"@ja
+     schema:streetAddress "金沢区富岡西七丁目41"@ja
    ];
    geo:lat "35.365597"^^xsd:float;
    geo:long "139.629166"^^xsd:float .
 
-park:富岡西三丁目公園 a schema:Park,
+park_resource:富岡西三丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡西三丁目公園"@ja;
    ic:地点_名称 "富岡西三丁目公園"@ja;
    ic:地点_場所 [
@@ -2399,27 +2572,29 @@ park:富岡西三丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西三丁目1304-55"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7098";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西三丁目1304-55"@ja
+     schema:streetAddress "金沢区富岡西三丁目1304-55"@ja
    ];
    geo:lat "35.368763"^^xsd:float;
    geo:long "139.624008"^^xsd:float .
 
-park:富岡西公園 a schema:Park,
+park_resource:富岡西公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "富岡西公園"@ja;
    ic:地点_名称 "富岡西公園"@ja;
    ic:地点_場所 [
@@ -2427,27 +2602,29 @@ park:富岡西公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡西6丁目3"@ja;
-       ic:住所_郵便番号 "236-0052"@ja
+       ic:住所_郵便番号 "236-0052"
      ]
    ];
    dcterms:identifier "P7009";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0052";
-     schema:streetAddress "富岡西6丁目3"@ja
+     schema:streetAddress "金沢区富岡西6丁目3"@ja
    ];
    geo:lat "35.36364"^^xsd:float;
    geo:long "139.620575"^^xsd:float .
 
-park:寺前さざなみ公園 a schema:Park,
+park_resource:寺前さざなみ公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "寺前さざなみ公園"@ja;
    ic:地点_名称 "寺前さざなみ公園"@ja;
    ic:地点_場所 [
@@ -2455,27 +2632,29 @@ park:寺前さざなみ公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区寺前二丁目5"@ja;
-       ic:住所_郵便番号 "236-0014"@ja
+       ic:住所_郵便番号 "236-0014"
      ]
    ];
    dcterms:identifier "P7085";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0014";
-     schema:streetAddress "寺前二丁目5"@ja
+     schema:streetAddress "金沢区寺前二丁目5"@ja
    ];
    geo:lat "35.337536"^^xsd:float;
    geo:long "139.630234"^^xsd:float .
 
-park:寺前町公園 a schema:Park,
+park_resource:寺前町公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "寺前町公園"@ja;
    ic:地点_名称 "寺前町公園"@ja;
    ic:地点_場所 [
@@ -2483,27 +2662,29 @@ park:寺前町公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区寺前一丁目5"@ja;
-       ic:住所_郵便番号 "236-0014"@ja
+       ic:住所_郵便番号 "236-0014"
      ]
    ];
    dcterms:identifier "P7086";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0014";
-     schema:streetAddress "寺前一丁目5"@ja
+     schema:streetAddress "金沢区寺前一丁目5"@ja
    ];
    geo:lat "35.340611"^^xsd:float;
    geo:long "139.625717"^^xsd:float .
 
-park:小柴浜公園 a schema:Park,
+park_resource:小柴浜公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "小柴浜公園"@ja;
    ic:地点_名称 "小柴浜公園"@ja;
    ic:地点_場所 [
@@ -2511,27 +2692,29 @@ park:小柴浜公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柴町347-7"@ja;
-       ic:住所_郵便番号 "236-0012"@ja
+       ic:住所_郵便番号 "236-0012"
      ]
    ];
    dcterms:identifier "P7058";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0012";
-     schema:streetAddress "柴町347-7"@ja
+     schema:streetAddress "金沢区柴町347-7"@ja
    ];
    geo:lat "35.3456"^^xsd:float;
    geo:long "139.638123"^^xsd:float .
 
-park:小浜公園 a schema:Park,
+park_resource:小浜公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "小浜公園"@ja;
    ic:地点_名称 "小浜公園"@ja;
    ic:地点_場所 [
@@ -2539,27 +2722,29 @@ park:小浜公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東二丁目5"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7059";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東二丁目5"@ja
+     schema:streetAddress "金沢区富岡東二丁目5"@ja
    ];
    geo:lat "35.37648"^^xsd:float;
    geo:long "139.636475"^^xsd:float .
 
-park:干網公園 a schema:Park,
+park_resource:干網公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "干網公園"@ja;
    ic:地点_名称 "干網公園"@ja;
    ic:地点_場所 [
@@ -2567,27 +2752,29 @@ park:干網公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木二丁目9"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7143";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木二丁目9"@ja
+     schema:streetAddress "金沢区並木二丁目9"@ja
    ];
    geo:lat "35.363907"^^xsd:float;
    geo:long "139.638641"^^xsd:float .
 
-park:平潟公園 a schema:Park,
+park_resource:平潟公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "平潟公園"@ja;
    ic:地点_名称 "平潟公園"@ja;
    ic:地点_場所 [
@@ -2595,27 +2782,29 @@ park:平潟公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区平潟町16"@ja;
-       ic:住所_郵便番号 "236-0023"@ja
+       ic:住所_郵便番号 "236-0023"
      ]
    ];
    dcterms:identifier "P7141";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0023";
-     schema:streetAddress "平潟町16"@ja
+     schema:streetAddress "金沢区平潟町16"@ja
    ];
    geo:lat "35.333206"^^xsd:float;
    geo:long "139.632416"^^xsd:float .
 
-park:方丈公園 a schema:Park,
+park_resource:方丈公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "方丈公園"@ja;
    ic:地点_名称 "方丈公園"@ja;
    ic:地点_場所 [
@@ -2623,27 +2812,29 @@ park:方丈公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西六丁目17"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7142";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西六丁目17"@ja
+     schema:streetAddress "金沢区釜利谷西六丁目17"@ja
    ];
    geo:lat "35.33839"^^xsd:float;
    geo:long "139.594406"^^xsd:float .
 
-park:朝比奈町公園 a schema:Park,
+park_resource:朝比奈町公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "朝比奈町公園"@ja;
    ic:地点_名称 "朝比奈町公園"@ja;
    ic:地点_場所 [
@@ -2651,27 +2842,29 @@ park:朝比奈町公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈二丁目46"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7027";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈二丁目46"@ja
+     schema:streetAddress "金沢区東朝比奈二丁目46"@ja
    ];
    geo:lat "35.325802"^^xsd:float;
    geo:long "139.596771"^^xsd:float .
 
-park:杉の崎公園 a schema:Park,
+park_resource:杉の崎公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "杉の崎公園"@ja;
    ic:地点_名称 "杉の崎公園"@ja;
    ic:地点_場所 [
@@ -2679,27 +2872,29 @@ park:杉の崎公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区大道二丁目26"@ja;
-       ic:住所_郵便番号 "236-0035"@ja
+       ic:住所_郵便番号 "236-0035"
      ]
    ];
    dcterms:identifier "P7071";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0035";
-     schema:streetAddress "大道二丁目26"@ja
+     schema:streetAddress "金沢区大道二丁目26"@ja
    ];
    geo:lat "35.3283"^^xsd:float;
    geo:long "139.603729"^^xsd:float .
 
-park:東富岡公園 a schema:Park,
+park_resource:東富岡公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "東富岡公園"@ja;
    ic:地点_名称 "東富岡公園"@ja;
    ic:地点_場所 [
@@ -2707,27 +2902,29 @@ park:東富岡公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東六丁目30"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7138";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東六丁目30"@ja
+     schema:streetAddress "金沢区富岡東六丁目30"@ja
    ];
    geo:lat "35.365639"^^xsd:float;
    geo:long "139.633392"^^xsd:float .
 
-park:東朝比奈ふれあい公園 a schema:Park,
+park_resource:東朝比奈ふれあい公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "東朝比奈ふれあい公園"@ja;
    ic:地点_名称 "東朝比奈ふれあい公園"@ja;
    ic:地点_場所 [
@@ -2735,27 +2932,29 @@ park:東朝比奈ふれあい公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈一丁目42"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7137";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈一丁目42"@ja
+     schema:streetAddress "金沢区東朝比奈一丁目42"@ja
    ];
    geo:lat "35.322117"^^xsd:float;
    geo:long "139.604935"^^xsd:float .
 
-park:東朝比奈三丁目公園 a schema:Park,
+park_resource:東朝比奈三丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "東朝比奈三丁目公園"@ja;
    ic:地点_名称 "東朝比奈三丁目公園"@ja;
    ic:地点_場所 [
@@ -2763,27 +2962,29 @@ park:東朝比奈三丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈三丁目15"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7135";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈三丁目15"@ja
+     schema:streetAddress "金沢区東朝比奈三丁目15"@ja
    ];
    geo:lat "35.326626"^^xsd:float;
    geo:long "139.597473"^^xsd:float .
 
-park:東朝比奈地蔵前公園 a schema:Park,
+park_resource:東朝比奈地蔵前公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "東朝比奈地蔵前公園"@ja;
    ic:地点_名称 "東朝比奈地蔵前公園"@ja;
    ic:地点_場所 [
@@ -2791,27 +2992,29 @@ park:東朝比奈地蔵前公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区東朝比奈三丁目2"@ja;
-       ic:住所_郵便番号 "236-0033"@ja
+       ic:住所_郵便番号 "236-0033"
      ]
    ];
    dcterms:identifier "P7136";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0033";
-     schema:streetAddress "東朝比奈三丁目2"@ja
+     schema:streetAddress "金沢区東朝比奈三丁目2"@ja
    ];
    geo:lat "35.32803"^^xsd:float;
    geo:long "139.601471"^^xsd:float .
 
-park:東浜公園 a schema:Park,
+park_resource:東浜公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "東浜公園"@ja;
    ic:地点_名称 "東浜公園"@ja;
    ic:地点_場所 [
@@ -2819,27 +3022,29 @@ park:東浜公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木一丁目4"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7139";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木一丁目4"@ja
+     schema:streetAddress "金沢区並木一丁目4"@ja
    ];
    geo:lat "35.373745"^^xsd:float;
    geo:long "139.637833"^^xsd:float .
 
-park:柳町公園 a schema:Park,
+park_resource:柳町公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "柳町公園"@ja;
    ic:地点_名称 "柳町公園"@ja;
    ic:地点_場所 [
@@ -2847,27 +3052,29 @@ park:柳町公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柳町19-3"@ja;
-       ic:住所_郵便番号 "236-0026"@ja
+       ic:住所_郵便番号 "236-0026"
      ]
    ];
    dcterms:identifier "P7187";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0026";
-     schema:streetAddress "柳町19-3"@ja
+     schema:streetAddress "金沢区柳町19-3"@ja
    ];
    geo:lat "35.324459"^^xsd:float;
    geo:long "139.621964"^^xsd:float .
 
-park:柴仲町公園 a schema:Park,
+park_resource:柴仲町公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "柴仲町公園"@ja;
    ic:地点_名称 "柴仲町公園"@ja;
    ic:地点_場所 [
@@ -2875,27 +3082,29 @@ park:柴仲町公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柴町278-1"@ja;
-       ic:住所_郵便番号 "236-0012"@ja
+       ic:住所_郵便番号 "236-0012"
      ]
    ];
    dcterms:identifier "P7067";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0012";
-     schema:streetAddress "柴町278-1"@ja
+     schema:streetAddress "金沢区柴町278-1"@ja
    ];
    geo:lat "35.346149"^^xsd:float;
    geo:long "139.639069"^^xsd:float .
 
-park:柴町公園 a schema:Park,
+park_resource:柴町公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "柴町公園"@ja;
    ic:地点_名称 "柴町公園"@ja;
    ic:地点_場所 [
@@ -2903,27 +3112,29 @@ park:柴町公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柴町37-6"@ja;
-       ic:住所_郵便番号 "236-0012"@ja
+       ic:住所_郵便番号 "236-0012"
      ]
    ];
    dcterms:identifier "P7066";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0012";
-     schema:streetAddress "柴町37-6"@ja
+     schema:streetAddress "金沢区柴町37-6"@ja
    ];
    geo:lat "35.343082"^^xsd:float;
    geo:long "139.635223"^^xsd:float .
 
-park:沢木谷公園 a schema:Park,
+park_resource:沢木谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "沢木谷公園"@ja;
    ic:地点_名称 "沢木谷公園"@ja;
    ic:地点_場所 [
@@ -2931,27 +3142,29 @@ park:沢木谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南三丁目12"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7061";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南三丁目12"@ja
+     schema:streetAddress "金沢区釜利谷南三丁目12"@ja
    ];
    geo:lat "35.337399"^^xsd:float;
    geo:long "139.602402"^^xsd:float .
 
-park:沢木谷第三公園 a schema:Park,
+park_resource:沢木谷第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "沢木谷第三公園"@ja;
    ic:地点_名称 "沢木谷第三公園"@ja;
    ic:地点_場所 [
@@ -2959,27 +3172,29 @@ park:沢木谷第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南四丁目31"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7063";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南四丁目31"@ja
+     schema:streetAddress "金沢区釜利谷南四丁目31"@ja
    ];
    geo:lat "35.338333"^^xsd:float;
    geo:long "139.600281"^^xsd:float .
 
-park:沢木谷第二公園 a schema:Park,
+park_resource:沢木谷第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "沢木谷第二公園"@ja;
    ic:地点_名称 "沢木谷第二公園"@ja;
    ic:地点_場所 [
@@ -2987,27 +3202,29 @@ park:沢木谷第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南四丁目19"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7062";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南四丁目19"@ja
+     schema:streetAddress "金沢区釜利谷南四丁目19"@ja
    ];
    geo:lat "35.338982"^^xsd:float;
    geo:long "139.603333"^^xsd:float .
 
-park:沢木谷第四公園 a schema:Park,
+park_resource:沢木谷第四公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "沢木谷第四公園"@ja;
    ic:地点_名称 "沢木谷第四公園"@ja;
    ic:地点_場所 [
@@ -3015,27 +3232,29 @@ park:沢木谷第四公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南三丁目18"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7064";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南三丁目18"@ja
+     schema:streetAddress "金沢区釜利谷南三丁目18"@ja
    ];
    geo:lat "35.336891"^^xsd:float;
    geo:long "139.600311"^^xsd:float .
 
-park:泥亀一丁目公園 a schema:Park,
+park_resource:泥亀一丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "泥亀一丁目公園"@ja;
    ic:地点_名称 "泥亀一丁目公園"@ja;
    ic:地点_場所 [
@@ -3043,27 +3262,29 @@ park:泥亀一丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区泥亀一丁目28"@ja;
-       ic:住所_郵便番号 "236-0021"@ja
+       ic:住所_郵便番号 "236-0021"
      ]
    ];
    dcterms:identifier "P7083";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0021";
-     schema:streetAddress "泥亀一丁目28"@ja
+     schema:streetAddress "金沢区泥亀一丁目28"@ja
    ];
    geo:lat "35.333988"^^xsd:float;
    geo:long "139.620972"^^xsd:float .
 
-park:泥亀公園 a schema:Park,
+park_resource:泥亀公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "泥亀公園"@ja;
    ic:地点_名称 "泥亀公園"@ja;
    ic:地点_場所 [
@@ -3071,27 +3292,29 @@ park:泥亀公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区泥亀二丁目9"@ja;
-       ic:住所_郵便番号 "236-0021"@ja
+       ic:住所_郵便番号 "236-0021"
      ]
    ];
    dcterms:identifier "P7084";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0021";
-     schema:streetAddress "泥亀二丁目9"@ja
+     schema:streetAddress "金沢区泥亀二丁目9"@ja
    ];
    geo:lat "35.338127"^^xsd:float;
    geo:long "139.624329"^^xsd:float .
 
-park:洲崎公園 a schema:Park,
+park_resource:洲崎公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "洲崎公園"@ja;
    ic:地点_名称 "洲崎公園"@ja;
    ic:地点_場所 [
@@ -3099,27 +3322,29 @@ park:洲崎公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区洲崎町23"@ja;
-       ic:住所_郵便番号 "236-0028"@ja
+       ic:住所_郵便番号 "236-0028"
      ]
    ];
    dcterms:identifier "P7072";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0028";
-     schema:streetAddress "洲崎町23"@ja
+     schema:streetAddress "金沢区洲崎町23"@ja
    ];
    geo:lat "35.331059"^^xsd:float;
    geo:long "139.626923"^^xsd:float .
 
-park:海の公園 a schema:Park,
+park_resource:海の公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "海の公園"@ja;
    ic:地点_名称 "海の公園"@ja;
    ic:地点_場所 [
@@ -3127,27 +3352,29 @@ park:海の公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区海の公園10"@ja;
-       ic:住所_郵便番号 "236-0013"@ja
+       ic:住所_郵便番号 "236-0013"
      ]
    ];
    dcterms:identifier "P7005";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0013";
-     schema:streetAddress "海の公園10"@ja
+     schema:streetAddress "金沢区海の公園10"@ja
    ];
    geo:lat "35.339546"^^xsd:float;
    geo:long "139.635162"^^xsd:float .
 
-park:潮通り公園 a schema:Park,
+park_resource:潮通り公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "潮通り公園"@ja;
    ic:地点_名称 "潮通り公園"@ja;
    ic:地点_場所 [
@@ -3155,27 +3382,29 @@ park:潮通り公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木一丁目24"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7065";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木一丁目24"@ja
+     schema:streetAddress "金沢区並木一丁目24"@ja
    ];
    geo:lat "35.366493"^^xsd:float;
    geo:long "139.639908"^^xsd:float .
 
-park:瀬ケ崎台公園 a schema:Park,
+park_resource:瀬ケ崎台公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "瀬ケ崎台公園"@ja;
    ic:地点_名称 "瀬ケ崎台公園"@ja;
    ic:地点_場所 [
@@ -3183,27 +3412,29 @@ park:瀬ケ崎台公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦南一丁目14"@ja;
-       ic:住所_郵便番号 "236-0038"@ja
+       ic:住所_郵便番号 "236-0038"
      ]
    ];
    dcterms:identifier "P7073";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0038";
-     schema:streetAddress "六浦南一丁目14"@ja
+     schema:streetAddress "金沢区六浦南一丁目14"@ja
    ];
    geo:lat "35.31879"^^xsd:float;
    geo:long "139.616074"^^xsd:float .
 
-park:片吹公園 a schema:Park,
+park_resource:片吹公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "片吹公園"@ja;
    ic:地点_名称 "片吹公園"@ja;
    ic:地点_場所 [
@@ -3211,27 +3442,29 @@ park:片吹公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区片吹53"@ja;
-       ic:住所_郵便番号 "236-0055"@ja
+       ic:住所_郵便番号 "236-0055"
      ]
    ];
    dcterms:identifier "P7037";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0055";
-     schema:streetAddress "片吹53"@ja
+     schema:streetAddress "金沢区片吹53"@ja
    ];
    geo:lat "35.351105"^^xsd:float;
    geo:long "139.623276"^^xsd:float .
 
-park:片吹第二公園 a schema:Park,
+park_resource:片吹第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "片吹第二公園"@ja;
    ic:地点_名称 "片吹第二公園"@ja;
    ic:地点_場所 [
@@ -3239,27 +3472,29 @@ park:片吹第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区片吹16"@ja;
-       ic:住所_郵便番号 "236-0055"@ja
+       ic:住所_郵便番号 "236-0055"
      ]
    ];
    dcterms:identifier "P7038";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0055";
-     schema:streetAddress "片吹16"@ja
+     schema:streetAddress "金沢区片吹16"@ja
    ];
    geo:lat "35.352238"^^xsd:float;
    geo:long "139.627167"^^xsd:float .
 
-park:牡蠣根公園 a schema:Park,
+park_resource:牡蠣根公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "牡蠣根公園"@ja;
    ic:地点_名称 "牡蠣根公園"@ja;
    ic:地点_場所 [
@@ -3267,27 +3502,29 @@ park:牡蠣根公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区並木一丁目3"@ja;
-       ic:住所_郵便番号 "236-0005"@ja
+       ic:住所_郵便番号 "236-0005"
      ]
    ];
    dcterms:identifier "P7035";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0005";
-     schema:streetAddress "並木一丁目3"@ja
+     schema:streetAddress "金沢区並木一丁目3"@ja
    ];
    geo:lat "35.373901"^^xsd:float;
    geo:long "139.64032"^^xsd:float .
 
-park:白山道公園 a schema:Park,
+park_resource:白山道公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "白山道公園"@ja;
    ic:地点_名称 "白山道公園"@ja;
    ic:地点_場所 [
@@ -3295,27 +3532,29 @@ park:白山道公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南二丁目27"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7128";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南二丁目27"@ja
+     schema:streetAddress "金沢区釜利谷南二丁目27"@ja
    ];
    geo:lat "35.335716"^^xsd:float;
    geo:long "139.607712"^^xsd:float .
 
-park:白山道六郎ヶ谷公園 a schema:Park,
+park_resource:白山道六郎ヶ谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "白山道六郎ヶ谷公園"@ja;
    ic:地点_名称 "白山道六郎ヶ谷公園"@ja;
    ic:地点_場所 [
@@ -3323,27 +3562,29 @@ park:白山道六郎ヶ谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南一丁目1363-10"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7130";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南一丁目1363-10"@ja
+     schema:streetAddress "金沢区釜利谷南一丁目1363-10"@ja
    ];
    geo:lat "35.335724"^^xsd:float;
    geo:long "139.609268"^^xsd:float .
 
-park:白山道奥公園 a schema:Park,
+park_resource:白山道奥公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "白山道奥公園"@ja;
    ic:地点_名称 "白山道奥公園"@ja;
    ic:地点_場所 [
@@ -3351,27 +3592,29 @@ park:白山道奥公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南二丁目58"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7020";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南二丁目58"@ja
+     schema:streetAddress "金沢区釜利谷南二丁目58"@ja
    ];
    geo:lat "35.334816"^^xsd:float;
    geo:long "139.598557"^^xsd:float .
 
-park:白山道第二公園 a schema:Park,
+park_resource:白山道第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "白山道第二公園"@ja;
    ic:地点_名称 "白山道第二公園"@ja;
    ic:地点_場所 [
@@ -3379,27 +3622,29 @@ park:白山道第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南二丁目23"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7129";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南二丁目23"@ja
+     schema:streetAddress "金沢区釜利谷南二丁目23"@ja
    ];
    geo:lat "35.334606"^^xsd:float;
    geo:long "139.606827"^^xsd:float .
 
-park:称名寺東公園 a schema:Park,
+park_resource:称名寺東公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "称名寺東公園"@ja;
    ic:地点_名称 "称名寺東公園"@ja;
    ic:地点_場所 [
@@ -3407,27 +3652,29 @@ park:称名寺東公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴四丁目24"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7069";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴四丁目24"@ja
+     schema:streetAddress "金沢区西柴四丁目24"@ja
    ];
    geo:lat "35.346401"^^xsd:float;
    geo:long "139.63353"^^xsd:float .
 
-park:能見台あきにれ公園 a schema:Park,
+park_resource:能見台あきにれ公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台あきにれ公園"@ja;
    ic:地点_名称 "能見台あきにれ公園"@ja;
    ic:地点_場所 [
@@ -3435,27 +3682,29 @@ park:能見台あきにれ公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台五丁目49-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7121";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台五丁目49-1"@ja
+     schema:streetAddress "金沢区能見台五丁目49-1"@ja
    ];
    geo:lat "35.349819"^^xsd:float;
    geo:long "139.621841"^^xsd:float .
 
-park:能見台中央公園 a schema:Park,
+park_resource:能見台中央公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台中央公園"@ja;
    ic:地点_名称 "能見台中央公園"@ja;
    ic:地点_場所 [
@@ -3463,27 +3712,29 @@ park:能見台中央公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台三丁目50-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7017";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台三丁目50-1"@ja
+     schema:streetAddress "金沢区能見台三丁目50-1"@ja
    ];
    geo:lat "35.356651"^^xsd:float;
    geo:long "139.619095"^^xsd:float .
 
-park:能見台北公園 a schema:Park,
+park_resource:能見台北公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台北公園"@ja;
    ic:地点_名称 "能見台北公園"@ja;
    ic:地点_場所 [
@@ -3491,27 +3742,29 @@ park:能見台北公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台一丁目42-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7016";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台一丁目42-1"@ja
+     schema:streetAddress "金沢区能見台一丁目42-1"@ja
    ];
    geo:lat "35.360687"^^xsd:float;
    geo:long "139.612732"^^xsd:float .
 
-park:能見台千丈公園 a schema:Park,
+park_resource:能見台千丈公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台千丈公園"@ja;
    ic:地点_名称 "能見台千丈公園"@ja;
    ic:地点_場所 [
@@ -3519,27 +3772,29 @@ park:能見台千丈公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台三丁目31-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7123";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台三丁目31-1"@ja
+     schema:streetAddress "金沢区能見台三丁目31-1"@ja
    ];
    geo:lat "35.359367"^^xsd:float;
    geo:long "139.622269"^^xsd:float .
 
-park:能見台堀口北公園 a schema:Park,
+park_resource:能見台堀口北公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台堀口北公園"@ja;
    ic:地点_名称 "能見台堀口北公園"@ja;
    ic:地点_場所 [
@@ -3547,27 +3802,29 @@ park:能見台堀口北公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台東6"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7019";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台東6"@ja
+     schema:streetAddress "金沢区能見台東6"@ja
    ];
    geo:lat "35.359898"^^xsd:float;
    geo:long "139.62468"^^xsd:float .
 
-park:能見台平原公園 a schema:Park,
+park_resource:能見台平原公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台平原公園"@ja;
    ic:地点_名称 "能見台平原公園"@ja;
    ic:地点_場所 [
@@ -3575,27 +3832,29 @@ park:能見台平原公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台三丁目12-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7126";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台三丁目12-1"@ja
+     schema:streetAddress "金沢区能見台三丁目12-1"@ja
    ];
    geo:lat "35.35881"^^xsd:float;
    geo:long "139.617035"^^xsd:float .
 
-park:能見台東公園 a schema:Park,
+park_resource:能見台東公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台東公園"@ja;
    ic:地点_名称 "能見台東公園"@ja;
    ic:地点_場所 [
@@ -3603,27 +3862,29 @@ park:能見台東公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台五丁目11-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7018";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台五丁目11-1"@ja
+     schema:streetAddress "金沢区能見台五丁目11-1"@ja
    ];
    geo:lat "35.354198"^^xsd:float;
    geo:long "139.623871"^^xsd:float .
 
-park:能見台清水ヶ入公園 a schema:Park,
+park_resource:能見台清水ヶ入公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台清水ヶ入公園"@ja;
    ic:地点_名称 "能見台清水ヶ入公園"@ja;
    ic:地点_場所 [
@@ -3631,27 +3892,29 @@ park:能見台清水ヶ入公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台六丁目19-2"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7122";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台六丁目19-2"@ja
+     schema:streetAddress "金沢区能見台六丁目19-2"@ja
    ];
    geo:lat "35.353828"^^xsd:float;
    geo:long "139.611084"^^xsd:float .
 
-park:能見台瀧公園 a schema:Park,
+park_resource:能見台瀧公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台瀧公園"@ja;
    ic:地点_名称 "能見台瀧公園"@ja;
    ic:地点_場所 [
@@ -3659,27 +3922,29 @@ park:能見台瀧公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台五丁目29-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7124";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台五丁目29-1"@ja
+     schema:streetAddress "金沢区能見台五丁目29-1"@ja
    ];
    geo:lat "35.353008"^^xsd:float;
    geo:long "139.618622"^^xsd:float .
 
-park:能見台野地久保公園 a schema:Park,
+park_resource:能見台野地久保公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見台野地久保公園"@ja;
    ic:地点_名称 "能見台野地久保公園"@ja;
    ic:地点_場所 [
@@ -3687,27 +3952,29 @@ park:能見台野地久保公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台二丁目8-6"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7125";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台二丁目8-6"@ja
+     schema:streetAddress "金沢区能見台二丁目8-6"@ja
    ];
    geo:lat "35.357712"^^xsd:float;
    geo:long "139.610825"^^xsd:float .
 
-park:能見堂緑地 a schema:Park,
+park_resource:能見堂緑地 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "能見堂緑地"@ja;
    ic:地点_名称 "能見堂緑地"@ja;
    ic:地点_場所 [
@@ -3715,27 +3982,29 @@ park:能見堂緑地 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台森185-4"@ja;
-       ic:住所_郵便番号 "236-0056"@ja
+       ic:住所_郵便番号 "236-0056"
      ]
    ];
    dcterms:identifier "P7002";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0056";
-     schema:streetAddress "能見台森185-4"@ja
+     schema:streetAddress "金沢区能見台森185-4"@ja
    ];
    geo:lat "35.351158"^^xsd:float;
    geo:long "139.618668"^^xsd:float .
 
-park:草舞台公園 a schema:Park,
+park_resource:草舞台公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "草舞台公園"@ja;
    ic:地点_名称 "草舞台公園"@ja;
    ic:地点_場所 [
@@ -3743,27 +4012,29 @@ park:草舞台公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西五丁目29"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7014";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西五丁目29"@ja
+     schema:streetAddress "金沢区釜利谷西五丁目29"@ja
    ];
    geo:lat "35.340729"^^xsd:float;
    geo:long "139.591934"^^xsd:float .
 
-park:西柴一丁目公園 a schema:Park,
+park_resource:西柴一丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴一丁目公園"@ja;
    ic:地点_名称 "西柴一丁目公園"@ja;
    ic:地点_場所 [
@@ -3771,27 +4042,29 @@ park:西柴一丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴一丁目76-7"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7119";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴一丁目76-7"@ja
+     schema:streetAddress "金沢区西柴一丁目76-7"@ja
    ];
    geo:lat "35.350746"^^xsd:float;
    geo:long "139.628036"^^xsd:float .
 
-park:西柴台公園 a schema:Park,
+park_resource:西柴台公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴台公園"@ja;
    ic:地点_名称 "西柴台公園"@ja;
    ic:地点_場所 [
@@ -3799,27 +4072,29 @@ park:西柴台公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区長浜二丁目7"@ja;
-       ic:住所_郵便番号 "236-0011"@ja
+       ic:住所_郵便番号 "236-0011"
      ]
    ];
    dcterms:identifier "P7120";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0011";
-     schema:streetAddress "長浜二丁目7"@ja
+     schema:streetAddress "金沢区長浜二丁目7"@ja
    ];
    geo:lat "35.352192"^^xsd:float;
    geo:long "139.632858"^^xsd:float .
 
-park:西柴第一公園 a schema:Park,
+park_resource:西柴第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴第一公園"@ja;
    ic:地点_名称 "西柴第一公園"@ja;
    ic:地点_場所 [
@@ -3827,27 +4102,29 @@ park:西柴第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴三丁目32"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7114";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴三丁目32"@ja
+     schema:streetAddress "金沢区西柴三丁目32"@ja
    ];
    geo:lat "35.34951"^^xsd:float;
    geo:long "139.628677"^^xsd:float .
 
-park:西柴第三公園 a schema:Park,
+park_resource:西柴第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴第三公園"@ja;
    ic:地点_名称 "西柴第三公園"@ja;
    ic:地点_場所 [
@@ -3855,27 +4132,29 @@ park:西柴第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴二丁目22"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7116";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴二丁目22"@ja
+     schema:streetAddress "金沢区西柴二丁目22"@ja
    ];
    geo:lat "35.349407"^^xsd:float;
    geo:long "139.631882"^^xsd:float .
 
-park:西柴第二公園 a schema:Park,
+park_resource:西柴第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴第二公園"@ja;
    ic:地点_名称 "西柴第二公園"@ja;
    ic:地点_場所 [
@@ -3883,27 +4162,29 @@ park:西柴第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴一丁目14"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7115";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴一丁目14"@ja
+     schema:streetAddress "金沢区西柴一丁目14"@ja
    ];
    geo:lat "35.353306"^^xsd:float;
    geo:long "139.630295"^^xsd:float .
 
-park:西柴第五公園 a schema:Park,
+park_resource:西柴第五公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴第五公園"@ja;
    ic:地点_名称 "西柴第五公園"@ja;
    ic:地点_場所 [
@@ -3911,27 +4192,29 @@ park:西柴第五公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴二丁目6"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7118";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴二丁目6"@ja
+     schema:streetAddress "金沢区西柴二丁目6"@ja
    ];
    geo:lat "35.351536"^^xsd:float;
    geo:long "139.629272"^^xsd:float .
 
-park:西柴第四公園 a schema:Park,
+park_resource:西柴第四公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "西柴第四公園"@ja;
    ic:地点_名称 "西柴第四公園"@ja;
    ic:地点_場所 [
@@ -3939,27 +4222,29 @@ park:西柴第四公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区西柴一丁目26"@ja;
-       ic:住所_郵便番号 "236-0017"@ja
+       ic:住所_郵便番号 "236-0017"
      ]
    ];
    dcterms:identifier "P7117";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0017";
-     schema:streetAddress "西柴一丁目26"@ja
+     schema:streetAddress "金沢区西柴一丁目26"@ja
    ];
    geo:lat "35.350399"^^xsd:float;
    geo:long "139.62767"^^xsd:float .
 
-park:谷津公園 a schema:Park,
+park_resource:谷津公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "谷津公園"@ja;
    ic:地点_名称 "谷津公園"@ja;
    ic:地点_場所 [
@@ -3967,27 +4252,29 @@ park:谷津公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区谷津町362"@ja;
-       ic:住所_郵便番号 "236-0016"@ja
+       ic:住所_郵便番号 "236-0016"
      ]
    ];
    dcterms:identifier "P7181";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0016";
-     schema:streetAddress "谷津町362"@ja
+     schema:streetAddress "金沢区谷津町362"@ja
    ];
    geo:lat "35.342091"^^xsd:float;
    geo:long "139.622757"^^xsd:float .
 
-park:谷津坂南公園 a schema:Park,
+park_resource:谷津坂南公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "谷津坂南公園"@ja;
    ic:地点_名称 "谷津坂南公園"@ja;
    ic:地点_場所 [
@@ -3995,27 +4282,29 @@ park:谷津坂南公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区堀口23"@ja;
-       ic:住所_郵便番号 "236-0054"@ja
+       ic:住所_郵便番号 "236-0054"
      ]
    ];
    dcterms:identifier "P7185";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0054";
-     schema:streetAddress "堀口23"@ja
+     schema:streetAddress "金沢区堀口23"@ja
    ];
    geo:lat "35.356621"^^xsd:float;
    geo:long "139.629074"^^xsd:float .
 
-park:谷津坂第一公園 a schema:Park,
+park_resource:谷津坂第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "谷津坂第一公園"@ja;
    ic:地点_名称 "谷津坂第一公園"@ja;
    ic:地点_場所 [
@@ -4023,27 +4312,29 @@ park:谷津坂第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台通15"@ja;
-       ic:住所_郵便番号 "236-0053"@ja
+       ic:住所_郵便番号 "236-0053"
      ]
    ];
    dcterms:identifier "P7182";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0053";
-     schema:streetAddress "能見台通15"@ja
+     schema:streetAddress "金沢区能見台通15"@ja
    ];
    geo:lat "35.361622"^^xsd:float;
    geo:long "139.626068"^^xsd:float .
 
-park:谷津坂第三公園 a schema:Park,
+park_resource:谷津坂第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "谷津坂第三公園"@ja;
    ic:地点_名称 "谷津坂第三公園"@ja;
    ic:地点_場所 [
@@ -4051,27 +4342,29 @@ park:谷津坂第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台通47"@ja;
-       ic:住所_郵便番号 "236-0053"@ja
+       ic:住所_郵便番号 "236-0053"
      ]
    ];
    dcterms:identifier "P7184";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0053";
-     schema:streetAddress "能見台通47"@ja
+     schema:streetAddress "金沢区能見台通47"@ja
    ];
    geo:lat "35.363129"^^xsd:float;
    geo:long "139.629303"^^xsd:float .
 
-park:谷津坂第二公園 a schema:Park,
+park_resource:谷津坂第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "谷津坂第二公園"@ja;
    ic:地点_名称 "谷津坂第二公園"@ja;
    ic:地点_場所 [
@@ -4079,27 +4372,29 @@ park:谷津坂第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台通36"@ja;
-       ic:住所_郵便番号 "236-0053"@ja
+       ic:住所_郵便番号 "236-0053"
      ]
    ];
    dcterms:identifier "P7183";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0053";
-     schema:streetAddress "能見台通36"@ja
+     schema:streetAddress "金沢区能見台通36"@ja
    ];
    geo:lat "35.361809"^^xsd:float;
    geo:long "139.623123"^^xsd:float .
 
-park:谷津染井公園 a schema:Park,
+park_resource:谷津染井公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "谷津染井公園"@ja;
    ic:地点_名称 "谷津染井公園"@ja;
    ic:地点_場所 [
@@ -4107,27 +4402,29 @@ park:谷津染井公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区谷津町231-6"@ja;
-       ic:住所_郵便番号 "236-0016"@ja
+       ic:住所_郵便番号 "236-0016"
      ]
    ];
    dcterms:identifier "P7186";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0016";
-     schema:streetAddress "谷津町231-6"@ja
+     schema:streetAddress "金沢区谷津町231-6"@ja
    ];
    geo:lat "35.346355"^^xsd:float;
    geo:long "139.622208"^^xsd:float .
 
-park:赤井谷公園 a schema:Park,
+park_resource:赤井谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "赤井谷公園"@ja;
    ic:地点_名称 "赤井谷公園"@ja;
    ic:地点_場所 [
@@ -4135,27 +4432,29 @@ park:赤井谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東三丁目9"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7024";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東三丁目9"@ja
+     schema:streetAddress "金沢区釜利谷東三丁目9"@ja
    ];
    geo:lat "35.347878"^^xsd:float;
    geo:long "139.617615"^^xsd:float .
 
-park:赤井谷第三公園 a schema:Park,
+park_resource:赤井谷第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "赤井谷第三公園"@ja;
    ic:地点_名称 "赤井谷第三公園"@ja;
    ic:地点_場所 [
@@ -4163,27 +4462,29 @@ park:赤井谷第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東三丁目18"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7026";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東三丁目18"@ja
+     schema:streetAddress "金沢区釜利谷東三丁目18"@ja
    ];
    geo:lat "35.348896"^^xsd:float;
    geo:long "139.616714"^^xsd:float .
 
-park:赤井谷第二公園 a schema:Park,
+park_resource:赤井谷第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "赤井谷第二公園"@ja;
    ic:地点_名称 "赤井谷第二公園"@ja;
    ic:地点_場所 [
@@ -4191,27 +4492,29 @@ park:赤井谷第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東三丁目26"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7025";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東三丁目26"@ja
+     schema:streetAddress "金沢区釜利谷東三丁目26"@ja
    ];
    geo:lat "35.350513"^^xsd:float;
    geo:long "139.616028"^^xsd:float .
 
-park:走川公園 a schema:Park,
+park_resource:走川公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "走川公園"@ja;
    ic:地点_名称 "走川公園"@ja;
    ic:地点_場所 [
@@ -4219,27 +4522,29 @@ park:走川公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区泥亀二丁目8"@ja;
-       ic:住所_郵便番号 "236-0021"@ja
+       ic:住所_郵便番号 "236-0021"
      ]
    ];
    dcterms:identifier "P7131";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0021";
-     schema:streetAddress "泥亀二丁目8"@ja
+     schema:streetAddress "金沢区泥亀二丁目8"@ja
    ];
    geo:lat "35.337318"^^xsd:float;
    geo:long "139.625763"^^xsd:float .
 
-park:野島公園 a schema:Park,
+park_resource:野島公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "野島公園"@ja;
    ic:地点_名称 "野島公園"@ja;
    ic:地点_場所 [
@@ -4247,27 +4552,29 @@ park:野島公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区野島町24"@ja;
-       ic:住所_郵便番号 "236-0025"@ja
+       ic:住所_郵便番号 "236-0025"
      ]
    ];
    dcterms:identifier "P7007";
    dcterms:updated "2013-09-20"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0025";
-     schema:streetAddress "野島町24"@ja
+     schema:streetAddress "金沢区野島町24"@ja
    ];
    geo:lat "35.327259"^^xsd:float;
    geo:long "139.635712"^^xsd:float .
 
-park:金沢町公園 a schema:Park,
+park_resource:金沢町公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "金沢町公園"@ja;
    ic:地点_名称 "金沢町公園"@ja;
    ic:地点_場所 [
@@ -4275,27 +4582,29 @@ park:金沢町公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区金沢町121"@ja;
-       ic:住所_郵便番号 "236-0015"@ja
+       ic:住所_郵便番号 "236-0015"
      ]
    ];
    dcterms:identifier "P7039";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0015";
-     schema:streetAddress "金沢町121"@ja
+     schema:streetAddress "金沢区金沢町121"@ja
    ];
    geo:lat "35.344101"^^xsd:float;
    geo:long "139.628891"^^xsd:float .
 
-park:金沢町第二公園 a schema:Park,
+park_resource:金沢町第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "金沢町第二公園"@ja;
    ic:地点_名称 "金沢町第二公園"@ja;
    ic:地点_場所 [
@@ -4303,27 +4612,29 @@ park:金沢町第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区金沢町184-132"@ja;
-       ic:住所_郵便番号 "236-0015"@ja
+       ic:住所_郵便番号 "236-0015"
      ]
    ];
    dcterms:identifier "P7040";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0015";
-     schema:streetAddress "金沢町184-132"@ja
+     schema:streetAddress "金沢区金沢町184-132"@ja
    ];
    geo:lat "35.342262"^^xsd:float;
    geo:long "139.631622"^^xsd:float .
 
-park:金沢自然公園 a schema:Park,
+park_resource:金沢自然公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "金沢自然公園"@ja;
    ic:地点_名称 "金沢自然公園"@ja;
    ic:地点_場所 [
@@ -4331,27 +4642,29 @@ park:金沢自然公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東五丁目15-1"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7003";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東五丁目15-1"@ja
+     schema:streetAddress "金沢区釜利谷東五丁目15-1"@ja
    ];
    geo:lat "35.351555"^^xsd:float;
    geo:long "139.600418"^^xsd:float .
 
-park:釜利谷ひろば公園 a schema:Park,
+park_resource:釜利谷ひろば公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷ひろば公園"@ja;
    ic:地点_名称 "釜利谷ひろば公園"@ja;
    ic:地点_場所 [
@@ -4359,27 +4672,29 @@ park:釜利谷ひろば公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台六丁目37"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7012";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台六丁目37"@ja
+     schema:streetAddress "金沢区能見台六丁目37"@ja
    ];
    geo:lat "35.354397"^^xsd:float;
    geo:long "139.609634"^^xsd:float .
 
-park:釜利谷わんぱく公園 a schema:Park,
+park_resource:釜利谷わんぱく公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷わんぱく公園"@ja;
    ic:地点_名称 "釜利谷わんぱく公園"@ja;
    ic:地点_場所 [
@@ -4387,27 +4702,29 @@ park:釜利谷わんぱく公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西一丁目1"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7054";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西一丁目1"@ja
+     schema:streetAddress "金沢区釜利谷西一丁目1"@ja
    ];
    geo:lat "35.3466"^^xsd:float;
    geo:long "139.606613"^^xsd:float .
 
-park:釜利谷公園 a schema:Park,
+park_resource:釜利谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷公園"@ja;
    ic:地点_名称 "釜利谷公園"@ja;
    ic:地点_場所 [
@@ -4415,27 +4732,29 @@ park:釜利谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東二丁目7"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7041";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東二丁目7"@ja
+     schema:streetAddress "金沢区釜利谷東二丁目7"@ja
    ];
    geo:lat "35.344807"^^xsd:float;
    geo:long "139.613312"^^xsd:float .
 
-park:釜利谷南二丁目公園 a schema:Park,
+park_resource:釜利谷南二丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷南二丁目公園"@ja;
    ic:地点_名称 "釜利谷南二丁目公園"@ja;
    ic:地点_場所 [
@@ -4443,27 +4762,29 @@ park:釜利谷南二丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南二丁目13"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7053";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南二丁目13"@ja
+     schema:streetAddress "金沢区釜利谷南二丁目13"@ja
    ];
    geo:lat "35.336731"^^xsd:float;
    geo:long "139.608032"^^xsd:float .
 
-park:釜利谷南公園 a schema:Park,
+park_resource:釜利谷南公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷南公園"@ja;
    ic:地点_名称 "釜利谷南公園"@ja;
    ic:地点_場所 [
@@ -4471,27 +4792,29 @@ park:釜利谷南公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南二丁目6"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7013";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南二丁目6"@ja
+     schema:streetAddress "金沢区釜利谷南二丁目6"@ja
    ];
    geo:lat "35.33799"^^xsd:float;
    geo:long "139.608078"^^xsd:float .
 
-park:釜利谷坂本公園 a schema:Park,
+park_resource:釜利谷坂本公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷坂本公園"@ja;
    ic:地点_名称 "釜利谷坂本公園"@ja;
    ic:地点_場所 [
@@ -4499,27 +4822,29 @@ park:釜利谷坂本公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南一丁目3"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7048";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南一丁目3"@ja
+     schema:streetAddress "金沢区釜利谷南一丁目3"@ja
    ];
    geo:lat "35.339352"^^xsd:float;
    geo:long "139.611313"^^xsd:float .
 
-park:釜利谷坂本第二公園 a schema:Park,
+park_resource:釜利谷坂本第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷坂本第二公園"@ja;
    ic:地点_名称 "釜利谷坂本第二公園"@ja;
    ic:地点_場所 [
@@ -4527,27 +4852,29 @@ park:釜利谷坂本第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷南四丁目8"@ja;
-       ic:住所_郵便番号 "236-0045"@ja
+       ic:住所_郵便番号 "236-0045"
      ]
    ];
    dcterms:identifier "P7049";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0045";
-     schema:streetAddress "釜利谷南四丁目8"@ja
+     schema:streetAddress "金沢区釜利谷南四丁目8"@ja
    ];
    geo:lat "35.340042"^^xsd:float;
    geo:long "139.60878"^^xsd:float .
 
-park:釜利谷宿公園 a schema:Park,
+park_resource:釜利谷宿公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷宿公園"@ja;
    ic:地点_名称 "釜利谷宿公園"@ja;
    ic:地点_場所 [
@@ -4555,27 +4882,29 @@ park:釜利谷宿公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東六丁目16"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7050";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東六丁目16"@ja
+     schema:streetAddress "金沢区釜利谷東六丁目16"@ja
    ];
    geo:lat "35.344189"^^xsd:float;
    geo:long "139.610352"^^xsd:float .
 
-park:釜利谷東八丁目公園 a schema:Park,
+park_resource:釜利谷東八丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷東八丁目公園"@ja;
    ic:地点_名称 "釜利谷東八丁目公園"@ja;
    ic:地点_場所 [
@@ -4583,27 +4912,29 @@ park:釜利谷東八丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東八丁目1794-152"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7052";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東八丁目1794-152"@ja
+     schema:streetAddress "金沢区釜利谷東八丁目1794-152"@ja
    ];
    geo:lat "35.34016"^^xsd:float;
    geo:long "139.601898"^^xsd:float .
 
-park:釜利谷柿の木公園 a schema:Park,
+park_resource:釜利谷柿の木公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷柿の木公園"@ja;
    ic:地点_名称 "釜利谷柿の木公園"@ja;
    ic:地点_場所 [
@@ -4611,27 +4942,29 @@ park:釜利谷柿の木公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西二丁目3"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7047";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西二丁目3"@ja
+     schema:streetAddress "金沢区釜利谷西二丁目3"@ja
    ];
    geo:lat "35.34333"^^xsd:float;
    geo:long "139.599976"^^xsd:float .
 
-park:釜利谷町小川アメニティ a schema:Park,
+park_resource:釜利谷町小川アメニティ a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷町小川アメニティ"@ja;
    ic:地点_名称 "釜利谷町小川アメニティ"@ja;
    ic:地点_場所 [
@@ -4639,27 +4972,29 @@ park:釜利谷町小川アメニティ a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県神奈川県横浜市釜利谷東七丁目7-1"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7190";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "神奈川県神奈川県横浜市釜利谷東七丁目7-1"@ja
+     schema:streetAddress "神奈川県釜利谷東七丁目7-1"@ja
    ];
    geo:lat "35.342418"^^xsd:float;
    geo:long "139.61035"^^xsd:float .
 
-park:釜利谷第三公園 a schema:Park,
+park_resource:釜利谷第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷第三公園"@ja;
    ic:地点_名称 "釜利谷第三公園"@ja;
    ic:地点_場所 [
@@ -4667,27 +5002,29 @@ park:釜利谷第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東一丁目6"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7043";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東一丁目6"@ja
+     schema:streetAddress "金沢区釜利谷東一丁目6"@ja
    ];
    geo:lat "35.342552"^^xsd:float;
    geo:long "139.616257"^^xsd:float .
 
-park:釜利谷第二公園 a schema:Park,
+park_resource:釜利谷第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷第二公園"@ja;
    ic:地点_名称 "釜利谷第二公園"@ja;
    ic:地点_場所 [
@@ -4695,27 +5032,29 @@ park:釜利谷第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東一丁目26"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7042";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東一丁目26"@ja
+     schema:streetAddress "金沢区釜利谷東一丁目26"@ja
    ];
    geo:lat "35.342232"^^xsd:float;
    geo:long "139.615402"^^xsd:float .
 
-park:釜利谷第五公園 a schema:Park,
+park_resource:釜利谷第五公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷第五公園"@ja;
    ic:地点_名称 "釜利谷第五公園"@ja;
    ic:地点_場所 [
@@ -4723,27 +5062,29 @@ park:釜利谷第五公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東二丁目19"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7045";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東二丁目19"@ja
+     schema:streetAddress "金沢区釜利谷東二丁目19"@ja
    ];
    geo:lat "35.344776"^^xsd:float;
    geo:long "139.617859"^^xsd:float .
 
-park:釜利谷第四公園 a schema:Park,
+park_resource:釜利谷第四公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷第四公園"@ja;
    ic:地点_名称 "釜利谷第四公園"@ja;
    ic:地点_場所 [
@@ -4751,27 +5092,29 @@ park:釜利谷第四公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東一丁目56"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7044";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東一丁目56"@ja
+     schema:streetAddress "金沢区釜利谷東一丁目56"@ja
    ];
    geo:lat "35.34296"^^xsd:float;
    geo:long "139.613297"^^xsd:float .
 
-park:釜利谷西一丁目公園 a schema:Park,
+park_resource:釜利谷西一丁目公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷西一丁目公園"@ja;
    ic:地点_名称 "釜利谷西一丁目公園"@ja;
    ic:地点_場所 [
@@ -4779,27 +5122,29 @@ park:釜利谷西一丁目公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西一丁目14"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7051";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西一丁目14"@ja
+     schema:streetAddress "金沢区釜利谷西一丁目14"@ja
    ];
    geo:lat "35.343346"^^xsd:float;
    geo:long "139.60524"^^xsd:float .
 
-park:釜利谷赤坂公園 a schema:Park,
+park_resource:釜利谷赤坂公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "釜利谷赤坂公園"@ja;
    ic:地点_名称 "釜利谷赤坂公園"@ja;
    ic:地点_場所 [
@@ -4807,27 +5152,29 @@ park:釜利谷赤坂公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷東四丁目15"@ja;
-       ic:住所_郵便番号 "236-0042"@ja
+       ic:住所_郵便番号 "236-0042"
      ]
    ];
    dcterms:identifier "P7046";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0042";
-     schema:streetAddress "釜利谷東四丁目15"@ja
+     schema:streetAddress "金沢区釜利谷東四丁目15"@ja
    ];
    geo:lat "35.349712"^^xsd:float;
    geo:long "139.61232"^^xsd:float .
 
-park:長浜みはらし公園 a schema:Park,
+park_resource:長浜みはらし公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "長浜みはらし公園"@ja;
    ic:地点_名称 "長浜みはらし公園"@ja;
    ic:地点_場所 [
@@ -4835,27 +5182,29 @@ park:長浜みはらし公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区堀口15"@ja;
-       ic:住所_郵便番号 "236-0054"@ja
+       ic:住所_郵便番号 "236-0054"
      ]
    ];
    dcterms:identifier "P7108";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0054";
-     schema:streetAddress "堀口15"@ja
+     schema:streetAddress "金沢区堀口15"@ja
    ];
    geo:lat "35.358303"^^xsd:float;
    geo:long "139.630753"^^xsd:float .
 
-park:長浜公園 a schema:Park,
+park_resource:長浜公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "長浜公園"@ja;
    ic:地点_名称 "長浜公園"@ja;
    ic:地点_場所 [
@@ -4863,27 +5212,29 @@ park:長浜公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区長浜106-6"@ja;
-       ic:住所_郵便番号 "236-0011"@ja
+       ic:住所_郵便番号 "236-0011"
      ]
    ];
    dcterms:identifier "P7008";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0011";
-     schema:streetAddress "長浜106-6"@ja
+     schema:streetAddress "金沢区長浜106-6"@ja
    ];
    geo:lat "35.361687"^^xsd:float;
    geo:long "139.636749"^^xsd:float .
 
-park:長浜第三公園 a schema:Park,
+park_resource:長浜第三公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "長浜第三公園"@ja;
    ic:地点_名称 "長浜第三公園"@ja;
    ic:地点_場所 [
@@ -4891,27 +5242,29 @@ park:長浜第三公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区長浜6-28"@ja;
-       ic:住所_郵便番号 "236-0011"@ja
+       ic:住所_郵便番号 "236-0011"
      ]
    ];
    dcterms:identifier "P7107";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0011";
-     schema:streetAddress "長浜6-28"@ja
+     schema:streetAddress "金沢区長浜6-28"@ja
    ];
    geo:lat "35.35947"^^xsd:float;
    geo:long "139.633545"^^xsd:float .
 
-park:長浜第二公園 a schema:Park,
+park_resource:長浜第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "長浜第二公園"@ja;
    ic:地点_名称 "長浜第二公園"@ja;
    ic:地点_場所 [
@@ -4919,27 +5272,29 @@ park:長浜第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区長浜一丁目7"@ja;
-       ic:住所_郵便番号 "236-0011"@ja
+       ic:住所_郵便番号 "236-0011"
      ]
    ];
    dcterms:identifier "P7106";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0011";
-     schema:streetAddress "長浜一丁目7"@ja
+     schema:streetAddress "金沢区長浜一丁目7"@ja
    ];
    geo:lat "35.356651"^^xsd:float;
    geo:long "139.630569"^^xsd:float .
 
-park:長浜野口記念公園 a schema:Park,
+park_resource:長浜野口記念公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "長浜野口記念公園"@ja;
    ic:地点_名称 "長浜野口記念公園"@ja;
    ic:地点_場所 [
@@ -4947,27 +5302,29 @@ park:長浜野口記念公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区長浜94-1"@ja;
-       ic:住所_郵便番号 "236-0011"@ja
+       ic:住所_郵便番号 "236-0011"
      ]
    ];
    dcterms:identifier "P7004";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0011";
-     schema:streetAddress "長浜94-1"@ja
+     schema:streetAddress "金沢区長浜94-1"@ja
    ];
    geo:lat "35.357452"^^xsd:float;
    geo:long "139.636322"^^xsd:float .
 
-park:関ヶ谷の辻公園 a schema:Park,
+park_resource:関ヶ谷の辻公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "関ヶ谷の辻公園"@ja;
    ic:地点_名称 "関ヶ谷の辻公園"@ja;
    ic:地点_場所 [
@@ -4975,27 +5332,29 @@ park:関ヶ谷の辻公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西二丁目35"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7076";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西二丁目35"@ja
+     schema:streetAddress "金沢区釜利谷西二丁目35"@ja
    ];
    geo:lat "35.340431"^^xsd:float;
    geo:long "139.596634"^^xsd:float .
 
-park:関ヶ谷公園 a schema:Park,
+park_resource:関ヶ谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "関ヶ谷公園"@ja;
    ic:地点_名称 "関ヶ谷公園"@ja;
    ic:地点_場所 [
@@ -5003,27 +5362,29 @@ park:関ヶ谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西三丁目42"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7074";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西三丁目42"@ja
+     schema:streetAddress "金沢区釜利谷西三丁目42"@ja
    ];
    geo:lat "35.34507"^^xsd:float;
    geo:long "139.598145"^^xsd:float .
 
-park:関ヶ谷第二公園 a schema:Park,
+park_resource:関ヶ谷第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "関ヶ谷第二公園"@ja;
    ic:地点_名称 "関ヶ谷第二公園"@ja;
    ic:地点_場所 [
@@ -5031,27 +5392,29 @@ park:関ヶ谷第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区釜利谷西三丁目28"@ja;
-       ic:住所_郵便番号 "236-0046"@ja
+       ic:住所_郵便番号 "236-0046"
      ]
    ];
    dcterms:identifier "P7075";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0046";
-     schema:streetAddress "釜利谷西三丁目28"@ja
+     schema:streetAddress "金沢区釜利谷西三丁目28"@ja
    ];
    geo:lat "35.34465"^^xsd:float;
    geo:long "139.600082"^^xsd:float .
 
-park:阿王ケ台公園 a schema:Park,
+park_resource:阿王ケ台公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "阿王ケ台公園"@ja;
    ic:地点_名称 "阿王ケ台公園"@ja;
    ic:地点_場所 [
@@ -5059,27 +5422,29 @@ park:阿王ケ台公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区能見台六丁目9-1"@ja;
-       ic:住所_郵便番号 "236-0057"@ja
+       ic:住所_郵便番号 "236-0057"
      ]
    ];
    dcterms:identifier "P7011";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0057";
-     schema:streetAddress "能見台六丁目9-1"@ja
+     schema:streetAddress "金沢区能見台六丁目9-1"@ja
    ];
    geo:lat "35.352421"^^xsd:float;
    geo:long "139.612946"^^xsd:float .
 
-park:高宗台公園 a schema:Park,
+park_resource:高宗台公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "高宗台公園"@ja;
    ic:地点_名称 "高宗台公園"@ja;
    ic:地点_場所 [
@@ -5087,27 +5452,29 @@ park:高宗台公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦三丁目27"@ja;
-       ic:住所_郵便番号 "236-0031"@ja
+       ic:住所_郵便番号 "236-0031"
      ]
    ];
    dcterms:identifier "P7080";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0031";
-     schema:streetAddress "六浦三丁目27"@ja
+     schema:streetAddress "金沢区六浦三丁目27"@ja
    ];
    geo:lat "35.33102"^^xsd:float;
    geo:long "139.608704"^^xsd:float .
 
-park:高舟台第一公園 a schema:Park,
+park_resource:高舟台第一公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "高舟台第一公園"@ja;
    ic:地点_名称 "高舟台第一公園"@ja;
    ic:地点_場所 [
@@ -5115,27 +5482,29 @@ park:高舟台第一公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区高舟台二丁目36"@ja;
-       ic:住所_郵便番号 "236-0044"@ja
+       ic:住所_郵便番号 "236-0044"
      ]
    ];
    dcterms:identifier "P7078";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0044";
-     schema:streetAddress "高舟台二丁目36"@ja
+     schema:streetAddress "金沢区高舟台二丁目36"@ja
    ];
    geo:lat "35.331791"^^xsd:float;
    geo:long "139.599594"^^xsd:float .
 
-park:高舟台第二公園 a schema:Park,
+park_resource:高舟台第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "高舟台第二公園"@ja;
    ic:地点_名称 "高舟台第二公園"@ja;
    ic:地点_場所 [
@@ -5143,27 +5512,29 @@ park:高舟台第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区高舟台二丁目36"@ja;
-       ic:住所_郵便番号 "236-0044"@ja
+       ic:住所_郵便番号 "236-0044"
      ]
    ];
    dcterms:identifier "P7079";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0044";
-     schema:streetAddress "高舟台二丁目36"@ja
+     schema:streetAddress "金沢区高舟台二丁目36"@ja
    ];
    geo:lat "35.331844"^^xsd:float;
    geo:long "139.598267"^^xsd:float .
 
-park:高谷公園 a schema:Park,
+park_resource:高谷公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "高谷公園"@ja;
    ic:地点_名称 "高谷公園"@ja;
    ic:地点_場所 [
@@ -5171,27 +5542,29 @@ park:高谷公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦東二丁目18"@ja;
-       ic:住所_郵便番号 "236-0037"@ja
+       ic:住所_郵便番号 "236-0037"
      ]
    ];
    dcterms:identifier "P7081";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0037";
-     schema:streetAddress "六浦東二丁目18"@ja
+     schema:streetAddress "金沢区六浦東二丁目18"@ja
    ];
    geo:lat "35.320412"^^xsd:float;
    geo:long "139.618011"^^xsd:float .
 
-park:高谷第二公園 a schema:Park,
+park_resource:高谷第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "高谷第二公園"@ja;
    ic:地点_名称 "高谷第二公園"@ja;
    ic:地点_場所 [
@@ -5199,27 +5572,29 @@ park:高谷第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区六浦町697-78"@ja;
-       ic:住所_郵便番号 "236-0032"@ja
+       ic:住所_郵便番号 "236-0032"
      ]
    ];
    dcterms:identifier "P7082";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0032";
-     schema:streetAddress "六浦町697-78"@ja
+     schema:streetAddress "金沢区六浦町697-78"@ja
    ];
    geo:lat "35.318642"^^xsd:float;
    geo:long "139.600647"^^xsd:float .
 
-park:鳥浜公園 a schema:Park,
+park_resource:鳥浜公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "鳥浜公園"@ja;
    ic:地点_名称 "鳥浜公園"@ja;
    ic:地点_場所 [
@@ -5227,27 +5602,29 @@ park:鳥浜公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区鳥浜町16-3"@ja;
-       ic:住所_郵便番号 "236-0002"@ja
+       ic:住所_郵便番号 "236-0002"
      ]
    ];
    dcterms:identifier "P7103";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0002";
-     schema:streetAddress "鳥浜町16-3"@ja
+     schema:streetAddress "金沢区鳥浜町16-3"@ja
    ];
    geo:lat "35.379894"^^xsd:float;
    geo:long "139.641769"^^xsd:float .
 
-park:鳥見ヶ丘公園 a schema:Park,
+park_resource:鳥見ヶ丘公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "鳥見ヶ丘公園"@ja;
    ic:地点_名称 "鳥見ヶ丘公園"@ja;
    ic:地点_場所 [
@@ -5255,27 +5632,29 @@ park:鳥見ヶ丘公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東三丁目5"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7104";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東三丁目5"@ja
+     schema:streetAddress "金沢区富岡東三丁目5"@ja
    ];
    geo:lat "35.374752"^^xsd:float;
    geo:long "139.628387"^^xsd:float .
 
-park:鳥見ヶ丘第二公園 a schema:Park,
+park_resource:鳥見ヶ丘第二公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "鳥見ヶ丘第二公園"@ja;
    ic:地点_名称 "鳥見ヶ丘第二公園"@ja;
    ic:地点_場所 [
@@ -5283,27 +5662,29 @@ park:鳥見ヶ丘第二公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区富岡東三丁目9"@ja;
-       ic:住所_郵便番号 "236-0051"@ja
+       ic:住所_郵便番号 "236-0051"
      ]
    ];
    dcterms:identifier "P7105";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0051";
-     schema:streetAddress "富岡東三丁目9"@ja
+     schema:streetAddress "金沢区富岡東三丁目9"@ja
    ];
    geo:lat "35.373051"^^xsd:float;
    geo:long "139.628281"^^xsd:float .
 
-park:鳶埼公園 a schema:Park,
+park_resource:鳶埼公園 a schema:Park,
      schema:CivicStructure,
      schema:Place,
      schema:Thing,
      ic:地点,
-     ic:施設;
+     ic:施設,
+     park:公園,
+     geo:SpatialThing;
    rdfs:label "鳶埼公園"@ja;
    ic:地点_名称 "鳶埼公園"@ja;
    ic:地点_場所 [
@@ -5311,17 +5692,17 @@ park:鳶埼公園 a schema:Park,
      ic:場所_住所 [
        a ic:住所;
        ic:住所_表記 "神奈川県横浜市金沢区柴町343-6"@ja;
-       ic:住所_郵便番号 "236-0012"@ja
+       ic:住所_郵便番号 "236-0012"
      ]
    ];
    dcterms:identifier "P7087";
    dcterms:updated "2013-04-01"^^xsd:date;
    schema:address [
      a schema:PostalAddress;
-     schema:addressLocality "神奈川県"@ja;
-     schema:addressRegion "横浜市金沢区"@ja;
+     schema:addressLocality "横浜市"@ja;
+     schema:addressRegion "神奈川県"@ja;
      schema:postalCode "236-0012";
-     schema:streetAddress "柴町343-6"@ja
+     schema:streetAddress "金沢区柴町343-6"@ja
    ];
    geo:lat "35.344837"^^xsd:float;
    geo:long "139.638275"^^xsd:float .

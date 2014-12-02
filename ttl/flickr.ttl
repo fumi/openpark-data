@@ -1,17 +1,25 @@
 @prefix openpark: <http://openpark.jp/ns/openpark#> .
 @prefix park: <http://yokohama.openpark.jp/parks/> .
 
+park:まつかぜ公園 openpark:flickrID "72157649448163975"@ja .
+
 park:カメギ根公園 openpark:flickrID "72157649034637638"@ja .
 
 park:乙舳公園 openpark:flickrID "72157649027533099"@ja .
 
 park:城山台公園 openpark:flickrID "72157649033893058"@ja .
 
+park:小柴浜公園 openpark:flickrID "72157647117992023"@ja .
+
 park:平潟公園 openpark:flickrID "72157649379222056"@ja .
+
+park:柴仲町公園 openpark:flickrID "72157649448183635"@ja .
 
 park:柴町公園 openpark:flickrID "72157649032549200"@ja .
 
 park:海の公園 openpark:flickrID "72157649378727176"@ja .
+
+park:瀬ケ崎台公園 openpark:flickrID "72157649448229935"@ja .
 
 park:走川公園 openpark:flickrID "72157649026673217"@ja .
 
