@@ -49,22 +49,25 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
       next
     end
     upper_age_limit, lower_age_limit = row[9].split(/〜/) if row[9] and !row[9].empty?
-    equipment_name = row[4].to_s
+    equipment_name = row[4].dup
     equipment_name << " - #{row[5]}" if row[5] and !row[5].empty?
     equipment_uri = EQUIPMENT_RESOURCE[id.to_s]
     park_uri = PARK_RESOURCE[row[3]]
+    park_class = PARK[row[2]]
+    equipment_class = PARK[row[4]]
 
     graph = RDF::Graph.new
     graph << [park_uri, IC["地点_設備"], equipment_uri]
-    graph << [park_uri, RDF.type, PARK[row[2]]]
-    writer << [PARK[row[2]], RDF.type, RDF::RDFS.Class]
-    writer << [PARK[row[2]], RDF::RDFS.label, RDF::Literal(name, :language => :ja)]
-    writer << [PARK[row[2]], RDF::RDFS.subClassOf, PARK["公園"]]
+    graph << [park_uri, RDF.type, park_class]
+    graph << [park_class, RDF.type, RDF::RDFS.Class]
+    graph << [park_class, RDF::RDFS.label, RDF::Literal(row[2], :language => :ja)]
+    graph << [park_class, RDF::RDFS.subClassOf, PARK["公園"]]
     graph << [equipment_uri, RDF.type, IC["設備"]]
-    graph << [equipment_uri, RDF.type, PARK[row[4]]]
-    graph << [PARK[row[4]], RDF.type, RDF::RDFS.Class]
-    graph << [PARK[row[4]], RDF::RDFS.label, RDF::Literal(row[4], :language => :ja)]
-    graph << [equipment_uri, RDF::DC.identifier, RDF::Literal(id)]
+    graph << [equipment_uri, RDF.type, equipment_class]
+    graph << [equipment_class, RDF.type, RDF::RDFS.Class]
+    graph << [equipment_class, RDF::RDFS.label, RDF::Literal(row[4], :language => :ja)]
+    graph << [equipment_class, RDF::RDFS.subClassOf, PARK["遊戯施設"]]
+    graph << [equipment_uri, RDF::DC.identifier, RDF::Literal(id.to_s)]
     graph << [equipment_uri, RDF::RDFS.label, RDF::Literal(equipment_name, :language => :ja)]
     graph << [equipment_uri, IC["設備_名称"], RDF::Literal(equipment_name, :language => :ja)]
     graph << [equipment_uri, IC["設備_設置地点"], park_uri]
@@ -78,6 +81,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     writer << graph
     id = id.succ
   end
+  writer << [PARK["遊戯施設"], RDF::RDFS.subClassOf, IC["設備"]]
   ["金沢土木事務所", "南部公園緑地事務所"].each do |name|
     writer << [ORGANIZATION_RESOURCE[name], RDF.type, IC["組織"]]
     writer << [ORGANIZATION_RESOURCE[name], RDF::RDFS.label, RDF::Literal(name, :language => :ja)]
