@@ -22,5 +22,5 @@ echo "Importing files ..."
 for file in ${IMPORT_DIR}/*.ttl
 do
   echo "... ${file} ..."
-  import_turtle ${file} "http://kanazawa.permit.jp"
+  import_turtle ${file} "http://yokohama.openpark.jp"
 done
