@@ -53,20 +53,18 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     equipment_name << " - #{row[5]}" if row[5] and !row[5].empty?
     equipment_uri = EQUIPMENT_RESOURCE[id.to_s]
     park_uri = PARK_RESOURCE[row[3]]
-    park_class = PARK[row[2]]
-    equipment_class = PARK[row[4]]
+    park_concept = PARK[row[2]]
+    equipment_concept = PARK[row[4]]
 
     graph = RDF::Graph.new
     graph << [park_uri, IC["地点_設備"], equipment_uri]
-    graph << [park_uri, RDF.type, park_class]
-    graph << [park_class, RDF.type, RDF::RDFS.Class]
-    graph << [park_class, RDF::RDFS.label, RDF::Literal(row[2], :language => :ja)]
-    graph << [park_class, RDF::RDFS.subClassOf, PARK["公園"]]
+    graph << [park_uri, RDF::DC.subject, park_concept]
+    graph << [park_concept, RDF.type, RDF::SKOS.Concept]
+    graph << [park_concept, RDF::RDFS.label, RDF::Literal(row[2], :language => :ja)]
     graph << [equipment_uri, RDF.type, IC["設備"]]
-    graph << [equipment_uri, RDF.type, equipment_class]
-    graph << [equipment_class, RDF.type, RDF::RDFS.Class]
-    graph << [equipment_class, RDF::RDFS.label, RDF::Literal(row[4], :language => :ja)]
-    graph << [equipment_class, RDF::RDFS.subClassOf, PARK["遊戯施設"]]
+    graph << [equipment_uri, RDF::DC.subject, equipment_concept]
+    graph << [equipment_concept, RDF.type, RDF::SKOS.Concept]
+    graph << [equipment_concept, RDF::RDFS.label, RDF::Literal(row[4], :language => :ja)]
     graph << [equipment_uri, RDF::DC.identifier, RDF::Literal(id.to_s)]
     graph << [equipment_uri, RDF::RDFS.label, RDF::Literal(equipment_name, :language => :ja)]
     graph << [equipment_uri, IC["設備_名称"], RDF::Literal(equipment_name, :language => :ja)]
@@ -81,7 +79,6 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     writer << graph
     id = id.succ
   end
-  writer << [PARK["遊戯施設"], RDF::RDFS.subClassOf, IC["設備"]]
   ["金沢土木事務所", "南部公園緑地事務所"].each do |name|
     writer << [ORGANIZATION_RESOURCE[name], RDF.type, IC["組織"]]
     writer << [ORGANIZATION_RESOURCE[name], RDF::RDFS.label, RDF::Literal(name, :language => :ja)]
