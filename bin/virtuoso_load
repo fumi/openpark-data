@@ -2,8 +2,6 @@
 
 . ./config.sh
 
-IMPORT_DIR=/Users/fumi/lodi/openpark-data/import
-
 function import_turtle {
   FILE=$1
   CONTEXT=$2
