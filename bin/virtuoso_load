@@ -1,13 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
 . ./config.sh
 
-function import_turtle {
+import_turtle () {
   FILE=$1
   CONTEXT=$2
   echo "ttlp_mt(file_to_string_output('${FILE}'), '', '${CONTEXT}');" | ${ISQL} ${HOSTNAME} -U ${V_USER} -P ${V_PASS}
 }
-function import_rdfxml {
+import_rdfxml () {
   FILE=$1
   CONTEXT=$2
   echo "rdf_load_rdfxml_mt(file_to_string_output('${FILE}'), '', '${CONTEXT}');" | ${ISQL} ${HOSTNAME} -U ${V_USER} -P ${V_PASS}
