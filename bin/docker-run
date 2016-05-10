@@ -4,9 +4,9 @@
 
 cp config.sh $DATA_DIR
 
-docker run --name openpark-virtuoso \
+docker run --name $DOCKER_NAME \
   -p 8890:8890 -p 1111:1111 \
   -e DBA_PASSWORD=$DBA_PASSWORD \
   -e DEFAULT_GRAPH=http://openpark.jp \
   -v $DATA_DIR:/data \
-  -d tenforce/virtuoso
+  -d $DOCKER_IMAGE
