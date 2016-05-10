@@ -8,6 +8,7 @@
 /.bundle
 /vender
 /bin/config.sh
+/data/config.sh
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
