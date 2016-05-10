@@ -12,9 +12,9 @@ require 'securerandom'
 INPUT_FILE="../original/4-kz-doboku_utf8.csv"
 OUTPUT_FILE="../ttl/4-kz-doboku.ttl"
 
-PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/park/神奈川県/横浜市金沢区/")
-EQUIPMENT_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/equipment/神奈川県/横浜市金沢区/")
-ORGANIZATION_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/organization/神奈川県/横浜市金沢区/")
+PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/park/14108/")
+EQUIPMENT_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/equipment/14108/")
+ORGANIZATION_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/organization/14108/")
 IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/rdf#")
 PARK = RDF::Vocabulary.new("http://openpark.jp/ns/park#")
 

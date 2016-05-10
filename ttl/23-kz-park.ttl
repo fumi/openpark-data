@@ -1,5 +1,5 @@
 @prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
-@prefix park_resource: <http://openpark.jp/park/神奈川県/横浜市金沢区/> .
+@prefix park_resource: <http://openpark.jp/park/14108/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 park_resource:のりべか公園 a ic:施設型;

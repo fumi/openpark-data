@@ -1,5 +1,5 @@
 @prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
-@prefix park_resource: <http://openpark.jp/park/横浜市金沢区/> .
+@prefix park_resource: <http://openpark.jp/park/14108/> .
 
 park_resource:カメギ根公園 ic:説明 "柴町交差点近くの団地の中の公園。大きい広場と遊具のある場所があります。ベンチがいっぱいあって、ママの休憩場所に♪ゆったりとお子さんを見ることができますよ。桜の木があるので、春はお花見に出かけませんか？"@ja .
 
