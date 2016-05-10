@@ -5,20 +5,20 @@
 import_turtle () {
   FILE=$1
   CONTEXT=$2
-  echo "ttlp_mt(file_to_string_output('${FILE}'), '', '${CONTEXT}');" | ${ISQL} ${HOSTNAME} -U ${V_USER} -P ${V_PASS}
+  echo "ttlp_mt(file_to_string_output('${FILE}'), '', '${CONTEXT}');" | ${ISQL} ${HOSTNAME} -U ${DBA_USER} -P ${DBA_PASSWORD}
 }
 import_rdfxml () {
   FILE=$1
   CONTEXT=$2
-  echo "rdf_load_rdfxml_mt(file_to_string_output('${FILE}'), '', '${CONTEXT}');" | ${ISQL} ${HOSTNAME} -U ${V_USER} -P ${V_PASS}
+  echo "rdf_load_rdfxml_mt(file_to_string_output('${FILE}'), '', '${CONTEXT}');" | ${ISQL} ${HOSTNAME} -U ${DBA_USER} -P ${DBA_PASSWORD}
 }
 
 echo "Initializing Database ..."
-echo "RDF_GLOBAL_RESET();" | ${ISQL} ${HOSTNAME} -U ${V_USER} -P ${V_PASS}
+echo "RDF_GLOBAL_RESET();" | ${ISQL} ${HOSTNAME} -U ${DBA_USER} -P ${DBA_PASSWORD}
 
 echo "Importing files ..."
-for file in ${IMPORT_DIR}/*.ttl
+for file in ${DATA_DIR}/*.ttl
 do
   echo "... ${file} ..."
-  import_turtle ${file} "http://yokohama.openpark.jp"
+  import_turtle ${file} "http://openpark.jp"
 done

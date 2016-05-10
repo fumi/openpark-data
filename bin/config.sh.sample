@@ -1,5 +1,5 @@
 ISQL=/usr/local/virtuoso-opensource/bin/isql
-IMPORT_DIR=/Users/fumi/lodi/openpark-data/import
+DATA_DIR=openpark-data/dumps
 HOSTNAME=localhost:1111
-V_USER=dba
-V_PASS=
+DBA_USER=dba
+DBA_PASSWORD=
