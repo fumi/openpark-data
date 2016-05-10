@@ -1,8 +1,8 @@
 @prefix equipment_resource: <http://openpark.jp/equipment/14108/> .
 @prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
-@prefix organization_resource: <http://openpark.jp/organization/14108/> .
+@prefix organization_resource: <http://openpark.jp/organizations/14108/> .
 @prefix park: <http://openpark.jp/ns/park#> .
-@prefix park_resource: <http://openpark.jp/park/14108/> .
+@prefix park_resource: <http://openpark.jp/parks/14108/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 equipment_resource:1 a ic:設備型;
@@ -12984,32 +12984,32 @@ park_resource:鳥見ヶ丘公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:327 .
 
 park_resource:サルダの鼻公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:148,
-     equipment_resource:149 .
+   ic:設備 equipment_resource:149,
+     equipment_resource:148 .
 
 park_resource:六浦二丁目第一公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:501,
      equipment_resource:502 .
 
 park_resource:六浦瀬ケ崎第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:543,
-     equipment_resource:542 .
+   ic:設備 equipment_resource:542,
+     equipment_resource:543 .
 
 park_resource:六浦第七公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:554,
-     equipment_resource:555 .
+   ic:設備 equipment_resource:555,
+     equipment_resource:554 .
 
 park_resource:六浦第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:544,
-     equipment_resource:545 .
+   ic:設備 equipment_resource:545,
+     equipment_resource:544 .
 
 park_resource:六浦西第五公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:572,
-     equipment_resource:571 .
+   ic:設備 equipment_resource:571,
+     equipment_resource:572 .
 
 park_resource:堀口西公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:682,
-     equipment_resource:683 .
+   ic:設備 equipment_resource:683,
+     equipment_resource:682 .
 
 park_resource:夏山東公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:355,
@@ -13020,16 +13020,16 @@ park_resource:瀬戸公園 ic:種別 "街区公園"@ja;
      equipment_resource:225 .
 
 park_resource:白山道奥公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:681,
-     equipment_resource:680 .
+   ic:設備 equipment_resource:680,
+     equipment_resource:681 .
 
 park_resource:白山道第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:408,
-     equipment_resource:409 .
+   ic:設備 equipment_resource:409,
+     equipment_resource:408 .
 
 park_resource:能見台あきにれ公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:388,
-     equipment_resource:389 .
+   ic:設備 equipment_resource:389,
+     equipment_resource:388 .
 
 park_resource:釜利谷南二丁目公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:117,
@@ -13041,18 +13041,18 @@ park_resource:釜利谷南公園 ic:種別 "近隣公園"@ja;
 
 park_resource:カメギ根公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:133,
-     equipment_resource:135,
-     equipment_resource:134 .
+     equipment_resource:134,
+     equipment_resource:135 .
 
 park_resource:マサキの鼻公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:484,
-     equipment_resource:482,
+   ic:設備 equipment_resource:482,
+     equipment_resource:484,
      equipment_resource:483 .
 
 park_resource:乙舳第二公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:33,
-     equipment_resource:35,
-     equipment_resource:34 .
+     equipment_resource:34,
+     equipment_resource:35 .
 
 park_resource:伊賀山公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:22,
@@ -13060,29 +13060,29 @@ park_resource:伊賀山公園 ic:種別 "街区公園"@ja;
      equipment_resource:21 .
 
 park_resource:六浦あさがお公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:511,
-     equipment_resource:510,
-     equipment_resource:512 .
+   ic:設備 equipment_resource:512,
+     equipment_resource:511,
+     equipment_resource:510 .
 
 park_resource:六浦あざみ公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:515,
-     equipment_resource:514,
-     equipment_resource:513 .
+   ic:設備 equipment_resource:513,
+     equipment_resource:515,
+     equipment_resource:514 .
 
 park_resource:六浦ひなぎく公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:578,
-     equipment_resource:577,
-     equipment_resource:576 .
+     equipment_resource:576,
+     equipment_resource:577 .
 
 park_resource:六浦二丁目第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:504,
-     equipment_resource:503,
-     equipment_resource:505 .
+   ic:設備 equipment_resource:503,
+     equipment_resource:505,
+     equipment_resource:504 .
 
 park_resource:六浦大道公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:690,
+   ic:設備 equipment_resource:692,
      equipment_resource:691,
-     equipment_resource:692 .
+     equipment_resource:690 .
 
 park_resource:六浦白梅公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:533,
@@ -13090,8 +13090,8 @@ park_resource:六浦白梅公園 ic:種別 "街区公園"@ja;
      equipment_resource:534 .
 
 park_resource:六浦第六公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:551,
-     equipment_resource:553,
+   ic:設備 equipment_resource:553,
+     equipment_resource:551,
      equipment_resource:552 .
 
 park_resource:六浦西第三公園 ic:種別 "街区公園"@ja;
@@ -13100,18 +13100,18 @@ park_resource:六浦西第三公園 ic:種別 "街区公園"@ja;
      equipment_resource:568 .
 
 park_resource:六浦西第六公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:575,
-     equipment_resource:574,
+   ic:設備 equipment_resource:574,
+     equipment_resource:575,
      equipment_resource:573 .
 
 park_resource:六浦谷戸田公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:588,
-     equipment_resource:589,
-     equipment_resource:587 .
+     equipment_resource:587,
+     equipment_resource:589 .
 
 park_resource:北谷公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:146,
-     equipment_resource:145,
+   ic:設備 equipment_resource:145,
+     equipment_resource:146,
      equipment_resource:147 .
 
 park_resource:南川公園 ic:種別 "街区公園"@ja;
@@ -13130,49 +13130,49 @@ park_resource:姫の島公園 ic:種別 "街区公園"@ja;
      equipment_resource:453 .
 
 park_resource:宮ノ前公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:498,
+   ic:設備 equipment_resource:500,
      equipment_resource:499,
-     equipment_resource:500 .
+     equipment_resource:498 .
 
 park_resource:富岡ひかりが丘公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:321,
-     equipment_resource:320,
+   ic:設備 equipment_resource:320,
+     equipment_resource:321,
      equipment_resource:319 .
 
 park_resource:富岡大谷公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:293,
-     equipment_resource:295,
+   ic:設備 equipment_resource:295,
+     equipment_resource:293,
      equipment_resource:294 .
 
 park_resource:富岡第七公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:292,
-     equipment_resource:290,
-     equipment_resource:291 .
+   ic:設備 equipment_resource:290,
+     equipment_resource:291,
+     equipment_resource:292 .
 
 park_resource:富岡第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:264,
+   ic:設備 equipment_resource:265,
      equipment_resource:266,
-     equipment_resource:265 .
+     equipment_resource:264 .
 
 park_resource:富岡第四公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:276,
-     equipment_resource:274,
-     equipment_resource:275 .
+   ic:設備 equipment_resource:274,
+     equipment_resource:275,
+     equipment_resource:276 .
 
 park_resource:富岡西七丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:312,
+   ic:設備 equipment_resource:313,
      equipment_resource:311,
-     equipment_resource:313 .
+     equipment_resource:312 .
 
 park_resource:富岡西公園 ic:種別 "地区公園"@ja;
-   ic:設備 equipment_resource:708,
-     equipment_resource:709,
+   ic:設備 equipment_resource:709,
+     equipment_resource:708,
      equipment_resource:707 .
 
 park_resource:寺前町公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:258,
+   ic:設備 equipment_resource:259,
      equipment_resource:260,
-     equipment_resource:259 .
+     equipment_resource:258 .
 
 park_resource:方丈公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:464,
@@ -13180,28 +13180,28 @@ park_resource:方丈公園 ic:種別 "街区公園"@ja;
      equipment_resource:465 .
 
 park_resource:東朝比奈三丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:433,
-     equipment_resource:434,
+   ic:設備 equipment_resource:434,
+     equipment_resource:433,
      equipment_resource:435 .
 
 park_resource:沢木谷第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:162,
+   ic:設備 equipment_resource:164,
      equipment_resource:163,
-     equipment_resource:164 .
+     equipment_resource:162 .
 
 park_resource:潮通り公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:170,
+   ic:設備 equipment_resource:169,
      equipment_resource:171,
-     equipment_resource:169 .
+     equipment_resource:170 .
 
 park_resource:片吹第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:41,
+   ic:設備 equipment_resource:42,
      equipment_resource:43,
-     equipment_resource:42 .
+     equipment_resource:41 .
 
 park_resource:白山道公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:407,
-     equipment_resource:406,
+   ic:設備 equipment_resource:406,
+     equipment_resource:407,
      equipment_resource:405 .
 
 park_resource:能見台北公園 ic:種別 "近隣公園"@ja;
@@ -13210,9 +13210,9 @@ park_resource:能見台北公園 ic:種別 "近隣公園"@ja;
      equipment_resource:658 .
 
 park_resource:能見台東公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:672,
+   ic:設備 equipment_resource:670,
      equipment_resource:671,
-     equipment_resource:670 .
+     equipment_resource:672 .
 
 park_resource:能見台清水ヶ入公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:391,
@@ -13225,19 +13225,19 @@ park_resource:能見台野地久保公園 ic:種別 "街区公園"@ja;
      equipment_resource:400 .
 
 park_resource:西柴第五公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:379,
-     equipment_resource:377,
+   ic:設備 equipment_resource:377,
+     equipment_resource:379,
      equipment_resource:378 .
 
 park_resource:赤井谷第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:12,
-     equipment_resource:11,
+   ic:設備 equipment_resource:11,
+     equipment_resource:12,
      equipment_resource:10 .
 
 park_resource:走川公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:413,
+   ic:設備 equipment_resource:411,
      equipment_resource:412,
-     equipment_resource:411 .
+     equipment_resource:413 .
 
 park_resource:金沢八幡公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:56,
@@ -13246,48 +13246,48 @@ park_resource:金沢八幡公園 ic:種別 "街区公園"@ja;
 
 park_resource:釜利谷公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:59,
-     equipment_resource:60,
-     equipment_resource:58 .
+     equipment_resource:58,
+     equipment_resource:60 .
 
 park_resource:釜利谷宿公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:107,
-     equipment_resource:108,
-     equipment_resource:109 .
+   ic:設備 equipment_resource:109,
+     equipment_resource:107,
+     equipment_resource:108 .
 
 park_resource:釜利谷東八丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:115,
-     equipment_resource:114,
-     equipment_resource:116 .
+   ic:設備 equipment_resource:114,
+     equipment_resource:116,
+     equipment_resource:115 .
 
 park_resource:釜利谷第四公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:74,
-     equipment_resource:76,
-     equipment_resource:75 .
+     equipment_resource:75,
+     equipment_resource:76 .
 
 park_resource:長浜第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:333,
+   ic:設備 equipment_resource:334,
      equipment_resource:332,
-     equipment_resource:334 .
+     equipment_resource:333 .
 
 park_resource:高宗台公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:240,
-     equipment_resource:241,
-     equipment_resource:242 .
+     equipment_resource:242,
+     equipment_resource:241 .
 
 park_resource:高舟台第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:239,
-     equipment_resource:238,
+   ic:設備 equipment_resource:238,
+     equipment_resource:239,
      equipment_resource:237 .
 
 park_resource:高谷公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:245,
+   ic:設備 equipment_resource:243,
      equipment_resource:244,
-     equipment_resource:243 .
+     equipment_resource:245 .
 
 park_resource:高谷第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:247,
-     equipment_resource:248,
-     equipment_resource:246 .
+   ic:設備 equipment_resource:246,
+     equipment_resource:247,
+     equipment_resource:248 .
 
 park_resource:鳶埼公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:261,
@@ -13295,172 +13295,172 @@ park_resource:鳶埼公園 ic:種別 "街区公園"@ja;
      equipment_resource:262 .
 
 park_resource:八景公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:417,
+   ic:設備 equipment_resource:415,
      equipment_resource:414,
-     equipment_resource:416,
-     equipment_resource:415 .
+     equipment_resource:417,
+     equipment_resource:416 .
 
 park_resource:六浦ひまわり公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:581,
-     equipment_resource:582,
+   ic:設備 equipment_resource:580,
+     equipment_resource:581,
      equipment_resource:579,
-     equipment_resource:580 .
+     equipment_resource:582 .
 
 park_resource:六浦三艘第二公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:530,
+     equipment_resource:529,
      equipment_resource:531,
-     equipment_resource:532,
-     equipment_resource:529 .
+     equipment_resource:532 .
 
 park_resource:六浦二丁目第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:506,
-     equipment_resource:507,
-     equipment_resource:509,
-     equipment_resource:508 .
+   ic:設備 equipment_resource:507,
+     equipment_resource:508,
+     equipment_resource:506,
+     equipment_resource:509 .
 
 park_resource:六浦南公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:584,
-     equipment_resource:585,
      equipment_resource:583,
+     equipment_resource:585,
      equipment_resource:586 .
 
 park_resource:六浦第四公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:548,
-     equipment_resource:546,
-     equipment_resource:549,
-     equipment_resource:547 .
+   ic:設備 equipment_resource:549,
+     equipment_resource:548,
+     equipment_resource:547,
+     equipment_resource:546 .
 
 park_resource:堀口第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:480,
+   ic:設備 equipment_resource:479,
      equipment_resource:481,
-     equipment_resource:479,
+     equipment_resource:480,
      equipment_resource:478 .
 
 park_resource:大川公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:24,
-     equipment_resource:23,
-     equipment_resource:25,
-     equipment_resource:26 .
+   ic:設備 equipment_resource:25,
+     equipment_resource:26,
+     equipment_resource:24,
+     equipment_resource:23 .
 
 park_resource:富岡第六公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:288,
-     equipment_resource:286,
+     equipment_resource:289,
      equipment_resource:287,
-     equipment_resource:289 .
+     equipment_resource:286 .
 
 park_resource:富岡西一丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:303,
-     equipment_resource:304,
-     equipment_resource:305,
-     equipment_resource:302 .
+   ic:設備 equipment_resource:304,
+     equipment_resource:302,
+     equipment_resource:303,
+     equipment_resource:305 .
 
 park_resource:小柴埼緑道 ic:種別 "緑道"@ja;
-   ic:設備 equipment_resource:705,
+   ic:設備 equipment_resource:706,
+     equipment_resource:705,
      equipment_resource:703,
-     equipment_resource:704,
-     equipment_resource:706 .
+     equipment_resource:704 .
 
 park_resource:干網公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:466,
+   ic:設備 equipment_resource:469,
+     equipment_resource:466,
      equipment_resource:468,
-     equipment_resource:467,
-     equipment_resource:469 .
+     equipment_resource:467 .
 
 park_resource:東浜公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:448,
+   ic:設備 equipment_resource:449,
+     equipment_resource:448,
      equipment_resource:447,
-     equipment_resource:449,
      equipment_resource:450 .
 
 park_resource:沢木谷第四公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:165,
-     equipment_resource:168,
      equipment_resource:167,
+     equipment_resource:168,
      equipment_resource:166 .
 
 park_resource:泥亀一丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:252,
+   ic:設備 equipment_resource:251,
      equipment_resource:250,
      equipment_resource:249,
-     equipment_resource:251 .
+     equipment_resource:252 .
 
 park_resource:称名寺東公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:182,
-     equipment_resource:180,
+   ic:設備 equipment_resource:181,
      equipment_resource:179,
-     equipment_resource:181 .
+     equipment_resource:180,
+     equipment_resource:182 .
 
 park_resource:能見台平原公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:402,
-     equipment_resource:401,
+   ic:設備 equipment_resource:404,
+     equipment_resource:402,
      equipment_resource:403,
-     equipment_resource:404 .
+     equipment_resource:401 .
 
 park_resource:能見台瀧公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:397,
-     equipment_resource:395,
      equipment_resource:394,
+     equipment_resource:395,
      equipment_resource:396 .
 
 park_resource:西柴一丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:383,
-     equipment_resource:382,
-     equipment_resource:380,
-     equipment_resource:381 .
+   ic:設備 equipment_resource:380,
+     equipment_resource:383,
+     equipment_resource:381,
+     equipment_resource:382 .
 
 park_resource:西柴台公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:387,
-     equipment_resource:386,
+     equipment_resource:384,
      equipment_resource:385,
-     equipment_resource:384 .
+     equipment_resource:386 .
 
 park_resource:西柴第一公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:360,
-     equipment_resource:359,
+   ic:設備 equipment_resource:359,
      equipment_resource:357,
+     equipment_resource:360,
      equipment_resource:358 .
 
 park_resource:西柴第四公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:376,
-     equipment_resource:373,
+   ic:設備 equipment_resource:373,
+     equipment_resource:376,
      equipment_resource:374,
      equipment_resource:375 .
 
 park_resource:谷津公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:593,
+   ic:設備 equipment_resource:591,
      equipment_resource:590,
-     equipment_resource:592,
-     equipment_resource:591 .
+     equipment_resource:593,
+     equipment_resource:592 .
 
 park_resource:赤井谷公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:4,
-     equipment_resource:3,
-     equipment_resource:2,
-     equipment_resource:1 .
+   ic:設備 equipment_resource:2,
+     equipment_resource:1,
+     equipment_resource:4,
+     equipment_resource:3 .
 
 park_resource:釜利谷坂本公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:100,
+   ic:設備 equipment_resource:97,
+     equipment_resource:98,
      equipment_resource:99,
-     equipment_resource:97,
-     equipment_resource:98 .
+     equipment_resource:100 .
 
 park_resource:釜利谷第五公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:78,
-     equipment_resource:79,
+   ic:設備 equipment_resource:77,
      equipment_resource:80,
-     equipment_resource:77 .
+     equipment_resource:79,
+     equipment_resource:78 .
 
 park_resource:釜利谷西一丁目公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:110,
-     equipment_resource:112,
      equipment_resource:111,
+     equipment_resource:112,
      equipment_resource:113 .
 
 park_resource:長浜みはらし公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:337,
-     equipment_resource:335,
+     equipment_resource:338,
      equipment_resource:336,
-     equipment_resource:338 .
+     equipment_resource:335 .
 
 park_resource:鳥見ヶ丘第二公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:329,
@@ -13469,609 +13469,609 @@ park_resource:鳥見ヶ丘第二公園 ic:種別 "街区公園"@ja;
      equipment_resource:331 .
 
 park_resource:六浦西第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:566,
-     equipment_resource:562,
-     equipment_resource:565,
+   ic:設備 equipment_resource:562,
      equipment_resource:563,
-     equipment_resource:564 .
+     equipment_resource:565,
+     equipment_resource:564,
+     equipment_resource:566 .
 
 park_resource:大道公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:227,
-     equipment_resource:230,
-     equipment_resource:229,
+   ic:設備 equipment_resource:229,
+     equipment_resource:227,
      equipment_resource:228,
-     equipment_resource:226 .
+     equipment_resource:226,
+     equipment_resource:230 .
 
 park_resource:富岡並木ふなだまり公園 ic:種別 "都市緑地"@ja;
-   ic:設備 equipment_resource:702,
-     equipment_resource:700,
+   ic:設備 equipment_resource:698,
+     equipment_resource:702,
      equipment_resource:699,
-     equipment_resource:698,
+     equipment_resource:700,
      equipment_resource:701 .
 
 park_resource:富岡八幡公園 ic:種別 "地区公園"@ja;
-   ic:設備 equipment_resource:693,
-     equipment_resource:695,
+   ic:設備 equipment_resource:694,
      equipment_resource:696,
+     equipment_resource:693,
      equipment_resource:697,
-     equipment_resource:694 .
+     equipment_resource:695 .
 
 park_resource:富岡大谷第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:299,
-     equipment_resource:298,
+   ic:設備 equipment_resource:296,
      equipment_resource:297,
-     equipment_resource:296,
-     equipment_resource:300 .
+     equipment_resource:300,
+     equipment_resource:298,
+     equipment_resource:299 .
 
 park_resource:富岡東一丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:316,
+   ic:設備 equipment_resource:314,
      equipment_resource:317,
-     equipment_resource:318,
      equipment_resource:315,
-     equipment_resource:314 .
+     equipment_resource:316,
+     equipment_resource:318 .
 
 park_resource:富岡西三丁目公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:306,
-     equipment_resource:307,
-     equipment_resource:310,
+   ic:設備 equipment_resource:309,
      equipment_resource:308,
-     equipment_resource:309 .
+     equipment_resource:306,
+     equipment_resource:307,
+     equipment_resource:310 .
 
 park_resource:寺前さざなみ公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:257,
-     equipment_resource:256,
+   ic:設備 equipment_resource:255,
      equipment_resource:254,
-     equipment_resource:253,
-     equipment_resource:255 .
+     equipment_resource:257,
+     equipment_resource:256,
+     equipment_resource:253 .
 
 park_resource:杉の崎公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:192,
-     equipment_resource:190,
+   ic:設備 equipment_resource:191,
      equipment_resource:194,
-     equipment_resource:191,
+     equipment_resource:190,
+     equipment_resource:192,
      equipment_resource:193 .
 
 park_resource:東富岡公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:443,
-     equipment_resource:442,
+   ic:設備 equipment_resource:442,
+     equipment_resource:446,
+     equipment_resource:443,
      equipment_resource:444,
-     equipment_resource:445,
-     equipment_resource:446 .
+     equipment_resource:445 .
 
 park_resource:柳町公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:632,
-     equipment_resource:631,
-     equipment_resource:634,
+     equipment_resource:635,
      equipment_resource:633,
-     equipment_resource:635 .
+     equipment_resource:631,
+     equipment_resource:634 .
 
 park_resource:沢木谷公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:152,
-     equipment_resource:151,
+   ic:設備 equipment_resource:151,
+     equipment_resource:152,
+     equipment_resource:153,
      equipment_resource:154,
-     equipment_resource:150,
-     equipment_resource:153 .
+     equipment_resource:150 .
 
 park_resource:洲崎公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:198,
-     equipment_resource:197,
+   ic:設備 equipment_resource:197,
      equipment_resource:196,
      equipment_resource:195,
+     equipment_resource:198,
      equipment_resource:199 .
 
 park_resource:片吹公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:39,
-     equipment_resource:38,
-     equipment_resource:37,
+     equipment_resource:36,
      equipment_resource:40,
-     equipment_resource:36 .
+     equipment_resource:38,
+     equipment_resource:37 .
 
 park_resource:西柴第二公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:365,
-     equipment_resource:362,
-     equipment_resource:363,
      equipment_resource:361,
-     equipment_resource:364 .
+     equipment_resource:362,
+     equipment_resource:364,
+     equipment_resource:363 .
 
 park_resource:赤井谷第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:6,
+   ic:設備 equipment_resource:8,
      equipment_resource:5,
+     equipment_resource:6,
      equipment_resource:7,
-     equipment_resource:9,
-     equipment_resource:8 .
+     equipment_resource:9 .
 
 park_resource:金沢町公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:45,
-     equipment_resource:48,
+   ic:設備 equipment_resource:48,
      equipment_resource:47,
+     equipment_resource:46,
      equipment_resource:44,
-     equipment_resource:46 .
+     equipment_resource:45 .
 
 park_resource:関ヶ谷第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:213,
-     equipment_resource:215,
+   ic:設備 equipment_resource:217,
+     equipment_resource:213,
+     equipment_resource:216,
      equipment_resource:214,
-     equipment_resource:217,
-     equipment_resource:216 .
+     equipment_resource:215 .
 
 park_resource:阿王ケ台公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:636,
+   ic:設備 equipment_resource:638,
      equipment_resource:640,
      equipment_resource:639,
-     equipment_resource:637,
-     equipment_resource:638 .
+     equipment_resource:636,
+     equipment_resource:637 .
 
 park_resource:鳥浜公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:323,
+   ic:設備 equipment_resource:324,
      equipment_resource:325,
-     equipment_resource:324,
      equipment_resource:322,
-     equipment_resource:326 .
+     equipment_resource:326,
+     equipment_resource:323 .
 
 park_resource:はなむしろ公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:429,
-     equipment_resource:431,
-     equipment_resource:432,
-     equipment_resource:430,
+   ic:設備 equipment_resource:432,
+     equipment_resource:428,
      equipment_resource:427,
-     equipment_resource:428 .
+     equipment_resource:430,
+     equipment_resource:431,
+     equipment_resource:429 .
 
 park_resource:まつかぜ公園 ic:種別 "近隣公園"@ja;
    ic:設備 equipment_resource:686,
+     equipment_resource:689,
      equipment_resource:684,
-     equipment_resource:685,
      equipment_resource:688,
-     equipment_resource:687,
-     equipment_resource:689 .
+     equipment_resource:685,
+     equipment_resource:687 .
 
 park_resource:下ノ浜公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:174,
+     equipment_resource:176,
      equipment_resource:177,
      equipment_resource:178,
      equipment_resource:173,
-     equipment_resource:175,
-     equipment_resource:176 .
+     equipment_resource:175 .
 
 park_resource:六浦三艘第一公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:525,
-     equipment_resource:524,
-     equipment_resource:526,
+   ic:設備 equipment_resource:528,
+     equipment_resource:527,
      equipment_resource:523,
-     equipment_resource:528,
-     equipment_resource:527 .
+     equipment_resource:525,
+     equipment_resource:524,
+     equipment_resource:526 .
 
 park_resource:六浦瀬ケ崎公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:537,
-     equipment_resource:540,
      equipment_resource:539,
+     equipment_resource:540,
      equipment_resource:538,
-     equipment_resource:536,
-     equipment_resource:541 .
+     equipment_resource:541,
+     equipment_resource:536 .
 
 park_resource:六浦西第一公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:560,
      equipment_resource:556,
-     equipment_resource:558,
+     equipment_resource:557,
      equipment_resource:559,
-     equipment_resource:561,
-     equipment_resource:557 .
+     equipment_resource:558,
+     equipment_resource:561 .
 
 park_resource:夏山第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:354,
-     equipment_resource:349,
-     equipment_resource:350,
+   ic:設備 equipment_resource:351,
      equipment_resource:353,
-     equipment_resource:351,
-     equipment_resource:352 .
+     equipment_resource:350,
+     equipment_resource:354,
+     equipment_resource:352,
+     equipment_resource:349 .
 
 park_resource:奥座公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:28,
-     equipment_resource:32,
-     equipment_resource:27,
+     equipment_resource:29,
      equipment_resource:31,
+     equipment_resource:27,
      equipment_resource:30,
-     equipment_resource:29 .
+     equipment_resource:32 .
 
 park_resource:富岡公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:655,
-     equipment_resource:651,
+   ic:設備 equipment_resource:652,
      equipment_resource:654,
-     equipment_resource:653,
-     equipment_resource:652,
-     equipment_resource:650 .
+     equipment_resource:655,
+     equipment_resource:650,
+     equipment_resource:651,
+     equipment_resource:653 .
 
 park_resource:朝比奈町公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:16,
+   ic:設備 equipment_resource:13,
      equipment_resource:17,
-     equipment_resource:14,
      equipment_resource:18,
      equipment_resource:15,
-     equipment_resource:13 .
+     equipment_resource:14,
+     equipment_resource:16 .
 
 park_resource:東朝比奈地蔵前公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:440,
-     equipment_resource:441,
+   ic:設備 equipment_resource:439,
      equipment_resource:438,
      equipment_resource:437,
+     equipment_resource:440,
      equipment_resource:436,
-     equipment_resource:439 .
+     equipment_resource:441 .
 
 park_resource:谷津染井公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:630,
-     equipment_resource:626,
-     equipment_resource:625,
+   ic:設備 equipment_resource:628,
      equipment_resource:629,
+     equipment_resource:625,
+     equipment_resource:630,
      equipment_resource:627,
-     equipment_resource:628 .
+     equipment_resource:626 .
 
 park_resource:金沢町第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:53,
-     equipment_resource:52,
-     equipment_resource:49,
+   ic:設備 equipment_resource:52,
      equipment_resource:50,
+     equipment_resource:49,
+     equipment_resource:54,
      equipment_resource:51,
-     equipment_resource:54 .
+     equipment_resource:53 .
 
 park_resource:釜利谷坂本第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:101,
-     equipment_resource:103,
-     equipment_resource:106,
+   ic:設備 equipment_resource:103,
      equipment_resource:105,
-     equipment_resource:104,
-     equipment_resource:102 .
+     equipment_resource:101,
+     equipment_resource:102,
+     equipment_resource:106,
+     equipment_resource:104 .
 
 park_resource:釜利谷第二公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:61,
-     equipment_resource:62,
-     equipment_resource:64,
-     equipment_resource:63,
+     equipment_resource:66,
      equipment_resource:65,
-     equipment_resource:66 .
+     equipment_resource:62,
+     equipment_resource:63,
+     equipment_resource:64 .
 
 park_resource:関ヶ谷の辻公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:222,
-     equipment_resource:223,
-     equipment_resource:219,
+   ic:設備 equipment_resource:223,
      equipment_resource:220,
+     equipment_resource:219,
+     equipment_resource:221,
      equipment_resource:218,
-     equipment_resource:221 .
+     equipment_resource:222 .
 
 park_resource:関ヶ谷公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:211,
-     equipment_resource:209,
-     equipment_resource:210,
+   ic:設備 equipment_resource:208,
      equipment_resource:207,
+     equipment_resource:210,
+     equipment_resource:211,
      equipment_resource:212,
-     equipment_resource:208 .
+     equipment_resource:209 .
 
 park_resource:高舟台第一公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:236,
-     equipment_resource:234,
-     equipment_resource:233,
      equipment_resource:235,
+     equipment_resource:231,
      equipment_resource:232,
-     equipment_resource:231 .
+     equipment_resource:234,
+     equipment_resource:233 .
 
 park_resource:六浦公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:520,
-     equipment_resource:517,
-     equipment_resource:516,
-     equipment_resource:522,
+   ic:設備 equipment_resource:518,
+     equipment_resource:520,
      equipment_resource:521,
      equipment_resource:519,
-     equipment_resource:518 .
+     equipment_resource:517,
+     equipment_resource:516,
+     equipment_resource:522 .
 
 park_resource:南丸公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:497,
-     equipment_resource:494,
+   ic:設備 equipment_resource:494,
      equipment_resource:496,
-     equipment_resource:492,
+     equipment_resource:493,
      equipment_resource:495,
+     equipment_resource:492,
      equipment_resource:491,
-     equipment_resource:493 .
+     equipment_resource:497 .
 
 park_resource:城山台公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:183,
+   ic:設備 equipment_resource:188,
+     equipment_resource:183,
+     equipment_resource:185,
      equipment_resource:186,
      equipment_resource:189,
-     equipment_resource:185,
      equipment_resource:187,
-     equipment_resource:184,
-     equipment_resource:188 .
+     equipment_resource:184 .
 
 park_resource:富岡第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:268,
-     equipment_resource:269,
-     equipment_resource:272,
-     equipment_resource:271,
+   ic:設備 equipment_resource:270,
      equipment_resource:267,
-     equipment_resource:270,
-     equipment_resource:273 .
+     equipment_resource:269,
+     equipment_resource:271,
+     equipment_resource:272,
+     equipment_resource:273,
+     equipment_resource:268 .
 
 park_resource:沢木谷第二公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:158,
-     equipment_resource:157,
+   ic:設備 equipment_resource:157,
+     equipment_resource:158,
      equipment_resource:159,
-     equipment_resource:161,
      equipment_resource:155,
      equipment_resource:156,
-     equipment_resource:160 .
+     equipment_resource:160,
+     equipment_resource:161 .
 
 park_resource:瀬ケ崎台公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:202,
-     equipment_resource:206,
+   ic:設備 equipment_resource:206,
+     equipment_resource:205,
+     equipment_resource:202,
+     equipment_resource:200,
      equipment_resource:201,
      equipment_resource:204,
-     equipment_resource:205,
-     equipment_resource:203,
-     equipment_resource:200 .
+     equipment_resource:203 .
 
 park_resource:能見台堀口北公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:674,
-     equipment_resource:676,
-     equipment_resource:675,
+   ic:設備 equipment_resource:676,
+     equipment_resource:678,
      equipment_resource:677,
      equipment_resource:679,
+     equipment_resource:674,
      equipment_resource:673,
-     equipment_resource:678 .
+     equipment_resource:675 .
 
 park_resource:草舞台公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:643,
-     equipment_resource:644,
+   ic:設備 equipment_resource:648,
+     equipment_resource:643,
      equipment_resource:646,
+     equipment_resource:644,
      equipment_resource:647,
-     equipment_resource:645,
-     equipment_resource:648,
-     equipment_resource:649 .
+     equipment_resource:649,
+     equipment_resource:645 .
 
 park_resource:西柴第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:369,
-     equipment_resource:370,
-     equipment_resource:368,
-     equipment_resource:367,
-     equipment_resource:366,
+   ic:設備 equipment_resource:366,
+     equipment_resource:371,
      equipment_resource:372,
-     equipment_resource:371 .
+     equipment_resource:368,
+     equipment_resource:370,
+     equipment_resource:367,
+     equipment_resource:369 .
 
 park_resource:谷津坂第三公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:613,
-     equipment_resource:612,
-     equipment_resource:611,
+   ic:設備 equipment_resource:614,
      equipment_resource:616,
+     equipment_resource:613,
+     equipment_resource:611,
      equipment_resource:610,
-     equipment_resource:615,
-     equipment_resource:614 .
+     equipment_resource:612,
+     equipment_resource:615 .
 
 park_resource:谷津坂第二公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:608,
      equipment_resource:609,
-     equipment_resource:604,
-     equipment_resource:605,
      equipment_resource:606,
+     equipment_resource:605,
      equipment_resource:603,
+     equipment_resource:604,
      equipment_resource:607 .
 
 park_resource:釜利谷柿の木公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:94,
+   ic:設備 equipment_resource:91,
+     equipment_resource:95,
+     equipment_resource:94,
+     equipment_resource:90,
      equipment_resource:93,
      equipment_resource:92,
-     equipment_resource:90,
-     equipment_resource:96,
-     equipment_resource:95,
-     equipment_resource:91 .
+     equipment_resource:96 .
 
 park_resource:釜利谷第三公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:68,
-     equipment_resource:71,
      equipment_resource:72,
+     equipment_resource:73,
+     equipment_resource:71,
      equipment_resource:67,
      equipment_resource:69,
-     equipment_resource:73,
      equipment_resource:70 .
 
 park_resource:堀口公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:473,
-     equipment_resource:477,
-     equipment_resource:471,
+   ic:設備 equipment_resource:475,
      equipment_resource:470,
+     equipment_resource:477,
+     equipment_resource:474,
      equipment_resource:472,
-     equipment_resource:476,
-     equipment_resource:475,
-     equipment_resource:474 .
+     equipment_resource:471,
+     equipment_resource:473,
+     equipment_resource:476 .
 
 park_resource:谷津坂南公園 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:618,
-     equipment_resource:622,
+     equipment_resource:620,
      equipment_resource:617,
      equipment_resource:623,
-     equipment_resource:624,
+     equipment_resource:619,
+     equipment_resource:622,
      equipment_resource:621,
-     equipment_resource:620,
-     equipment_resource:619 .
+     equipment_resource:624 .
 
 park_resource:八景西公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:424,
-     equipment_resource:418,
-     equipment_resource:419,
-     equipment_resource:423,
-     equipment_resource:421,
+   ic:設備 equipment_resource:420,
      equipment_resource:422,
-     equipment_resource:420,
-     equipment_resource:425,
-     equipment_resource:426 .
+     equipment_resource:423,
+     equipment_resource:418,
+     equipment_resource:421,
+     equipment_resource:419,
+     equipment_resource:424,
+     equipment_resource:426,
+     equipment_resource:425 .
 
 park_resource:北之門公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:142,
-     equipment_resource:138,
-     equipment_resource:137,
-     equipment_resource:136,
-     equipment_resource:139,
-     equipment_resource:140,
+   ic:設備 equipment_resource:143,
      equipment_resource:141,
+     equipment_resource:137,
      equipment_resource:144,
-     equipment_resource:143 .
+     equipment_resource:142,
+     equipment_resource:139,
+     equipment_resource:136,
+     equipment_resource:138,
+     equipment_resource:140 .
 
 park_resource:富岡第五公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:281,
-     equipment_resource:283,
-     equipment_resource:280,
+   ic:設備 equipment_resource:284,
+     equipment_resource:282,
      equipment_resource:278,
-     equipment_resource:279,
      equipment_resource:285,
+     equipment_resource:283,
+     equipment_resource:279,
+     equipment_resource:280,
      equipment_resource:277,
-     equipment_resource:284,
-     equipment_resource:282 .
+     equipment_resource:281 .
 
 park_resource:富岡総合公園 ic:種別 "総合公園"@ja;
-   ic:設備 equipment_resource:720,
-     equipment_resource:726,
+   ic:設備 equipment_resource:721,
      equipment_resource:719,
-     equipment_resource:725,
      equipment_resource:723,
+     equipment_resource:725,
      equipment_resource:727,
+     equipment_resource:722,
      equipment_resource:724,
-     equipment_resource:721,
-     equipment_resource:722 .
+     equipment_resource:720,
+     equipment_resource:726 .
 
 park_resource:平潟公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:457,
-     equipment_resource:456,
-     equipment_resource:455,
-     equipment_resource:454,
-     equipment_resource:461,
-     equipment_resource:459,
-     equipment_resource:460,
+   ic:設備 equipment_resource:460,
      equipment_resource:462,
-     equipment_resource:458 .
+     equipment_resource:455,
+     equipment_resource:459,
+     equipment_resource:461,
+     equipment_resource:454,
+     equipment_resource:457,
+     equipment_resource:458,
+     equipment_resource:456 .
 
 park_resource:海の公園 ic:種別 "総合公園"@ja;
-   ic:設備 equipment_resource:715,
-     equipment_resource:710,
-     equipment_resource:718,
+   ic:設備 equipment_resource:718,
      equipment_resource:716,
-     equipment_resource:713,
-     equipment_resource:717,
      equipment_resource:714,
+     equipment_resource:713,
      equipment_resource:712,
-     equipment_resource:711 .
+     equipment_resource:710,
+     equipment_resource:711,
+     equipment_resource:717,
+     equipment_resource:715 .
 
 park_resource:谷津坂第一公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:599,
-     equipment_resource:596,
-     equipment_resource:597,
-     equipment_resource:594,
-     equipment_resource:598,
+   ic:設備 equipment_resource:598,
      equipment_resource:595,
      equipment_resource:602,
+     equipment_resource:594,
+     equipment_resource:597,
+     equipment_resource:599,
      equipment_resource:601,
+     equipment_resource:596,
      equipment_resource:600 .
 
 park_resource:釜利谷赤坂公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:86,
-     equipment_resource:88,
-     equipment_resource:89,
-     equipment_resource:82,
-     equipment_resource:83,
-     equipment_resource:87,
-     equipment_resource:85,
+   ic:設備 equipment_resource:87,
      equipment_resource:81,
-     equipment_resource:84 .
+     equipment_resource:84,
+     equipment_resource:85,
+     equipment_resource:82,
+     equipment_resource:86,
+     equipment_resource:83,
+     equipment_resource:88,
+     equipment_resource:89 .
 
 park_resource:夏山第一公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:339,
-     equipment_resource:348,
-     equipment_resource:340,
+   ic:設備 equipment_resource:340,
      equipment_resource:341,
-     equipment_resource:346,
-     equipment_resource:343,
-     equipment_resource:342,
      equipment_resource:347,
+     equipment_resource:342,
+     equipment_resource:344,
+     equipment_resource:348,
+     equipment_resource:339,
+     equipment_resource:343,
      equipment_resource:345,
-     equipment_resource:344 .
+     equipment_resource:346 .
 
 park_resource:能見台中央公園 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:666,
-     equipment_resource:664,
-     equipment_resource:669,
+   ic:設備 equipment_resource:665,
      equipment_resource:659,
-     equipment_resource:668,
+     equipment_resource:669,
      equipment_resource:667,
-     equipment_resource:663,
-     equipment_resource:662,
-     equipment_resource:660,
      equipment_resource:661,
-     equipment_resource:665 .
+     equipment_resource:662,
+     equipment_resource:663,
+     equipment_resource:660,
+     equipment_resource:668,
+     equipment_resource:666,
+     equipment_resource:664 .
 
 park_resource:金沢自然公園 ic:種別 "広域公園"@ja;
-   ic:設備 equipment_resource:773,
-     equipment_resource:770,
-     equipment_resource:775,
-     equipment_resource:777,
-     equipment_resource:772,
-     equipment_resource:774,
-     equipment_resource:769,
-     equipment_resource:765,
-     equipment_resource:766,
+   ic:設備 equipment_resource:771,
      equipment_resource:768,
+     equipment_resource:770,
      equipment_resource:767,
-     equipment_resource:771,
-     equipment_resource:776 .
+     equipment_resource:773,
+     equipment_resource:772,
+     equipment_resource:777,
+     equipment_resource:774,
+     equipment_resource:775,
+     equipment_resource:766,
+     equipment_resource:765,
+     equipment_resource:776,
+     equipment_resource:769 .
 
 park_resource:釜利谷わんぱく公園 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:129,
-     equipment_resource:128,
-     equipment_resource:125,
-     equipment_resource:119,
-     equipment_resource:127,
-     equipment_resource:120,
-     equipment_resource:130,
-     equipment_resource:132,
+   ic:設備 equipment_resource:125,
+     equipment_resource:129,
      equipment_resource:123,
-     equipment_resource:126,
+     equipment_resource:130,
+     equipment_resource:131,
+     equipment_resource:128,
+     equipment_resource:127,
+     equipment_resource:119,
      equipment_resource:121,
-     equipment_resource:124,
      equipment_resource:122,
-     equipment_resource:131 .
+     equipment_resource:120,
+     equipment_resource:126,
+     equipment_resource:124,
+     equipment_resource:132 .
 
 park_resource:長浜公園 ic:種別 "運動公園"@ja;
-   ic:設備 equipment_resource:748,
-     equipment_resource:753,
-     equipment_resource:762,
-     equipment_resource:749,
-     equipment_resource:754,
-     equipment_resource:761,
-     equipment_resource:759,
-     equipment_resource:757,
-     equipment_resource:756,
+   ic:設備 equipment_resource:749,
+     equipment_resource:751,
      equipment_resource:760,
+     equipment_resource:754,
      equipment_resource:750,
-     equipment_resource:755,
      equipment_resource:752,
-     equipment_resource:758,
      equipment_resource:764,
+     equipment_resource:758,
+     equipment_resource:755,
+     equipment_resource:762,
+     equipment_resource:748,
+     equipment_resource:761,
+     equipment_resource:757,
+     equipment_resource:753,
      equipment_resource:763,
-     equipment_resource:751 .
+     equipment_resource:756,
+     equipment_resource:759 .
 
 park_resource:野島公園 ic:種別 "総合公園"@ja;
-   ic:設備 equipment_resource:729,
-     equipment_resource:731,
-     equipment_resource:736,
-     equipment_resource:732,
-     equipment_resource:742,
-     equipment_resource:733,
-     equipment_resource:740,
-     equipment_resource:730,
-     equipment_resource:738,
+   ic:設備 equipment_resource:731,
      equipment_resource:739,
-     equipment_resource:741,
-     equipment_resource:735,
-     equipment_resource:728,
-     equipment_resource:734,
-     equipment_resource:745,
-     equipment_resource:746,
+     equipment_resource:742,
      equipment_resource:744,
-     equipment_resource:747,
+     equipment_resource:738,
+     equipment_resource:730,
      equipment_resource:737,
+     equipment_resource:735,
+     equipment_resource:734,
+     equipment_resource:728,
+     equipment_resource:732,
+     equipment_resource:729,
+     equipment_resource:741,
+     equipment_resource:736,
+     equipment_resource:733,
+     equipment_resource:747,
+     equipment_resource:745,
+     equipment_resource:740,
+     equipment_resource:746,
      equipment_resource:743 .
 
 organization_resource:南部公園緑地事務所 a ic:組織型;

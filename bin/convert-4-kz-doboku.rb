@@ -9,12 +9,12 @@ require 'securerandom'
 
 
 #INPUT_FILE="../original/playground-equipment_utf8.csv"
-INPUT_FILE="../original/4-kz-doboku_utf8.csv"
-OUTPUT_FILE="../ttl/4-kz-doboku.ttl"
+INPUT_FILE="../data/original/14108/4-kz-doboku_utf8.csv"
+OUTPUT_FILE="../data/dumps/park/14108/4-kz-doboku.ttl"
 
-PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/park/14108/")
+PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/parks/14108/")
 EQUIPMENT_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/equipment/14108/")
-ORGANIZATION_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/organization/14108/")
+ORGANIZATION_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/organizations/14108/")
 IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/rdf#")
 PARK = RDF::Vocabulary.new("http://openpark.jp/ns/park#")
 
@@ -76,7 +76,6 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     turtle << "        park:数量 \"#{row[6]}\"^^xsd:integer ;\n" if row[6]
     turtle << "        park:仕様・規格 \"#{row[5]}\"@ja ;\n" if row[5]
     turtle << "        park:種別 \"#{row[4]}\"@ja .\n\n"
-    puts turtle
 
     graph = RDF::Graph.new
     graph.from_ttl(turtle, :prefixes => PREFIXES)

@@ -8,10 +8,10 @@ require 'csv'
 require 'securerandom'
 
 
-INPUT_FILE="../original/23-kz-park_utf8.csv"
-OUTPUT_FILE="../ttl/23-kz-park.ttl"
+INPUT_FILE="../data/original/14108/23-kz-park_utf8.csv"
+OUTPUT_FILE="../data/dumps/park/14108/23-kz-park.ttl"
 
-PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/park/14108/")
+PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/parks/14108/")
 IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/rdf#")
 PARK = RDF::Vocabulary.new("http://openpark.jp/ns/park#")
 
