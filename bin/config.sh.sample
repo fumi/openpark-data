@@ -1,5 +1,7 @@
 ISQL=/usr/local/virtuoso-opensource/bin/isql
 DATA_DIR=openpark-data/dumps
 HOSTNAME=localhost:1111
+DOCKER_IMAGE=tenforce/virtuoso
+DOCKER_NAME=openpark-virtuoso
 DBA_USER=dba
 DBA_PASSWORD=
