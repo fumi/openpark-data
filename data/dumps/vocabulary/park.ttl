@@ -6,14 +6,47 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix openpark: <http://openpark.jp/ns/openpark#>
+@prefix schema: <http://schema.org> .
+@prefix park: <http://openpark.jp/ns/park#> .
 
-<http://openpark.jp/ns/openpark> a owl:Ontology ;
-  rdfs:label "Open Park Vocabulary" ;
-  dcterms:title "Open Park Vocabulary" ;
+<http://openpark.jp/ns/park> a owl:Ontology ;
+  rdfs:label "Open Park語彙"@ja, "Open Park Vocabulary"@en ;
   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
   dcterms:creator <http://fumi.me/foaf#me> ;
-  dcterms:created "2014-11-20" ;
-  owl:versionInfo "0.1" .
+  dcterms:created "2016-05-24" ;
+  rdfs:comment "Open Park語彙は共通語彙基盤を拡張して公園のデータを記述するための語彙です。"@ja ;
+  owl:versionInfo "1.0" .
 
-openpark:
+park:公園型 a owl:Class ;
+  rdfs:label "公園型"@ja, "Park / Playground"@en ;
+  rdfs:comment "公園を表現するためのクラス用語"@ja, "A class term to express a park or a playground"@en ;
+  rdfs:subClassOf ic:施設型 .
+
+park:遊具型 a owl:Class ;
+  rdfs:label "遊具型"@ja, "Playground equipment"@en ;
+  rdfs:comment "遊具を表現するためのクラス用語"@ja, "A class term to express playground equipment"@en ;
+  rdfs:subClassOf ic:設備型 .
+
+park:年齢上限 a owl:DatatypeProperty ;
+  rdfs:label "年齢上限"@ja, "Upper age limit"@en ;
+  rdfs:comment "年齢の上限を記述するためのプロパティ用語"@ja, "The textual expression of a upper age limit. "@en ;
+  schema:domainIncludes park:遊具型 ;
+  rdfs:range xsd:integer .
+
+park:年齢下限 a owl:DatatypeProperty ;
+  rdfs:label "年齢下限"@ja, "Lower age limit"@en ;
+  rdfs:comment "年齢の下限を記述するためのプロパティ用語"@ja, "The textual expression of a lower age limit."@en ;
+  schema:domainIncludes park:遊具型 ;
+  rdfs:range xsd:integer .
+
+park:数量 a owl:DatatypeProperty ;
+  rdfs:label "数量"@ja, "Quantity"@en ;
+  rdfs:comment "数量を記述するためのプロパティ用語"@ja, "The textual expression of quantity."@en ;
+  schema:domainIncludes park:遊具型 ;
+  rdfs:range xsd:integer .
+
+park:仕様・規格 a owl:DatatypeProperty ;
+  rdfs:label "仕様・規格"@ja, "Specification / Standard"@en ;
+  rdfs:comment "仕様や規格を記述するためのプロパティ用語"@ja, "The textual expression of a specification or a standard."@en ;
+  schema:domainIncludes park:遊具型 ;
+  rdfs:range xsd:string .
