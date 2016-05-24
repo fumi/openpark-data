@@ -3,3 +3,5 @@
 . ./config.sh
 
 docker rm -f `docker ps -aq --filter "name=$DOCKER_NAME"`
+cd $DATA_DIR
+rm virtuoso*
