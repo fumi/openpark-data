@@ -1,8 +1,9 @@
 @prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
+@prefix park: <http://openpark.jp/ns/park#> .
 @prefix park_resource: <http://openpark.jp/parks/14108/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-park_resource:のりべか公園 a ic:施設型;
+park_resource:のりべか公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7127"
@@ -25,7 +26,7 @@ park_resource:のりべか公園 a ic:施設型;
      ic:緯度 "35.366093"
    ] .
 
-park_resource:はなむしろ公園 a ic:施設型;
+park_resource:はなむしろ公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7134"
@@ -48,7 +49,7 @@ park_resource:はなむしろ公園 a ic:施設型;
      ic:緯度 "35.34156"
    ] .
 
-park_resource:まつかぜ公園 a ic:施設型;
+park_resource:まつかぜ公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7022"
@@ -71,7 +72,7 @@ park_resource:まつかぜ公園 a ic:施設型;
      ic:緯度 "35.3395"
    ] .
 
-park_resource:イガイ根公園 a ic:施設型;
+park_resource:イガイ根公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7028"
@@ -94,7 +95,7 @@ park_resource:イガイ根公園 a ic:施設型;
      ic:緯度 "35.355473"
    ] .
 
-park_resource:イド藻公園 a ic:施設型;
+park_resource:イド藻公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7030"
@@ -117,7 +118,7 @@ park_resource:イド藻公園 a ic:施設型;
      ic:緯度 "35.359913"
    ] .
 
-park_resource:カゼ場公園 a ic:施設型;
+park_resource:カゼ場公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7036"
@@ -140,7 +141,7 @@ park_resource:カゼ場公園 a ic:施設型;
      ic:緯度 "35.370407"
    ] .
 
-park_resource:カメギ根公園 a ic:施設型;
+park_resource:カメギ根公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7055"
@@ -163,7 +164,7 @@ park_resource:カメギ根公園 a ic:施設型;
      ic:緯度 "35.346149"
    ] .
 
-park_resource:サルダの鼻公園 a ic:施設型;
+park_resource:サルダの鼻公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7060"
@@ -186,7 +187,7 @@ park_resource:サルダの鼻公園 a ic:施設型;
      ic:緯度 "35.364582"
    ] .
 
-park_resource:マサキの鼻公園 a ic:施設型;
+park_resource:マサキの鼻公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7146"
@@ -209,7 +210,7 @@ park_resource:マサキの鼻公園 a ic:施設型;
      ic:緯度 "35.344116"
    ] .
 
-park_resource:下ノ浜公園 a ic:施設型;
+park_resource:下ノ浜公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7068"
@@ -232,7 +233,7 @@ park_resource:下ノ浜公園 a ic:施設型;
      ic:緯度 "35.367931"
    ] .
 
-park_resource:並木十二天公園 a ic:施設型;
+park_resource:並木十二天公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7113"
@@ -255,7 +256,7 @@ park_resource:並木十二天公園 a ic:施設型;
      ic:緯度 "35.372181"
    ] .
 
-park_resource:中藻公園 a ic:施設型;
+park_resource:中藻公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7109"
@@ -278,7 +279,7 @@ park_resource:中藻公園 a ic:施設型;
      ic:緯度 "35.36264"
    ] .
 
-park_resource:乙舳公園 a ic:施設型;
+park_resource:乙舳公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7033"
@@ -301,7 +302,7 @@ park_resource:乙舳公園 a ic:施設型;
      ic:緯度 "35.33252"
    ] .
 
-park_resource:乙舳第二公園 a ic:施設型;
+park_resource:乙舳第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7034"
@@ -324,7 +325,7 @@ park_resource:乙舳第二公園 a ic:施設型;
      ic:緯度 "35.328541"
    ] .
 
-park_resource:伊賀山公園 a ic:施設型;
+park_resource:伊賀山公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7029"
@@ -347,7 +348,7 @@ park_resource:伊賀山公園 a ic:施設型;
      ic:緯度 "35.329834"
    ] .
 
-park_resource:八景公園 a ic:施設型;
+park_resource:八景公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7132"
@@ -370,7 +371,7 @@ park_resource:八景公園 a ic:施設型;
      ic:緯度 "35.328274"
    ] .
 
-park_resource:八景西公園 a ic:施設型;
+park_resource:八景西公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7133"
@@ -393,7 +394,7 @@ park_resource:八景西公園 a ic:施設型;
      ic:緯度 "35.335636"
    ] .
 
-park_resource:六浦あさがお公園 a ic:施設型;
+park_resource:六浦あさがお公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7155"
@@ -416,7 +417,7 @@ park_resource:六浦あさがお公園 a ic:施設型;
      ic:緯度 "35.318939"
    ] .
 
-park_resource:六浦あざみ公園 a ic:施設型;
+park_resource:六浦あざみ公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7156"
@@ -439,7 +440,7 @@ park_resource:六浦あざみ公園 a ic:施設型;
      ic:緯度 "35.317101"
    ] .
 
-park_resource:六浦しらゆり公園 a ic:施設型;
+park_resource:六浦しらゆり公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7161"
@@ -462,7 +463,7 @@ park_resource:六浦しらゆり公園 a ic:施設型;
      ic:緯度 "35.317062"
    ] .
 
-park_resource:六浦ひなぎく公園 a ic:施設型;
+park_resource:六浦ひなぎく公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7177"
@@ -485,7 +486,7 @@ park_resource:六浦ひなぎく公園 a ic:施設型;
      ic:緯度 "35.316376"
    ] .
 
-park_resource:六浦ひまわり公園 a ic:施設型;
+park_resource:六浦ひまわり公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7178"
@@ -508,7 +509,7 @@ park_resource:六浦ひまわり公園 a ic:施設型;
      ic:緯度 "35.316132"
    ] .
 
-park_resource:六浦三艘第一公園 a ic:施設型;
+park_resource:六浦三艘第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7158"
@@ -531,7 +532,7 @@ park_resource:六浦三艘第一公園 a ic:施設型;
      ic:緯度 "35.321293"
    ] .
 
-park_resource:六浦三艘第二公園 a ic:施設型;
+park_resource:六浦三艘第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7159"
@@ -554,7 +555,7 @@ park_resource:六浦三艘第二公園 a ic:施設型;
      ic:緯度 "35.317043"
    ] .
 
-park_resource:六浦二丁目第一公園 a ic:施設型;
+park_resource:六浦二丁目第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7152"
@@ -577,7 +578,7 @@ park_resource:六浦二丁目第一公園 a ic:施設型;
      ic:緯度 "35.329231"
    ] .
 
-park_resource:六浦二丁目第三公園 a ic:施設型;
+park_resource:六浦二丁目第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7154"
@@ -600,7 +601,7 @@ park_resource:六浦二丁目第三公園 a ic:施設型;
      ic:緯度 "35.329296"
    ] .
 
-park_resource:六浦二丁目第二公園 a ic:施設型;
+park_resource:六浦二丁目第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7153"
@@ -623,7 +624,7 @@ park_resource:六浦二丁目第二公園 a ic:施設型;
      ic:緯度 "35.328728"
    ] .
 
-park_resource:六浦五丁目公園 a ic:施設型;
+park_resource:六浦五丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7188"
@@ -646,7 +647,7 @@ park_resource:六浦五丁目公園 a ic:施設型;
      ic:緯度 "35.344311"
    ] .
 
-park_resource:六浦公園 a ic:施設型;
+park_resource:六浦公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7157"
@@ -669,7 +670,7 @@ park_resource:六浦公園 a ic:施設型;
      ic:緯度 "35.327026"
    ] .
 
-park_resource:六浦南公園 a ic:施設型;
+park_resource:六浦南公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7179"
@@ -692,7 +693,7 @@ park_resource:六浦南公園 a ic:施設型;
      ic:緯度 "35.322601"
    ] .
 
-park_resource:六浦大道公園 a ic:施設型;
+park_resource:六浦大道公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7023"
@@ -715,7 +716,7 @@ park_resource:六浦大道公園 a ic:施設型;
      ic:緯度 "35.32534"
    ] .
 
-park_resource:六浦瀬ケ崎公園 a ic:施設型;
+park_resource:六浦瀬ケ崎公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7162"
@@ -738,7 +739,7 @@ park_resource:六浦瀬ケ崎公園 a ic:施設型;
      ic:緯度 "35.319481"
    ] .
 
-park_resource:六浦瀬ケ崎第二公園 a ic:施設型;
+park_resource:六浦瀬ケ崎第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7163"
@@ -761,7 +762,7 @@ park_resource:六浦瀬ケ崎第二公園 a ic:施設型;
      ic:緯度 "35.321239"
    ] .
 
-park_resource:六浦瀬戸公園 a ic:施設型;
+park_resource:六浦瀬戸公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7164"
@@ -784,7 +785,7 @@ park_resource:六浦瀬戸公園 a ic:施設型;
      ic:緯度 "35.329281"
    ] .
 
-park_resource:六浦白梅公園 a ic:施設型;
+park_resource:六浦白梅公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7160"
@@ -807,7 +808,7 @@ park_resource:六浦白梅公園 a ic:施設型;
      ic:緯度 "35.325401"
    ] .
 
-park_resource:六浦第七公園 a ic:施設型;
+park_resource:六浦第七公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7170"
@@ -830,7 +831,7 @@ park_resource:六浦第七公園 a ic:施設型;
      ic:緯度 "35.330635"
    ] .
 
-park_resource:六浦第三公園 a ic:施設型;
+park_resource:六浦第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7166"
@@ -853,7 +854,7 @@ park_resource:六浦第三公園 a ic:施設型;
      ic:緯度 "35.329533"
    ] .
 
-park_resource:六浦第二公園 a ic:施設型;
+park_resource:六浦第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7165"
@@ -876,7 +877,7 @@ park_resource:六浦第二公園 a ic:施設型;
      ic:緯度 "35.329868"
    ] .
 
-park_resource:六浦第五公園 a ic:施設型;
+park_resource:六浦第五公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7168"
@@ -899,7 +900,7 @@ park_resource:六浦第五公園 a ic:施設型;
      ic:緯度 "35.328163"
    ] .
 
-park_resource:六浦第六公園 a ic:施設型;
+park_resource:六浦第六公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7169"
@@ -922,7 +923,7 @@ park_resource:六浦第六公園 a ic:施設型;
      ic:緯度 "35.330795"
    ] .
 
-park_resource:六浦第四公園 a ic:施設型;
+park_resource:六浦第四公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7167"
@@ -945,7 +946,7 @@ park_resource:六浦第四公園 a ic:施設型;
      ic:緯度 "35.332466"
    ] .
 
-park_resource:六浦西第一公園 a ic:施設型;
+park_resource:六浦西第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7171"
@@ -968,7 +969,7 @@ park_resource:六浦西第一公園 a ic:施設型;
      ic:緯度 "35.326771"
    ] .
 
-park_resource:六浦西第三公園 a ic:施設型;
+park_resource:六浦西第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7173"
@@ -991,7 +992,7 @@ park_resource:六浦西第三公園 a ic:施設型;
      ic:緯度 "35.321621"
    ] .
 
-park_resource:六浦西第二公園 a ic:施設型;
+park_resource:六浦西第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7172"
@@ -1014,7 +1015,7 @@ park_resource:六浦西第二公園 a ic:施設型;
      ic:緯度 "35.323841"
    ] .
 
-park_resource:六浦西第五公園 a ic:施設型;
+park_resource:六浦西第五公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7175"
@@ -1037,7 +1038,7 @@ park_resource:六浦西第五公園 a ic:施設型;
      ic:緯度 "35.322182"
    ] .
 
-park_resource:六浦西第六公園 a ic:施設型;
+park_resource:六浦西第六公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7176"
@@ -1060,7 +1061,7 @@ park_resource:六浦西第六公園 a ic:施設型;
      ic:緯度 "35.324181"
    ] .
 
-park_resource:六浦西第四公園 a ic:施設型;
+park_resource:六浦西第四公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7174"
@@ -1083,7 +1084,7 @@ park_resource:六浦西第四公園 a ic:施設型;
      ic:緯度 "35.323338"
    ] .
 
-park_resource:六浦谷戸田公園 a ic:施設型;
+park_resource:六浦谷戸田公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7180"
@@ -1106,7 +1107,7 @@ park_resource:六浦谷戸田公園 a ic:施設型;
      ic:緯度 "35.318642"
    ] .
 
-park_resource:北之門公園 a ic:施設型;
+park_resource:北之門公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7056"
@@ -1129,7 +1130,7 @@ park_resource:北之門公園 a ic:施設型;
      ic:緯度 "35.346375"
    ] .
 
-park_resource:北谷公園 a ic:施設型;
+park_resource:北谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7057"
@@ -1152,7 +1153,7 @@ park_resource:北谷公園 a ic:施設型;
      ic:緯度 "35.348118"
    ] .
 
-park_resource:南丸公園 a ic:施設型;
+park_resource:南丸公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7150"
@@ -1175,7 +1176,7 @@ park_resource:南丸公園 a ic:施設型;
      ic:緯度 "35.336342"
    ] .
 
-park_resource:南川こども公園 a ic:施設型;
+park_resource:南川こども公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7148"
@@ -1198,7 +1199,7 @@ park_resource:南川こども公園 a ic:施設型;
      ic:緯度 "35.321526"
    ] .
 
-park_resource:南川公園 a ic:施設型;
+park_resource:南川公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7147"
@@ -1221,7 +1222,7 @@ park_resource:南川公園 a ic:施設型;
      ic:緯度 "35.321339"
    ] .
 
-park_resource:南川第二公園 a ic:施設型;
+park_resource:南川第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7149"
@@ -1244,7 +1245,7 @@ park_resource:南川第二公園 a ic:施設型;
      ic:緯度 "35.31889"
    ] .
 
-park_resource:城山台公園 a ic:施設型;
+park_resource:城山台公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7070"
@@ -1267,7 +1268,7 @@ park_resource:城山台公園 a ic:施設型;
      ic:緯度 "35.345024"
    ] .
 
-park_resource:堀口公園 a ic:施設型;
+park_resource:堀口公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7144"
@@ -1290,7 +1291,7 @@ park_resource:堀口公園 a ic:施設型;
      ic:緯度 "35.357738"
    ] .
 
-park_resource:堀口第三公園 a ic:施設型;
+park_resource:堀口第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7145"
@@ -1313,7 +1314,7 @@ park_resource:堀口第三公園 a ic:施設型;
      ic:緯度 "35.357719"
    ] .
 
-park_resource:堀口西公園 a ic:施設型;
+park_resource:堀口西公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7021"
@@ -1336,7 +1337,7 @@ park_resource:堀口西公園 a ic:施設型;
      ic:緯度 "35.357948"
    ] .
 
-park_resource:夏山東公園 a ic:施設型;
+park_resource:夏山東公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7112"
@@ -1359,7 +1360,7 @@ park_resource:夏山東公園 a ic:施設型;
      ic:緯度 "35.343624"
    ] .
 
-park_resource:夏山第一公園 a ic:施設型;
+park_resource:夏山第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7110"
@@ -1382,7 +1383,7 @@ park_resource:夏山第一公園 a ic:施設型;
      ic:緯度 "35.345039"
    ] .
 
-park_resource:夏山第二公園 a ic:施設型;
+park_resource:夏山第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7111"
@@ -1405,7 +1406,7 @@ park_resource:夏山第二公園 a ic:施設型;
      ic:緯度 "35.347401"
    ] .
 
-park_resource:大川公園 a ic:施設型;
+park_resource:大川公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7031"
@@ -1428,7 +1429,7 @@ park_resource:大川公園 a ic:施設型;
      ic:緯度 "35.340389"
    ] .
 
-park_resource:大道公園 a ic:施設型;
+park_resource:大道公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7077"
@@ -1451,7 +1452,7 @@ park_resource:大道公園 a ic:施設型;
      ic:緯度 "35.329582"
    ] .
 
-park_resource:奥座公園 a ic:施設型;
+park_resource:奥座公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7032"
@@ -1474,7 +1475,7 @@ park_resource:奥座公園 a ic:施設型;
      ic:緯度 "35.344437"
    ] .
 
-park_resource:姫の島公園 a ic:施設型;
+park_resource:姫の島公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7140"
@@ -1497,7 +1498,7 @@ park_resource:姫の島公園 a ic:施設型;
      ic:緯度 "35.334351"
    ] .
 
-park_resource:宮ノ前公園 a ic:施設型;
+park_resource:宮ノ前公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7151"
@@ -1520,7 +1521,7 @@ park_resource:宮ノ前公園 a ic:施設型;
      ic:緯度 "35.371037"
    ] .
 
-park_resource:富岡ひかりが丘公園 a ic:施設型;
+park_resource:富岡ひかりが丘公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7102"
@@ -1543,7 +1544,7 @@ park_resource:富岡ひかりが丘公園 a ic:施設型;
      ic:緯度 "35.365456"
    ] .
 
-park_resource:富岡並木ふなだまり公園 a ic:施設型;
+park_resource:富岡並木ふなだまり公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7001"
@@ -1566,7 +1567,7 @@ park_resource:富岡並木ふなだまり公園 a ic:施設型;
      ic:緯度 "35.366619"
    ] .
 
-park_resource:富岡八幡公園 a ic:施設型;
+park_resource:富岡八幡公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7010"
@@ -1589,7 +1590,7 @@ park_resource:富岡八幡公園 a ic:施設型;
      ic:緯度 "35.369736"
    ] .
 
-park_resource:富岡公園 a ic:施設型;
+park_resource:富岡公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7015"
@@ -1612,7 +1613,7 @@ park_resource:富岡公園 a ic:施設型;
      ic:緯度 "35.370506"
    ] .
 
-park_resource:富岡大谷公園 a ic:施設型;
+park_resource:富岡大谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7094"
@@ -1635,7 +1636,7 @@ park_resource:富岡大谷公園 a ic:施設型;
      ic:緯度 "35.369648"
    ] .
 
-park_resource:富岡大谷第二公園 a ic:施設型;
+park_resource:富岡大谷第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7095"
@@ -1658,7 +1659,7 @@ park_resource:富岡大谷第二公園 a ic:施設型;
      ic:緯度 "35.367428"
    ] .
 
-park_resource:富岡川せせらぎ緑道 a ic:施設型;
+park_resource:富岡川せせらぎ緑道 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7189"
@@ -1681,7 +1682,7 @@ park_resource:富岡川せせらぎ緑道 a ic:施設型;
      ic:緯度 "35.366271"
    ] .
 
-park_resource:富岡東一丁目公園 a ic:施設型;
+park_resource:富岡東一丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7101"
@@ -1704,7 +1705,7 @@ park_resource:富岡東一丁目公園 a ic:施設型;
      ic:緯度 "35.376266"
    ] .
 
-park_resource:富岡桜ヶ丘公園 a ic:施設型;
+park_resource:富岡桜ヶ丘公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7096"
@@ -1727,7 +1728,7 @@ park_resource:富岡桜ヶ丘公園 a ic:施設型;
      ic:緯度 "35.364719"
    ] .
 
-park_resource:富岡第七公園 a ic:施設型;
+park_resource:富岡第七公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7093"
@@ -1750,7 +1751,7 @@ park_resource:富岡第七公園 a ic:施設型;
      ic:緯度 "35.360062"
    ] .
 
-park_resource:富岡第三公園 a ic:施設型;
+park_resource:富岡第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7089"
@@ -1773,7 +1774,7 @@ park_resource:富岡第三公園 a ic:施設型;
      ic:緯度 "35.366791"
    ] .
 
-park_resource:富岡第二公園 a ic:施設型;
+park_resource:富岡第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7088"
@@ -1796,7 +1797,7 @@ park_resource:富岡第二公園 a ic:施設型;
      ic:緯度 "35.364887"
    ] .
 
-park_resource:富岡第五公園 a ic:施設型;
+park_resource:富岡第五公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7091"
@@ -1819,7 +1820,7 @@ park_resource:富岡第五公園 a ic:施設型;
      ic:緯度 "35.363029"
    ] .
 
-park_resource:富岡第六公園 a ic:施設型;
+park_resource:富岡第六公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7092"
@@ -1842,7 +1843,7 @@ park_resource:富岡第六公園 a ic:施設型;
      ic:緯度 "35.360199"
    ] .
 
-park_resource:富岡第四公園 a ic:施設型;
+park_resource:富岡第四公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7090"
@@ -1865,7 +1866,7 @@ park_resource:富岡第四公園 a ic:施設型;
      ic:緯度 "35.365799"
    ] .
 
-park_resource:富岡総合公園 a ic:施設型;
+park_resource:富岡総合公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7006"
@@ -1888,7 +1889,7 @@ park_resource:富岡総合公園 a ic:施設型;
      ic:緯度 "35.376331"
    ] .
 
-park_resource:富岡西ふれあいの辻公園 a ic:施設型;
+park_resource:富岡西ふれあいの辻公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7100"
@@ -1911,7 +1912,7 @@ park_resource:富岡西ふれあいの辻公園 a ic:施設型;
      ic:緯度 "35.370472"
    ] .
 
-park_resource:富岡西一丁目公園 a ic:施設型;
+park_resource:富岡西一丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7097"
@@ -1934,7 +1935,7 @@ park_resource:富岡西一丁目公園 a ic:施設型;
      ic:緯度 "35.369434"
    ] .
 
-park_resource:富岡西七丁目公園 a ic:施設型;
+park_resource:富岡西七丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7099"
@@ -1957,7 +1958,7 @@ park_resource:富岡西七丁目公園 a ic:施設型;
      ic:緯度 "35.365597"
    ] .
 
-park_resource:富岡西三丁目公園 a ic:施設型;
+park_resource:富岡西三丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7098"
@@ -1980,7 +1981,7 @@ park_resource:富岡西三丁目公園 a ic:施設型;
      ic:緯度 "35.368763"
    ] .
 
-park_resource:富岡西公園 a ic:施設型;
+park_resource:富岡西公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7009"
@@ -2003,7 +2004,7 @@ park_resource:富岡西公園 a ic:施設型;
      ic:緯度 "35.36364"
    ] .
 
-park_resource:寺前さざなみ公園 a ic:施設型;
+park_resource:寺前さざなみ公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7085"
@@ -2026,7 +2027,7 @@ park_resource:寺前さざなみ公園 a ic:施設型;
      ic:緯度 "35.337536"
    ] .
 
-park_resource:寺前町公園 a ic:施設型;
+park_resource:寺前町公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7086"
@@ -2049,7 +2050,7 @@ park_resource:寺前町公園 a ic:施設型;
      ic:緯度 "35.340611"
    ] .
 
-park_resource:小柴浜公園 a ic:施設型;
+park_resource:小柴浜公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7058"
@@ -2072,7 +2073,7 @@ park_resource:小柴浜公園 a ic:施設型;
      ic:緯度 "35.3456"
    ] .
 
-park_resource:小浜公園 a ic:施設型;
+park_resource:小浜公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7059"
@@ -2095,7 +2096,7 @@ park_resource:小浜公園 a ic:施設型;
      ic:緯度 "35.37648"
    ] .
 
-park_resource:干網公園 a ic:施設型;
+park_resource:干網公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7143"
@@ -2118,7 +2119,7 @@ park_resource:干網公園 a ic:施設型;
      ic:緯度 "35.363907"
    ] .
 
-park_resource:平潟公園 a ic:施設型;
+park_resource:平潟公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7141"
@@ -2141,7 +2142,7 @@ park_resource:平潟公園 a ic:施設型;
      ic:緯度 "35.333206"
    ] .
 
-park_resource:方丈公園 a ic:施設型;
+park_resource:方丈公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7142"
@@ -2164,7 +2165,7 @@ park_resource:方丈公園 a ic:施設型;
      ic:緯度 "35.33839"
    ] .
 
-park_resource:朝比奈町公園 a ic:施設型;
+park_resource:朝比奈町公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7027"
@@ -2187,7 +2188,7 @@ park_resource:朝比奈町公園 a ic:施設型;
      ic:緯度 "35.325802"
    ] .
 
-park_resource:杉の崎公園 a ic:施設型;
+park_resource:杉の崎公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7071"
@@ -2210,7 +2211,7 @@ park_resource:杉の崎公園 a ic:施設型;
      ic:緯度 "35.3283"
    ] .
 
-park_resource:東富岡公園 a ic:施設型;
+park_resource:東富岡公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7138"
@@ -2233,7 +2234,7 @@ park_resource:東富岡公園 a ic:施設型;
      ic:緯度 "35.365639"
    ] .
 
-park_resource:東朝比奈ふれあい公園 a ic:施設型;
+park_resource:東朝比奈ふれあい公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7137"
@@ -2256,7 +2257,7 @@ park_resource:東朝比奈ふれあい公園 a ic:施設型;
      ic:緯度 "35.322117"
    ] .
 
-park_resource:東朝比奈三丁目公園 a ic:施設型;
+park_resource:東朝比奈三丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7135"
@@ -2279,7 +2280,7 @@ park_resource:東朝比奈三丁目公園 a ic:施設型;
      ic:緯度 "35.326626"
    ] .
 
-park_resource:東朝比奈地蔵前公園 a ic:施設型;
+park_resource:東朝比奈地蔵前公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7136"
@@ -2302,7 +2303,7 @@ park_resource:東朝比奈地蔵前公園 a ic:施設型;
      ic:緯度 "35.32803"
    ] .
 
-park_resource:東浜公園 a ic:施設型;
+park_resource:東浜公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7139"
@@ -2325,7 +2326,7 @@ park_resource:東浜公園 a ic:施設型;
      ic:緯度 "35.373745"
    ] .
 
-park_resource:柳町公園 a ic:施設型;
+park_resource:柳町公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7187"
@@ -2348,7 +2349,7 @@ park_resource:柳町公園 a ic:施設型;
      ic:緯度 "35.324459"
    ] .
 
-park_resource:柴仲町公園 a ic:施設型;
+park_resource:柴仲町公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7067"
@@ -2371,7 +2372,7 @@ park_resource:柴仲町公園 a ic:施設型;
      ic:緯度 "35.346149"
    ] .
 
-park_resource:柴町公園 a ic:施設型;
+park_resource:柴町公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7066"
@@ -2394,7 +2395,7 @@ park_resource:柴町公園 a ic:施設型;
      ic:緯度 "35.343082"
    ] .
 
-park_resource:沢木谷公園 a ic:施設型;
+park_resource:沢木谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7061"
@@ -2417,7 +2418,7 @@ park_resource:沢木谷公園 a ic:施設型;
      ic:緯度 "35.337399"
    ] .
 
-park_resource:沢木谷第三公園 a ic:施設型;
+park_resource:沢木谷第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7063"
@@ -2440,7 +2441,7 @@ park_resource:沢木谷第三公園 a ic:施設型;
      ic:緯度 "35.338333"
    ] .
 
-park_resource:沢木谷第二公園 a ic:施設型;
+park_resource:沢木谷第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7062"
@@ -2463,7 +2464,7 @@ park_resource:沢木谷第二公園 a ic:施設型;
      ic:緯度 "35.338982"
    ] .
 
-park_resource:沢木谷第四公園 a ic:施設型;
+park_resource:沢木谷第四公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7064"
@@ -2486,7 +2487,7 @@ park_resource:沢木谷第四公園 a ic:施設型;
      ic:緯度 "35.336891"
    ] .
 
-park_resource:泥亀一丁目公園 a ic:施設型;
+park_resource:泥亀一丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7083"
@@ -2509,7 +2510,7 @@ park_resource:泥亀一丁目公園 a ic:施設型;
      ic:緯度 "35.333988"
    ] .
 
-park_resource:泥亀公園 a ic:施設型;
+park_resource:泥亀公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7084"
@@ -2532,7 +2533,7 @@ park_resource:泥亀公園 a ic:施設型;
      ic:緯度 "35.338127"
    ] .
 
-park_resource:洲崎公園 a ic:施設型;
+park_resource:洲崎公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7072"
@@ -2555,7 +2556,7 @@ park_resource:洲崎公園 a ic:施設型;
      ic:緯度 "35.331059"
    ] .
 
-park_resource:海の公園 a ic:施設型;
+park_resource:海の公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7005"
@@ -2578,7 +2579,7 @@ park_resource:海の公園 a ic:施設型;
      ic:緯度 "35.339546"
    ] .
 
-park_resource:潮通り公園 a ic:施設型;
+park_resource:潮通り公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7065"
@@ -2601,7 +2602,7 @@ park_resource:潮通り公園 a ic:施設型;
      ic:緯度 "35.366493"
    ] .
 
-park_resource:瀬ケ崎台公園 a ic:施設型;
+park_resource:瀬ケ崎台公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7073"
@@ -2624,7 +2625,7 @@ park_resource:瀬ケ崎台公園 a ic:施設型;
      ic:緯度 "35.31879"
    ] .
 
-park_resource:片吹公園 a ic:施設型;
+park_resource:片吹公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7037"
@@ -2647,7 +2648,7 @@ park_resource:片吹公園 a ic:施設型;
      ic:緯度 "35.351105"
    ] .
 
-park_resource:片吹第二公園 a ic:施設型;
+park_resource:片吹第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7038"
@@ -2670,7 +2671,7 @@ park_resource:片吹第二公園 a ic:施設型;
      ic:緯度 "35.352238"
    ] .
 
-park_resource:牡蠣根公園 a ic:施設型;
+park_resource:牡蠣根公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7035"
@@ -2693,7 +2694,7 @@ park_resource:牡蠣根公園 a ic:施設型;
      ic:緯度 "35.373901"
    ] .
 
-park_resource:白山道公園 a ic:施設型;
+park_resource:白山道公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7128"
@@ -2716,7 +2717,7 @@ park_resource:白山道公園 a ic:施設型;
      ic:緯度 "35.335716"
    ] .
 
-park_resource:白山道六郎ヶ谷公園 a ic:施設型;
+park_resource:白山道六郎ヶ谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7130"
@@ -2739,7 +2740,7 @@ park_resource:白山道六郎ヶ谷公園 a ic:施設型;
      ic:緯度 "35.335724"
    ] .
 
-park_resource:白山道奥公園 a ic:施設型;
+park_resource:白山道奥公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7020"
@@ -2762,7 +2763,7 @@ park_resource:白山道奥公園 a ic:施設型;
      ic:緯度 "35.334816"
    ] .
 
-park_resource:白山道第二公園 a ic:施設型;
+park_resource:白山道第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7129"
@@ -2785,7 +2786,7 @@ park_resource:白山道第二公園 a ic:施設型;
      ic:緯度 "35.334606"
    ] .
 
-park_resource:称名寺東公園 a ic:施設型;
+park_resource:称名寺東公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7069"
@@ -2808,7 +2809,7 @@ park_resource:称名寺東公園 a ic:施設型;
      ic:緯度 "35.346401"
    ] .
 
-park_resource:能見台あきにれ公園 a ic:施設型;
+park_resource:能見台あきにれ公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7121"
@@ -2831,7 +2832,7 @@ park_resource:能見台あきにれ公園 a ic:施設型;
      ic:緯度 "35.349819"
    ] .
 
-park_resource:能見台中央公園 a ic:施設型;
+park_resource:能見台中央公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7017"
@@ -2854,7 +2855,7 @@ park_resource:能見台中央公園 a ic:施設型;
      ic:緯度 "35.356651"
    ] .
 
-park_resource:能見台北公園 a ic:施設型;
+park_resource:能見台北公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7016"
@@ -2877,7 +2878,7 @@ park_resource:能見台北公園 a ic:施設型;
      ic:緯度 "35.360687"
    ] .
 
-park_resource:能見台千丈公園 a ic:施設型;
+park_resource:能見台千丈公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7123"
@@ -2900,7 +2901,7 @@ park_resource:能見台千丈公園 a ic:施設型;
      ic:緯度 "35.359367"
    ] .
 
-park_resource:能見台堀口北公園 a ic:施設型;
+park_resource:能見台堀口北公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7019"
@@ -2923,7 +2924,7 @@ park_resource:能見台堀口北公園 a ic:施設型;
      ic:緯度 "35.359898"
    ] .
 
-park_resource:能見台平原公園 a ic:施設型;
+park_resource:能見台平原公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7126"
@@ -2946,7 +2947,7 @@ park_resource:能見台平原公園 a ic:施設型;
      ic:緯度 "35.35881"
    ] .
 
-park_resource:能見台東公園 a ic:施設型;
+park_resource:能見台東公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7018"
@@ -2969,7 +2970,7 @@ park_resource:能見台東公園 a ic:施設型;
      ic:緯度 "35.354198"
    ] .
 
-park_resource:能見台清水ヶ入公園 a ic:施設型;
+park_resource:能見台清水ヶ入公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7122"
@@ -2992,7 +2993,7 @@ park_resource:能見台清水ヶ入公園 a ic:施設型;
      ic:緯度 "35.353828"
    ] .
 
-park_resource:能見台瀧公園 a ic:施設型;
+park_resource:能見台瀧公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7124"
@@ -3015,7 +3016,7 @@ park_resource:能見台瀧公園 a ic:施設型;
      ic:緯度 "35.353008"
    ] .
 
-park_resource:能見台野地久保公園 a ic:施設型;
+park_resource:能見台野地久保公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7125"
@@ -3038,7 +3039,7 @@ park_resource:能見台野地久保公園 a ic:施設型;
      ic:緯度 "35.357712"
    ] .
 
-park_resource:能見堂緑地 a ic:施設型;
+park_resource:能見堂緑地 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7002"
@@ -3061,7 +3062,7 @@ park_resource:能見堂緑地 a ic:施設型;
      ic:緯度 "35.351158"
    ] .
 
-park_resource:草舞台公園 a ic:施設型;
+park_resource:草舞台公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7014"
@@ -3084,7 +3085,7 @@ park_resource:草舞台公園 a ic:施設型;
      ic:緯度 "35.340729"
    ] .
 
-park_resource:西柴一丁目公園 a ic:施設型;
+park_resource:西柴一丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7119"
@@ -3107,7 +3108,7 @@ park_resource:西柴一丁目公園 a ic:施設型;
      ic:緯度 "35.350746"
    ] .
 
-park_resource:西柴台公園 a ic:施設型;
+park_resource:西柴台公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7120"
@@ -3130,7 +3131,7 @@ park_resource:西柴台公園 a ic:施設型;
      ic:緯度 "35.352192"
    ] .
 
-park_resource:西柴第一公園 a ic:施設型;
+park_resource:西柴第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7114"
@@ -3153,7 +3154,7 @@ park_resource:西柴第一公園 a ic:施設型;
      ic:緯度 "35.34951"
    ] .
 
-park_resource:西柴第三公園 a ic:施設型;
+park_resource:西柴第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7116"
@@ -3176,7 +3177,7 @@ park_resource:西柴第三公園 a ic:施設型;
      ic:緯度 "35.349407"
    ] .
 
-park_resource:西柴第二公園 a ic:施設型;
+park_resource:西柴第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7115"
@@ -3199,7 +3200,7 @@ park_resource:西柴第二公園 a ic:施設型;
      ic:緯度 "35.353306"
    ] .
 
-park_resource:西柴第五公園 a ic:施設型;
+park_resource:西柴第五公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7118"
@@ -3222,7 +3223,7 @@ park_resource:西柴第五公園 a ic:施設型;
      ic:緯度 "35.351536"
    ] .
 
-park_resource:西柴第四公園 a ic:施設型;
+park_resource:西柴第四公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7117"
@@ -3245,7 +3246,7 @@ park_resource:西柴第四公園 a ic:施設型;
      ic:緯度 "35.350399"
    ] .
 
-park_resource:谷津公園 a ic:施設型;
+park_resource:谷津公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7181"
@@ -3268,7 +3269,7 @@ park_resource:谷津公園 a ic:施設型;
      ic:緯度 "35.342091"
    ] .
 
-park_resource:谷津坂南公園 a ic:施設型;
+park_resource:谷津坂南公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7185"
@@ -3291,7 +3292,7 @@ park_resource:谷津坂南公園 a ic:施設型;
      ic:緯度 "35.356621"
    ] .
 
-park_resource:谷津坂第一公園 a ic:施設型;
+park_resource:谷津坂第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7182"
@@ -3314,7 +3315,7 @@ park_resource:谷津坂第一公園 a ic:施設型;
      ic:緯度 "35.361622"
    ] .
 
-park_resource:谷津坂第三公園 a ic:施設型;
+park_resource:谷津坂第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7184"
@@ -3337,7 +3338,7 @@ park_resource:谷津坂第三公園 a ic:施設型;
      ic:緯度 "35.363129"
    ] .
 
-park_resource:谷津坂第二公園 a ic:施設型;
+park_resource:谷津坂第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7183"
@@ -3360,7 +3361,7 @@ park_resource:谷津坂第二公園 a ic:施設型;
      ic:緯度 "35.361809"
    ] .
 
-park_resource:谷津染井公園 a ic:施設型;
+park_resource:谷津染井公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7186"
@@ -3383,7 +3384,7 @@ park_resource:谷津染井公園 a ic:施設型;
      ic:緯度 "35.346355"
    ] .
 
-park_resource:赤井谷公園 a ic:施設型;
+park_resource:赤井谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7024"
@@ -3406,7 +3407,7 @@ park_resource:赤井谷公園 a ic:施設型;
      ic:緯度 "35.347878"
    ] .
 
-park_resource:赤井谷第三公園 a ic:施設型;
+park_resource:赤井谷第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7026"
@@ -3429,7 +3430,7 @@ park_resource:赤井谷第三公園 a ic:施設型;
      ic:緯度 "35.348896"
    ] .
 
-park_resource:赤井谷第二公園 a ic:施設型;
+park_resource:赤井谷第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7025"
@@ -3452,7 +3453,7 @@ park_resource:赤井谷第二公園 a ic:施設型;
      ic:緯度 "35.350513"
    ] .
 
-park_resource:走川公園 a ic:施設型;
+park_resource:走川公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7131"
@@ -3475,7 +3476,7 @@ park_resource:走川公園 a ic:施設型;
      ic:緯度 "35.337318"
    ] .
 
-park_resource:野島公園 a ic:施設型;
+park_resource:野島公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7007"
@@ -3498,7 +3499,7 @@ park_resource:野島公園 a ic:施設型;
      ic:緯度 "35.327259"
    ] .
 
-park_resource:金沢町公園 a ic:施設型;
+park_resource:金沢町公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7039"
@@ -3521,7 +3522,7 @@ park_resource:金沢町公園 a ic:施設型;
      ic:緯度 "35.344101"
    ] .
 
-park_resource:金沢町第二公園 a ic:施設型;
+park_resource:金沢町第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7040"
@@ -3544,7 +3545,7 @@ park_resource:金沢町第二公園 a ic:施設型;
      ic:緯度 "35.342262"
    ] .
 
-park_resource:金沢自然公園 a ic:施設型;
+park_resource:金沢自然公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7003"
@@ -3567,7 +3568,7 @@ park_resource:金沢自然公園 a ic:施設型;
      ic:緯度 "35.351555"
    ] .
 
-park_resource:釜利谷ひろば公園 a ic:施設型;
+park_resource:釜利谷ひろば公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7012"
@@ -3590,7 +3591,7 @@ park_resource:釜利谷ひろば公園 a ic:施設型;
      ic:緯度 "35.354397"
    ] .
 
-park_resource:釜利谷わんぱく公園 a ic:施設型;
+park_resource:釜利谷わんぱく公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7054"
@@ -3613,7 +3614,7 @@ park_resource:釜利谷わんぱく公園 a ic:施設型;
      ic:緯度 "35.3466"
    ] .
 
-park_resource:釜利谷公園 a ic:施設型;
+park_resource:釜利谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7041"
@@ -3636,7 +3637,7 @@ park_resource:釜利谷公園 a ic:施設型;
      ic:緯度 "35.344807"
    ] .
 
-park_resource:釜利谷南二丁目公園 a ic:施設型;
+park_resource:釜利谷南二丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7053"
@@ -3659,7 +3660,7 @@ park_resource:釜利谷南二丁目公園 a ic:施設型;
      ic:緯度 "35.336731"
    ] .
 
-park_resource:釜利谷南公園 a ic:施設型;
+park_resource:釜利谷南公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7013"
@@ -3682,7 +3683,7 @@ park_resource:釜利谷南公園 a ic:施設型;
      ic:緯度 "35.33799"
    ] .
 
-park_resource:釜利谷坂本公園 a ic:施設型;
+park_resource:釜利谷坂本公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7048"
@@ -3705,7 +3706,7 @@ park_resource:釜利谷坂本公園 a ic:施設型;
      ic:緯度 "35.339352"
    ] .
 
-park_resource:釜利谷坂本第二公園 a ic:施設型;
+park_resource:釜利谷坂本第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7049"
@@ -3728,7 +3729,7 @@ park_resource:釜利谷坂本第二公園 a ic:施設型;
      ic:緯度 "35.340042"
    ] .
 
-park_resource:釜利谷宿公園 a ic:施設型;
+park_resource:釜利谷宿公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7050"
@@ -3751,7 +3752,7 @@ park_resource:釜利谷宿公園 a ic:施設型;
      ic:緯度 "35.344189"
    ] .
 
-park_resource:釜利谷東八丁目公園 a ic:施設型;
+park_resource:釜利谷東八丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7052"
@@ -3774,7 +3775,7 @@ park_resource:釜利谷東八丁目公園 a ic:施設型;
      ic:緯度 "35.34016"
    ] .
 
-park_resource:釜利谷柿の木公園 a ic:施設型;
+park_resource:釜利谷柿の木公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7047"
@@ -3797,7 +3798,7 @@ park_resource:釜利谷柿の木公園 a ic:施設型;
      ic:緯度 "35.34333"
    ] .
 
-park_resource:釜利谷町小川アメニティ a ic:施設型;
+park_resource:釜利谷町小川アメニティ a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7190"
@@ -3820,7 +3821,7 @@ park_resource:釜利谷町小川アメニティ a ic:施設型;
      ic:緯度 "35.342418"
    ] .
 
-park_resource:釜利谷第三公園 a ic:施設型;
+park_resource:釜利谷第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7043"
@@ -3843,7 +3844,7 @@ park_resource:釜利谷第三公園 a ic:施設型;
      ic:緯度 "35.342552"
    ] .
 
-park_resource:釜利谷第二公園 a ic:施設型;
+park_resource:釜利谷第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7042"
@@ -3866,7 +3867,7 @@ park_resource:釜利谷第二公園 a ic:施設型;
      ic:緯度 "35.342232"
    ] .
 
-park_resource:釜利谷第五公園 a ic:施設型;
+park_resource:釜利谷第五公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7045"
@@ -3889,7 +3890,7 @@ park_resource:釜利谷第五公園 a ic:施設型;
      ic:緯度 "35.344776"
    ] .
 
-park_resource:釜利谷第四公園 a ic:施設型;
+park_resource:釜利谷第四公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7044"
@@ -3912,7 +3913,7 @@ park_resource:釜利谷第四公園 a ic:施設型;
      ic:緯度 "35.34296"
    ] .
 
-park_resource:釜利谷西一丁目公園 a ic:施設型;
+park_resource:釜利谷西一丁目公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7051"
@@ -3935,7 +3936,7 @@ park_resource:釜利谷西一丁目公園 a ic:施設型;
      ic:緯度 "35.343346"
    ] .
 
-park_resource:釜利谷赤坂公園 a ic:施設型;
+park_resource:釜利谷赤坂公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7046"
@@ -3958,7 +3959,7 @@ park_resource:釜利谷赤坂公園 a ic:施設型;
      ic:緯度 "35.349712"
    ] .
 
-park_resource:長浜みはらし公園 a ic:施設型;
+park_resource:長浜みはらし公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7108"
@@ -3981,7 +3982,7 @@ park_resource:長浜みはらし公園 a ic:施設型;
      ic:緯度 "35.358303"
    ] .
 
-park_resource:長浜公園 a ic:施設型;
+park_resource:長浜公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7008"
@@ -4004,7 +4005,7 @@ park_resource:長浜公園 a ic:施設型;
      ic:緯度 "35.361687"
    ] .
 
-park_resource:長浜第三公園 a ic:施設型;
+park_resource:長浜第三公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7107"
@@ -4027,7 +4028,7 @@ park_resource:長浜第三公園 a ic:施設型;
      ic:緯度 "35.35947"
    ] .
 
-park_resource:長浜第二公園 a ic:施設型;
+park_resource:長浜第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7106"
@@ -4050,7 +4051,7 @@ park_resource:長浜第二公園 a ic:施設型;
      ic:緯度 "35.356651"
    ] .
 
-park_resource:長浜野口記念公園 a ic:施設型;
+park_resource:長浜野口記念公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7004"
@@ -4073,7 +4074,7 @@ park_resource:長浜野口記念公園 a ic:施設型;
      ic:緯度 "35.357452"
    ] .
 
-park_resource:関ヶ谷の辻公園 a ic:施設型;
+park_resource:関ヶ谷の辻公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7076"
@@ -4096,7 +4097,7 @@ park_resource:関ヶ谷の辻公園 a ic:施設型;
      ic:緯度 "35.340431"
    ] .
 
-park_resource:関ヶ谷公園 a ic:施設型;
+park_resource:関ヶ谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7074"
@@ -4119,7 +4120,7 @@ park_resource:関ヶ谷公園 a ic:施設型;
      ic:緯度 "35.34507"
    ] .
 
-park_resource:関ヶ谷第二公園 a ic:施設型;
+park_resource:関ヶ谷第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7075"
@@ -4142,7 +4143,7 @@ park_resource:関ヶ谷第二公園 a ic:施設型;
      ic:緯度 "35.34465"
    ] .
 
-park_resource:阿王ケ台公園 a ic:施設型;
+park_resource:阿王ケ台公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7011"
@@ -4165,7 +4166,7 @@ park_resource:阿王ケ台公園 a ic:施設型;
      ic:緯度 "35.352421"
    ] .
 
-park_resource:高宗台公園 a ic:施設型;
+park_resource:高宗台公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7080"
@@ -4188,7 +4189,7 @@ park_resource:高宗台公園 a ic:施設型;
      ic:緯度 "35.33102"
    ] .
 
-park_resource:高舟台第一公園 a ic:施設型;
+park_resource:高舟台第一公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7078"
@@ -4211,7 +4212,7 @@ park_resource:高舟台第一公園 a ic:施設型;
      ic:緯度 "35.331791"
    ] .
 
-park_resource:高舟台第二公園 a ic:施設型;
+park_resource:高舟台第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7079"
@@ -4234,7 +4235,7 @@ park_resource:高舟台第二公園 a ic:施設型;
      ic:緯度 "35.331844"
    ] .
 
-park_resource:高谷公園 a ic:施設型;
+park_resource:高谷公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7081"
@@ -4257,7 +4258,7 @@ park_resource:高谷公園 a ic:施設型;
      ic:緯度 "35.320412"
    ] .
 
-park_resource:高谷第二公園 a ic:施設型;
+park_resource:高谷第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7082"
@@ -4280,7 +4281,7 @@ park_resource:高谷第二公園 a ic:施設型;
      ic:緯度 "35.318642"
    ] .
 
-park_resource:鳥浜公園 a ic:施設型;
+park_resource:鳥浜公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7103"
@@ -4303,7 +4304,7 @@ park_resource:鳥浜公園 a ic:施設型;
      ic:緯度 "35.379894"
    ] .
 
-park_resource:鳥見ヶ丘公園 a ic:施設型;
+park_resource:鳥見ヶ丘公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7104"
@@ -4326,7 +4327,7 @@ park_resource:鳥見ヶ丘公園 a ic:施設型;
      ic:緯度 "35.374752"
    ] .
 
-park_resource:鳥見ヶ丘第二公園 a ic:施設型;
+park_resource:鳥見ヶ丘第二公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7105"
@@ -4349,7 +4350,7 @@ park_resource:鳥見ヶ丘第二公園 a ic:施設型;
      ic:緯度 "35.373051"
    ] .
 
-park_resource:鳶埼公園 a ic:施設型;
+park_resource:鳶埼公園 a park:公園型;
    ic:ID [
      a ic:ID型;
      ic:識別値 "P7087"

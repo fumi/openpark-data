@@ -61,7 +61,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     turtle = "<#{park_uri}> ic:種別 \"#{row[2]}\"@ja ;
         ic:設備 <#{equipment_uri}> .
 "
-    turtle << "<#{equipment_uri}> a ic:設備型 ;
+    turtle << "<#{equipment_uri}> a park:遊具型 ;
         ic:ID [ a ic:ID型 ;
           ic:識別値 \"#{id.to_s}\"
         ] ;
@@ -75,7 +75,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     turtle << "        park:年齢上限 \"#{upper_age_limit}\"^^xsd:integer ;\n" if upper_age_limit
     turtle << "        park:数量 \"#{row[6]}\"^^xsd:integer ;\n" if row[6]
     turtle << "        park:仕様・規格 \"#{row[5]}\"@ja ;\n" if row[5]
-    turtle << "        park:種別 \"#{row[4]}\"@ja .\n\n"
+    turtle << "        ic:種別 \"#{row[4]}\"@ja .\n\n"
 
     graph = RDF::Graph.new
     graph.from_ttl(turtle, :prefixes => PREFIXES)

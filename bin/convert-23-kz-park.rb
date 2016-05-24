@@ -36,7 +36,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
       next
     end
     graph = RDF::Graph.new
-    graph.from_ttl("park_resource:#{row[1]} a ic:施設型 ;
+    graph.from_ttl("park_resource:#{row[1]} a park:公園型 ;
                       ic:ID [ a ic:ID型 ;
                         ic:識別値 \"#{row[0]}\" ;
                       ] ;
