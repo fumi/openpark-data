@@ -10,11 +10,11 @@
 @prefix park: <http://openpark.jp/ns/park#> .
 
 <http://openpark.jp/ns/park> a owl:Ontology ;
-  rdfs:label "Open Park語彙"@ja, "Open Park Vocabulary"@en ;
+  rdfs:label "公園語彙"@ja, "Park Vocabulary"@en ;
   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
   dcterms:creator <http://fumi.me/foaf#me> ;
   dcterms:created "2016-05-24" ;
-  rdfs:comment "Open Park語彙は共通語彙基盤を拡張して公園のデータを記述するための語彙です。"@ja ;
+  rdfs:comment "公園語彙は共通語彙基盤 コア語彙を拡張して公園のデータを記述するための語彙です。"@ja ;
   owl:versionInfo "1.0" .
 
 park:公園型 a owl:Class ;
