@@ -6,9 +6,12 @@
 
 # Ignore bundler config.
 /.bundle
-/vender
+/vendor
 /bin/config.sh
 /data/config.sh
+/data/clean-logs.sh
+/data/http*
+/data/virtuoso*
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
