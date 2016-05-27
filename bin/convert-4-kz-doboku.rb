@@ -42,7 +42,7 @@ def to_western_year(year)
 end
 
 firstline = true
-id = 1
+id = 0
 
 RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
   CSV.foreach(INPUT_FILE) do |row|
@@ -50,11 +50,13 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
       firstline = false
       next
     end
+    id = id.succ
+    park_uri = row[11]
+    next unless park_uri
     lower_age_limit, upper_age_limit = row[9].split(/〜/) if row[9] and !row[9].empty?
     equipment_name = row[4].dup
     equipment_name << " - #{row[5]}" if row[5] and !row[5].empty?
     equipment_uri = EQUIPMENT_RESOURCE[id.to_s]
-    park_uri = PARK_RESOURCE[row[3]]
     park_concept = PARK[row[2]]
     equipment_concept = PARK[row[4]]
 
@@ -69,27 +71,44 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
           ic:表記 \"#{equipment_name}\"@ja
         ] ;
         ic:設置地点 <#{park_uri}> ;
-        ic:管理者 <#{ORGANIZATION_RESOURCE[row[0]]}> ;
+        ic:管理者 <#{row[12]}> ;
         ic:利用者 \"対象年齢: #{row[9]}\"@ja ;\n"
     turtle << "        park:年齢下限 \"#{lower_age_limit}\"^^xsd:integer ;\n" if lower_age_limit
     turtle << "        park:年齢上限 \"#{upper_age_limit}\"^^xsd:integer ;\n" if upper_age_limit
-    turtle << "        park:数量 \"#{row[6]}\"^^xsd:integer ;\n" if row[6]
+    if row[6]
+      turtle << "        park:設置数 [ a ic:数量型 ;"
+      turtle << "          ic:数値 \"#{row[6]}\"^^xsd:decimal ;\n"
+      turtle << "          ic:単位表記 \"#{row[7]}\" \n" if row[7]
+      turtle << "        ] ;\n"
+    end
     turtle << "        park:仕様・規格 \"#{row[5]}\"@ja ;\n" if row[5]
-    turtle << "        ic:種別 \"#{row[4]}\"@ja .\n\n"
+    turtle << "        park:種別 \"#{row[4]}\"@ja .\n\n"
 
     graph = RDF::Graph.new
     graph.from_ttl(turtle, :prefixes => PREFIXES)
     writer << graph
-    id = id.succ
   end
-  ["金沢土木事務所", "南部公園緑地事務所"].each do |name|
-    turtle = "<#{ORGANIZATION_RESOURCE[name]}> a ic:組織型 ;
+  turtle = """organization_resource:1 a ic:組織型 ;
+      ic:ID [ a ic:ID型 ;
+        ic:識別値 \"1\"
+      ] ;
       ic:名称 [ a ic:名称型 ;
-        ic:表記 \"#{name}\"@ja
+        ic:表記 \"南部公園緑地事務所\"@ja
+      ] ;
+      ic:連絡先 [ a ic:連絡先型 ;
+        ic:電話番号 \"045-831-8484\"
       ] .
-    "
-    graph = RDF::Graph.new
-    graph.from_ttl(turtle, :prefixes => PREFIXES)
-    writer << graph
-  end
+    organization_resource:2 a ic:組織型 ;
+      ic:ID [ a ic:ID型 ;
+        ic:識別値 \"2\"
+      ] ;
+      ic:名称 [ a ic:名称型 ;
+        ic:表記 \"金沢土木事務所\"@ja
+      ] ;
+      ic:連絡先 [ a ic:連絡先型 ;
+        ic:電話番号 \"045-831-8484\"
+      ] ."""
+  graph = RDF::Graph.new
+  graph.from_ttl(turtle, :prefixes => PREFIXES)
+  writer << graph
 end
