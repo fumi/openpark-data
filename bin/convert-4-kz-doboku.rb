@@ -60,10 +60,10 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     park_concept = PARK[row[2]]
     equipment_concept = PARK[row[4]]
 
-    turtle = "<#{park_uri}> ic:種別 \"#{row[2]}\"@ja ;
-        ic:設備 <#{equipment_uri}> .
-"
-    turtle << "<#{equipment_uri}> a park:遊具型 ;
+    turtle = """<#{park_uri}> ic:種別 \"#{row[2]}\"@ja ;
+        ic:設備 <#{equipment_uri}> ."""
+
+    turtle << """<#{equipment_uri}> a park:遊具型 ;
         ic:ID [ a ic:ID型 ;
           ic:識別値 \"#{id.to_s}\"
         ] ;
@@ -71,8 +71,9 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
           ic:表記 \"#{equipment_name}\"@ja
         ] ;
         ic:設置地点 <#{park_uri}> ;
-        ic:管理者 <#{row[12]}> ;
-        ic:利用者 \"対象年齢: #{row[9]}\"@ja ;\n"
+        ic:管理者 <#{row[12]}> ;"""
+
+    turtle << "       ic:利用者 \"対象年齢: #{row[9]}\"@ja ;\n" if row[9] && !row[9].empty?
     turtle << "        park:年齢下限 \"#{lower_age_limit}\"^^xsd:integer ;\n" if lower_age_limit
     turtle << "        park:年齢上限 \"#{upper_age_limit}\"^^xsd:integer ;\n" if upper_age_limit
     if row[6]
