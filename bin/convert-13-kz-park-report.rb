@@ -33,7 +33,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
       next
     end
     graph = RDF::Graph.new
-    graph.from_ttl("park_resource:#{row[1]} ic:説明 \"#{row[2]}\"@ja .", :prefixes => PREFIXES)
+    graph.from_ttl("park_resource:#{row[0]} ic:説明 \"#{row[2]}\"@ja .", :prefixes => PREFIXES)
 
     writer << graph
   end
