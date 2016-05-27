@@ -22,6 +22,12 @@ park:公園型 a owl:Class ;
   rdfs:comment "公園を表現するためのクラス用語"@ja, "A class term to express a park or a playground"@en ;
   rdfs:subClassOf ic:施設型 .
 
+park:面積 a owl:ObjectProperty ;
+  rdfs:label "面積"@ja, "Area"@en ;
+  rdfs:comment "面積を記述するためのプロパティ用語"@ja, "The textual expression of area."@en ;
+  schema:domainIncludes park:公園型 ;
+  rdfs:range ic:面積型 .
+
 park:遊具型 a owl:Class ;
   rdfs:label "遊具型"@ja, "Playground equipment"@en ;
   rdfs:comment "遊具を表現するためのクラス用語"@ja, "A class term to express playground equipment"@en ;
@@ -39,11 +45,11 @@ park:年齢下限 a owl:DatatypeProperty ;
   schema:domainIncludes park:遊具型 ;
   rdfs:range xsd:integer .
 
-park:数量 a owl:DatatypeProperty ;
-  rdfs:label "数量"@ja, "Quantity"@en ;
-  rdfs:comment "数量を記述するためのプロパティ用語"@ja, "The textual expression of quantity."@en ;
+park:設置数 a owl:ObjectProperty ;
+  rdfs:label "設置数"@ja, "Quantity"@en ;
+  rdfs:comment "設置数を記述するためのプロパティ用語"@ja, "The textual expression of the number of installed."@en ;
   schema:domainIncludes park:遊具型 ;
-  rdfs:range xsd:integer .
+  rdfs:range ic:数量型 .
 
 park:仕様・規格 a owl:DatatypeProperty ;
   rdfs:label "仕様・規格"@ja, "Specification / Standard"@en ;
