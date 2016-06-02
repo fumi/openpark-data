@@ -51,8 +51,8 @@ park:設置数 a owl:ObjectProperty ;
   schema:domainIncludes park:遊具型 ;
   rdfs:range ic:数量型 .
 
-park:仕様・規格 a owl:DatatypeProperty ;
-  rdfs:label "仕様・規格"@ja, "Specification / Standard"@en ;
+park:仕様規格 a owl:DatatypeProperty ;
+  rdfs:label "仕様規格"@ja, "Specification / Standard"@en ;
   rdfs:comment "仕様や規格を記述するためのプロパティ用語"@ja, "The textual expression of a specification or a standard."@en ;
   schema:domainIncludes park:遊具型 ;
   rdfs:range xsd:string .
