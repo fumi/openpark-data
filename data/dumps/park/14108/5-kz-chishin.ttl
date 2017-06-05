@@ -1,4 +1,4 @@
-@prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
+@prefix ic: <http://imi.go.jp/ns/core/rdf#> .
 @prefix park: <http://openpark.jp/ns/park#> .
 @prefix park_resource: <http://openpark.jp/parks/14108/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .

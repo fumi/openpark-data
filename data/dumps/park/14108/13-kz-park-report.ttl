@@ -1,4 +1,4 @@
-@prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
+@prefix ic: <http://imi.go.jp/ns/core/rdf#> .
 @prefix park_resource: <http://openpark.jp/parks/14108/> .
 
 park_resource:P7001 ic:説明 "湾のようになっている広場では鳥が気持ち良さそうに日向ぼっこ。広場をお散歩したり、走ってみたり、鳥を見ながら日向ぼっこをしたり、のんびり楽しめます。"@ja .

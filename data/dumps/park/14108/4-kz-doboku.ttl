@@ -1,5 +1,5 @@
 @prefix equipment_resource: <http://openpark.jp/equipment/14108/> .
-@prefix ic: <http://imi.ipa.go.jp/ns/core/rdf#> .
+@prefix ic: <http://imi.go.jp/ns/core/rdf#> .
 @prefix organization_resource: <http://openpark.jp/organizations/14108/> .
 @prefix park: <http://openpark.jp/ns/park#> .
 @prefix park_resource: <http://openpark.jp/parks/14108/> .
@@ -15677,40 +15677,40 @@ park_resource:P7013 ic:種別 "近隣公園"@ja;
      equipment_resource:642 .
 
 park_resource:P7020 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:681,
-     equipment_resource:680 .
+   ic:設備 equipment_resource:680,
+     equipment_resource:681 .
 
 park_resource:P7021 ic:種別 "近隣公園"@ja;
    ic:設備 equipment_resource:683,
      equipment_resource:682 .
 
 park_resource:P7053 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:118,
-     equipment_resource:117 .
+   ic:設備 equipment_resource:117,
+     equipment_resource:118 .
 
 park_resource:P7060 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:148,
      equipment_resource:149 .
 
 park_resource:P7112 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:355,
-     equipment_resource:356 .
+   ic:設備 equipment_resource:356,
+     equipment_resource:355 .
 
 park_resource:P7121 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:389,
      equipment_resource:388 .
 
 park_resource:P7129 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:409,
-     equipment_resource:408 .
+   ic:設備 equipment_resource:408,
+     equipment_resource:409 .
 
 park_resource:P7152 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:501,
-     equipment_resource:502 .
+   ic:設備 equipment_resource:502,
+     equipment_resource:501 .
 
 park_resource:P7163 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:542,
-     equipment_resource:543 .
+   ic:設備 equipment_resource:543,
+     equipment_resource:542 .
 
 park_resource:P7164 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:224,
@@ -15721,27 +15721,27 @@ park_resource:P7165 ic:種別 "街区公園"@ja;
      equipment_resource:545 .
 
 park_resource:P7170 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:554,
-     equipment_resource:555 .
+   ic:設備 equipment_resource:555,
+     equipment_resource:554 .
 
 park_resource:P7175 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:571,
-     equipment_resource:572 .
+   ic:設備 equipment_resource:572,
+     equipment_resource:571 .
 
 park_resource:P7009 ic:種別 "地区公園"@ja;
    ic:設備 equipment_resource:707,
-     equipment_resource:708,
-     equipment_resource:709 .
+     equipment_resource:709,
+     equipment_resource:708 .
 
 park_resource:P7016 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:656,
+   ic:設備 equipment_resource:658,
      equipment_resource:657,
-     equipment_resource:658 .
+     equipment_resource:656 .
 
 park_resource:P7018 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:672,
-     equipment_resource:670,
-     equipment_resource:671 .
+   ic:設備 equipment_resource:671,
+     equipment_resource:672,
+     equipment_resource:670 .
 
 park_resource:P7023 ic:種別 "近隣公園"@ja;
    ic:設備 equipment_resource:692,
@@ -15750,23 +15750,23 @@ park_resource:P7023 ic:種別 "近隣公園"@ja;
 
 park_resource:P7026 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:12,
-     equipment_resource:11,
-     equipment_resource:10 .
+     equipment_resource:10,
+     equipment_resource:11 .
 
 park_resource:P7029 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:20,
-     equipment_resource:21,
-     equipment_resource:22 .
+   ic:設備 equipment_resource:21,
+     equipment_resource:22,
+     equipment_resource:20 .
 
 park_resource:P7034 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:34,
-     equipment_resource:33,
-     equipment_resource:35 .
+   ic:設備 equipment_resource:33,
+     equipment_resource:35,
+     equipment_resource:34 .
 
 park_resource:P7038 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:42,
+   ic:設備 equipment_resource:41,
      equipment_resource:43,
-     equipment_resource:41 .
+     equipment_resource:42 .
 
 park_resource:P7041 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:60,
@@ -15779,54 +15779,54 @@ park_resource:P7044 ic:種別 "街区公園"@ja;
      equipment_resource:76 .
 
 park_resource:P7050 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:108,
-     equipment_resource:109,
-     equipment_resource:107 .
+   ic:設備 equipment_resource:107,
+     equipment_resource:108,
+     equipment_resource:109 .
 
 park_resource:P7052 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:116,
-     equipment_resource:115,
-     equipment_resource:114 .
+   ic:設備 equipment_resource:115,
+     equipment_resource:114,
+     equipment_resource:116 .
 
 park_resource:P7055 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:133,
-     equipment_resource:135,
+   ic:設備 equipment_resource:135,
+     equipment_resource:133,
      equipment_resource:134 .
 
 park_resource:P7057 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:145,
-     equipment_resource:147,
-     equipment_resource:146 .
+   ic:設備 equipment_resource:147,
+     equipment_resource:146,
+     equipment_resource:145 .
 
 park_resource:P7063 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:162,
-     equipment_resource:163,
+   ic:設備 equipment_resource:163,
+     equipment_resource:162,
      equipment_resource:164 .
 
 park_resource:P7065 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:170,
-     equipment_resource:171,
-     equipment_resource:169 .
+     equipment_resource:169,
+     equipment_resource:171 .
 
 park_resource:P7079 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:239,
-     equipment_resource:238,
+   ic:設備 equipment_resource:238,
+     equipment_resource:239,
      equipment_resource:237 .
 
 park_resource:P7080 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:240,
-     equipment_resource:242,
-     equipment_resource:241 .
+   ic:設備 equipment_resource:241,
+     equipment_resource:240,
+     equipment_resource:242 .
 
 park_resource:P7081 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:243,
-     equipment_resource:244,
-     equipment_resource:245 .
+   ic:設備 equipment_resource:245,
+     equipment_resource:243,
+     equipment_resource:244 .
 
 park_resource:P7082 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:246,
-     equipment_resource:247,
-     equipment_resource:248 .
+     equipment_resource:248,
+     equipment_resource:247 .
 
 park_resource:P7086 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:259,
@@ -15834,34 +15834,34 @@ park_resource:P7086 ic:種別 "街区公園"@ja;
      equipment_resource:260 .
 
 park_resource:P7087 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:263,
-     equipment_resource:261,
-     equipment_resource:262 .
+   ic:設備 equipment_resource:261,
+     equipment_resource:262,
+     equipment_resource:263 .
 
 park_resource:P7088 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:266,
-     equipment_resource:264,
-     equipment_resource:265 .
+     equipment_resource:265,
+     equipment_resource:264 .
 
 park_resource:P7090 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:274,
-     equipment_resource:276,
+   ic:設備 equipment_resource:276,
+     equipment_resource:274,
      equipment_resource:275 .
 
 park_resource:P7093 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:290,
-     equipment_resource:292,
+   ic:設備 equipment_resource:292,
+     equipment_resource:290,
      equipment_resource:291 .
 
 park_resource:P7094 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:293,
+   ic:設備 equipment_resource:295,
      equipment_resource:294,
-     equipment_resource:295 .
+     equipment_resource:293 .
 
 park_resource:P7099 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:311,
-     equipment_resource:313,
-     equipment_resource:312 .
+   ic:設備 equipment_resource:312,
+     equipment_resource:311,
+     equipment_resource:313 .
 
 park_resource:P7102 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:321,
@@ -15869,28 +15869,28 @@ park_resource:P7102 ic:種別 "街区公園"@ja;
      equipment_resource:319 .
 
 park_resource:P7107 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:334,
-     equipment_resource:332,
-     equipment_resource:333 .
+   ic:設備 equipment_resource:333,
+     equipment_resource:334,
+     equipment_resource:332 .
 
 park_resource:P7118 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:378,
-     equipment_resource:379,
-     equipment_resource:377 .
+     equipment_resource:377,
+     equipment_resource:379 .
 
 park_resource:P7122 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:390,
-     equipment_resource:391,
-     equipment_resource:392 .
+     equipment_resource:392,
+     equipment_resource:391 .
 
 park_resource:P7125 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:399,
-     equipment_resource:398,
-     equipment_resource:400 .
+   ic:設備 equipment_resource:398,
+     equipment_resource:400,
+     equipment_resource:399 .
 
 park_resource:P7128 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:407,
-     equipment_resource:406,
+   ic:設備 equipment_resource:406,
+     equipment_resource:407,
      equipment_resource:405 .
 
 park_resource:P7131 ic:種別 "街区公園"@ja;
@@ -15899,858 +15899,858 @@ park_resource:P7131 ic:種別 "街区公園"@ja;
      equipment_resource:412 .
 
 park_resource:P7135 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:435,
-     equipment_resource:434,
+   ic:設備 equipment_resource:434,
+     equipment_resource:435,
      equipment_resource:433 .
 
 park_resource:P7140 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:451,
-     equipment_resource:453,
+   ic:設備 equipment_resource:453,
+     equipment_resource:451,
      equipment_resource:452 .
 
 park_resource:P7142 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:463,
-     equipment_resource:465,
+   ic:設備 equipment_resource:465,
+     equipment_resource:463,
      equipment_resource:464 .
 
 park_resource:P7146 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:482,
-     equipment_resource:484,
-     equipment_resource:483 .
+     equipment_resource:483,
+     equipment_resource:484 .
 
 park_resource:P7147 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:487,
-     equipment_resource:485,
-     equipment_resource:486 .
+   ic:設備 equipment_resource:485,
+     equipment_resource:486,
+     equipment_resource:487 .
 
 park_resource:P7149 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:490,
-     equipment_resource:488,
+   ic:設備 equipment_resource:488,
+     equipment_resource:490,
      equipment_resource:489 .
 
 park_resource:P7151 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:500,
-     equipment_resource:498,
-     equipment_resource:499 .
+   ic:設備 equipment_resource:498,
+     equipment_resource:499,
+     equipment_resource:500 .
 
 park_resource:P7153 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:504,
-     equipment_resource:505,
-     equipment_resource:503 .
+   ic:設備 equipment_resource:505,
+     equipment_resource:503,
+     equipment_resource:504 .
 
 park_resource:P7155 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:511,
+   ic:設備 equipment_resource:510,
      equipment_resource:512,
-     equipment_resource:510 .
+     equipment_resource:511 .
 
 park_resource:P7156 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:513,
-     equipment_resource:515,
+   ic:設備 equipment_resource:515,
+     equipment_resource:513,
      equipment_resource:514 .
 
 park_resource:P7160 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:534,
-     equipment_resource:535,
-     equipment_resource:533 .
+     equipment_resource:533,
+     equipment_resource:535 .
 
 park_resource:P7169 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:552,
-     equipment_resource:553,
-     equipment_resource:551 .
+     equipment_resource:551,
+     equipment_resource:553 .
 
 park_resource:P7173 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:569,
-     equipment_resource:567,
-     equipment_resource:568 .
+   ic:設備 equipment_resource:567,
+     equipment_resource:568,
+     equipment_resource:569 .
 
 park_resource:P7176 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:573,
-     equipment_resource:574,
-     equipment_resource:575 .
+     equipment_resource:575,
+     equipment_resource:574 .
 
 park_resource:P7177 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:576,
-     equipment_resource:577,
-     equipment_resource:578 .
+     equipment_resource:578,
+     equipment_resource:577 .
 
 park_resource:P7180 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:587,
-     equipment_resource:588,
+   ic:設備 equipment_resource:588,
+     equipment_resource:587,
      equipment_resource:589 .
 
 park_resource:P7024 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:3,
+   ic:設備 equipment_resource:1,
+     equipment_resource:2,
      equipment_resource:4,
-     equipment_resource:1,
-     equipment_resource:2 .
+     equipment_resource:3 .
 
 park_resource:P7031 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:24,
      equipment_resource:23,
-     equipment_resource:25,
-     equipment_resource:26 .
+     equipment_resource:26,
+     equipment_resource:25 .
 
 park_resource:P7045 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:79,
-     equipment_resource:80,
+     equipment_resource:78,
      equipment_resource:77,
-     equipment_resource:78 .
+     equipment_resource:80 .
 
 park_resource:P7048 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:98,
-     equipment_resource:97,
+   ic:設備 equipment_resource:97,
      equipment_resource:100,
-     equipment_resource:99 .
+     equipment_resource:99,
+     equipment_resource:98 .
 
 park_resource:P7051 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:112,
-     equipment_resource:110,
-     equipment_resource:113,
-     equipment_resource:111 .
+   ic:設備 equipment_resource:110,
+     equipment_resource:111,
+     equipment_resource:112,
+     equipment_resource:113 .
 
 park_resource:P7064 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:167,
+   ic:設備 equipment_resource:168,
      equipment_resource:166,
-     equipment_resource:168,
-     equipment_resource:165 .
+     equipment_resource:165,
+     equipment_resource:167 .
 
 park_resource:P7069 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:181,
+   ic:設備 equipment_resource:179,
      equipment_resource:182,
-     equipment_resource:179,
-     equipment_resource:180 .
+     equipment_resource:180,
+     equipment_resource:181 .
 
 park_resource:P7083 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:252,
-     equipment_resource:250,
+   ic:設備 equipment_resource:250,
      equipment_resource:249,
+     equipment_resource:252,
      equipment_resource:251 .
 
 park_resource:P7092 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:288,
-     equipment_resource:287,
+   ic:設備 equipment_resource:287,
      equipment_resource:286,
+     equipment_resource:288,
      equipment_resource:289 .
 
 park_resource:P7097 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:302,
-     equipment_resource:304,
-     equipment_resource:303,
-     equipment_resource:305 .
+   ic:設備 equipment_resource:304,
+     equipment_resource:305,
+     equipment_resource:302,
+     equipment_resource:303 .
 
 park_resource:P7105 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:331,
+   ic:設備 equipment_resource:328,
      equipment_resource:330,
-     equipment_resource:328,
+     equipment_resource:331,
      equipment_resource:329 .
 
 park_resource:P7108 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:338,
-     equipment_resource:337,
+   ic:設備 equipment_resource:335,
      equipment_resource:336,
-     equipment_resource:335 .
+     equipment_resource:337,
+     equipment_resource:338 .
 
 park_resource:P7114 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:359,
-     equipment_resource:358,
+   ic:設備 equipment_resource:358,
+     equipment_resource:359,
      equipment_resource:357,
      equipment_resource:360 .
 
 park_resource:P7117 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:374,
-     equipment_resource:376,
-     equipment_resource:373,
-     equipment_resource:375 .
+   ic:設備 equipment_resource:376,
+     equipment_resource:374,
+     equipment_resource:375,
+     equipment_resource:373 .
 
 park_resource:P7119 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:383,
-     equipment_resource:382,
+   ic:設備 equipment_resource:381,
      equipment_resource:380,
-     equipment_resource:381 .
+     equipment_resource:382,
+     equipment_resource:383 .
 
 park_resource:P7120 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:384,
-     equipment_resource:386,
-     equipment_resource:387,
-     equipment_resource:385 .
+   ic:設備 equipment_resource:386,
+     equipment_resource:385,
+     equipment_resource:384,
+     equipment_resource:387 .
 
 park_resource:P7124 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:395,
-     equipment_resource:397,
-     equipment_resource:394,
-     equipment_resource:396 .
+   ic:設備 equipment_resource:397,
+     equipment_resource:395,
+     equipment_resource:396,
+     equipment_resource:394 .
 
 park_resource:P7126 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:403,
+   ic:設備 equipment_resource:404,
+     equipment_resource:402,
      equipment_resource:401,
-     equipment_resource:404,
-     equipment_resource:402 .
+     equipment_resource:403 .
 
 park_resource:P7132 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:417,
      equipment_resource:414,
-     equipment_resource:416,
-     equipment_resource:415 .
+     equipment_resource:415,
+     equipment_resource:416 .
 
 park_resource:P7139 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:449,
-     equipment_resource:448,
+     equipment_resource:450,
      equipment_resource:447,
-     equipment_resource:450 .
+     equipment_resource:448 .
 
 park_resource:P7143 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:469,
-     equipment_resource:466,
-     equipment_resource:468,
-     equipment_resource:467 .
+   ic:設備 equipment_resource:466,
+     equipment_resource:467,
+     equipment_resource:469,
+     equipment_resource:468 .
 
 park_resource:P7145 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:479,
-     equipment_resource:480,
-     equipment_resource:481,
-     equipment_resource:478 .
+   ic:設備 equipment_resource:481,
+     equipment_resource:479,
+     equipment_resource:478,
+     equipment_resource:480 .
 
 park_resource:P7154 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:508,
+   ic:設備 equipment_resource:506,
+     equipment_resource:508,
      equipment_resource:507,
-     equipment_resource:509,
-     equipment_resource:506 .
+     equipment_resource:509 .
 
 park_resource:P7159 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:532,
+   ic:設備 equipment_resource:531,
+     equipment_resource:532,
      equipment_resource:529,
-     equipment_resource:531,
      equipment_resource:530 .
 
 park_resource:P7167 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:548,
+   ic:設備 equipment_resource:547,
+     equipment_resource:548,
      equipment_resource:546,
-     equipment_resource:547,
      equipment_resource:549 .
 
 park_resource:P7178 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:580,
-     equipment_resource:582,
      equipment_resource:579,
+     equipment_resource:582,
      equipment_resource:581 .
 
 park_resource:P7179 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:586,
+   ic:設備 equipment_resource:583,
      equipment_resource:585,
-     equipment_resource:584,
-     equipment_resource:583 .
+     equipment_resource:586,
+     equipment_resource:584 .
 
 park_resource:P7181 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:590,
-     equipment_resource:592,
+   ic:設備 equipment_resource:591,
+     equipment_resource:590,
      equipment_resource:593,
-     equipment_resource:591 .
+     equipment_resource:592 .
 
 park_resource:P7001 ic:種別 "都市緑地"@ja;
-   ic:設備 equipment_resource:700,
-     equipment_resource:699,
+   ic:設備 equipment_resource:701,
      equipment_resource:702,
-     equipment_resource:701,
-     equipment_resource:698 .
+     equipment_resource:699,
+     equipment_resource:698,
+     equipment_resource:700 .
 
 park_resource:P7010 ic:種別 "地区公園"@ja;
-   ic:設備 equipment_resource:695,
-     equipment_resource:694,
-     equipment_resource:693,
+   ic:設備 equipment_resource:694,
+     equipment_resource:695,
      equipment_resource:697,
-     equipment_resource:696 .
+     equipment_resource:696,
+     equipment_resource:693 .
 
 park_resource:P7011 ic:種別 "近隣公園"@ja;
    ic:設備 equipment_resource:640,
      equipment_resource:638,
-     equipment_resource:637,
      equipment_resource:636,
+     equipment_resource:637,
      equipment_resource:639 .
 
 park_resource:P7025 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:8,
+   ic:設備 equipment_resource:9,
+     equipment_resource:8,
      equipment_resource:5,
-     equipment_resource:9,
-     equipment_resource:6,
-     equipment_resource:7 .
+     equipment_resource:7,
+     equipment_resource:6 .
 
 park_resource:P7037 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:36,
-     equipment_resource:40,
-     equipment_resource:37,
+   ic:設備 equipment_resource:38,
      equipment_resource:39,
-     equipment_resource:38 .
+     equipment_resource:37,
+     equipment_resource:36,
+     equipment_resource:40 .
 
 park_resource:P7039 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:46,
-     equipment_resource:44,
-     equipment_resource:47,
+   ic:設備 equipment_resource:48,
      equipment_resource:45,
-     equipment_resource:48 .
+     equipment_resource:47,
+     equipment_resource:44,
+     equipment_resource:46 .
 
 park_resource:P7061 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:152,
+   ic:設備 equipment_resource:150,
      equipment_resource:153,
+     equipment_resource:152,
      equipment_resource:154,
-     equipment_resource:151,
-     equipment_resource:150 .
+     equipment_resource:151 .
 
 park_resource:P7071 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:194,
+   ic:設備 equipment_resource:190,
      equipment_resource:193,
-     equipment_resource:190,
+     equipment_resource:194,
      equipment_resource:192,
      equipment_resource:191 .
 
 park_resource:P7072 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:195,
-     equipment_resource:199,
-     equipment_resource:198,
+   ic:設備 equipment_resource:197,
      equipment_resource:196,
-     equipment_resource:197 .
+     equipment_resource:195,
+     equipment_resource:199,
+     equipment_resource:198 .
 
 park_resource:P7075 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:214,
-     equipment_resource:215,
-     equipment_resource:216,
+   ic:設備 equipment_resource:217,
+     equipment_resource:214,
      equipment_resource:213,
-     equipment_resource:217 .
+     equipment_resource:216,
+     equipment_resource:215 .
 
 park_resource:P7077 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:226,
-     equipment_resource:229,
+   ic:設備 equipment_resource:228,
      equipment_resource:227,
-     equipment_resource:228,
+     equipment_resource:229,
+     equipment_resource:226,
      equipment_resource:230 .
 
 park_resource:P7085 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:253,
+   ic:設備 equipment_resource:254,
      equipment_resource:255,
-     equipment_resource:254,
-     equipment_resource:257,
-     equipment_resource:256 .
+     equipment_resource:256,
+     equipment_resource:253,
+     equipment_resource:257 .
 
 park_resource:P7095 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:296,
+   ic:設備 equipment_resource:299,
      equipment_resource:300,
+     equipment_resource:297,
      equipment_resource:298,
-     equipment_resource:299,
-     equipment_resource:297 .
+     equipment_resource:296 .
 
 park_resource:P7098 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:307,
-     equipment_resource:308,
      equipment_resource:309,
-     equipment_resource:306,
-     equipment_resource:310 .
+     equipment_resource:310,
+     equipment_resource:308,
+     equipment_resource:306 .
 
 park_resource:P7101 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:318,
-     equipment_resource:317,
-     equipment_resource:314,
+   ic:設備 equipment_resource:314,
+     equipment_resource:318,
+     equipment_resource:316,
      equipment_resource:315,
-     equipment_resource:316 .
+     equipment_resource:317 .
 
 park_resource:P7103 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:324,
-     equipment_resource:326,
-     equipment_resource:323,
+   ic:設備 equipment_resource:323,
      equipment_resource:322,
-     equipment_resource:325 .
+     equipment_resource:325,
+     equipment_resource:324,
+     equipment_resource:326 .
 
 park_resource:P7115 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:362,
-     equipment_resource:363,
-     equipment_resource:364,
+   ic:設備 equipment_resource:363,
      equipment_resource:361,
-     equipment_resource:365 .
+     equipment_resource:365,
+     equipment_resource:362,
+     equipment_resource:364 .
 
 park_resource:P7138 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:444,
+   ic:設備 equipment_resource:445,
+     equipment_resource:444,
+     equipment_resource:442,
      equipment_resource:446,
-     equipment_resource:445,
-     equipment_resource:443,
-     equipment_resource:442 .
+     equipment_resource:443 .
 
 park_resource:P7172 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:566,
-     equipment_resource:562,
+   ic:設備 equipment_resource:564,
      equipment_resource:563,
      equipment_resource:565,
-     equipment_resource:564 .
+     equipment_resource:562,
+     equipment_resource:566 .
 
 park_resource:P7187 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:633,
-     equipment_resource:632,
-     equipment_resource:631,
+     equipment_resource:634,
      equipment_resource:635,
-     equipment_resource:634 .
+     equipment_resource:631,
+     equipment_resource:632 .
 
 park_resource:P7015 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:655,
-     equipment_resource:653,
-     equipment_resource:654,
-     equipment_resource:650,
+   ic:設備 equipment_resource:652,
      equipment_resource:651,
-     equipment_resource:652 .
+     equipment_resource:655,
+     equipment_resource:654,
+     equipment_resource:653,
+     equipment_resource:650 .
 
 park_resource:P7022 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:685,
-     equipment_resource:684,
-     equipment_resource:687,
+   ic:設備 equipment_resource:689,
      equipment_resource:688,
-     equipment_resource:689,
-     equipment_resource:686 .
+     equipment_resource:685,
+     equipment_resource:686,
+     equipment_resource:684,
+     equipment_resource:687 .
 
 park_resource:P7027 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:18,
+   ic:設備 equipment_resource:15,
+     equipment_resource:18,
+     equipment_resource:17,
      equipment_resource:13,
-     equipment_resource:15,
-     equipment_resource:16,
      equipment_resource:14,
-     equipment_resource:17 .
+     equipment_resource:16 .
 
 park_resource:P7032 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:27,
-     equipment_resource:32,
-     equipment_resource:30,
+   ic:設備 equipment_resource:28,
+     equipment_resource:27,
      equipment_resource:29,
      equipment_resource:31,
-     equipment_resource:28 .
+     equipment_resource:30,
+     equipment_resource:32 .
 
 park_resource:P7040 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:53,
-     equipment_resource:51,
-     equipment_resource:50,
+   ic:設備 equipment_resource:51,
+     equipment_resource:53,
+     equipment_resource:49,
      equipment_resource:54,
      equipment_resource:52,
-     equipment_resource:49 .
+     equipment_resource:50 .
 
 park_resource:P7042 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:65,
+   ic:設備 equipment_resource:63,
+     equipment_resource:65,
      equipment_resource:66,
      equipment_resource:61,
      equipment_resource:64,
-     equipment_resource:62,
-     equipment_resource:63 .
+     equipment_resource:62 .
 
 park_resource:P7049 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:103,
-     equipment_resource:104,
-     equipment_resource:101,
+   ic:設備 equipment_resource:101,
+     equipment_resource:105,
      equipment_resource:106,
+     equipment_resource:103,
      equipment_resource:102,
-     equipment_resource:105 .
+     equipment_resource:104 .
 
 park_resource:P7068 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:175,
-     equipment_resource:174,
-     equipment_resource:176,
+   ic:設備 equipment_resource:176,
      equipment_resource:173,
+     equipment_resource:175,
      equipment_resource:177,
-     equipment_resource:178 .
+     equipment_resource:178,
+     equipment_resource:174 .
 
 park_resource:P7074 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:211,
-     equipment_resource:210,
+   ic:設備 equipment_resource:210,
      equipment_resource:209,
-     equipment_resource:207,
      equipment_resource:212,
-     equipment_resource:208 .
+     equipment_resource:207,
+     equipment_resource:208,
+     equipment_resource:211 .
 
 park_resource:P7076 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:219,
-     equipment_resource:223,
-     equipment_resource:220,
+   ic:設備 equipment_resource:221,
      equipment_resource:218,
-     equipment_resource:222,
-     equipment_resource:221 .
+     equipment_resource:220,
+     equipment_resource:223,
+     equipment_resource:219,
+     equipment_resource:222 .
 
 park_resource:P7078 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:233,
+   ic:設備 equipment_resource:231,
      equipment_resource:232,
-     equipment_resource:234,
+     equipment_resource:233,
      equipment_resource:236,
-     equipment_resource:231,
-     equipment_resource:235 .
+     equipment_resource:235,
+     equipment_resource:234 .
 
 park_resource:P7111 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:351,
+   ic:設備 equipment_resource:354,
+     equipment_resource:351,
+     equipment_resource:352,
      equipment_resource:350,
      equipment_resource:353,
-     equipment_resource:352,
-     equipment_resource:354,
      equipment_resource:349 .
 
 park_resource:P7134 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:427,
-     equipment_resource:432,
-     equipment_resource:428,
-     equipment_resource:430,
+   ic:設備 equipment_resource:430,
+     equipment_resource:427,
+     equipment_resource:429,
      equipment_resource:431,
-     equipment_resource:429 .
+     equipment_resource:428,
+     equipment_resource:432 .
 
 park_resource:P7136 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:436,
+     equipment_resource:437,
+     equipment_resource:441,
      equipment_resource:440,
      equipment_resource:438,
-     equipment_resource:439,
-     equipment_resource:437,
-     equipment_resource:441 .
+     equipment_resource:439 .
 
 park_resource:P7158 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:528,
-     equipment_resource:524,
-     equipment_resource:527,
+   ic:設備 equipment_resource:523,
+     equipment_resource:526,
+     equipment_resource:528,
      equipment_resource:525,
-     equipment_resource:523,
-     equipment_resource:526 .
+     equipment_resource:524,
+     equipment_resource:527 .
 
 park_resource:P7162 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:541,
-     equipment_resource:539,
+   ic:設備 equipment_resource:536,
      equipment_resource:537,
-     equipment_resource:536,
+     equipment_resource:540,
+     equipment_resource:541,
      equipment_resource:538,
-     equipment_resource:540 .
+     equipment_resource:539 .
 
 park_resource:P7171 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:559,
+   ic:設備 equipment_resource:558,
+     equipment_resource:559,
      equipment_resource:556,
-     equipment_resource:558,
-     equipment_resource:561,
+     equipment_resource:557,
      equipment_resource:560,
-     equipment_resource:557 .
+     equipment_resource:561 .
 
 park_resource:P7186 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:625,
-     equipment_resource:627,
-     equipment_resource:628,
+   ic:設備 equipment_resource:628,
      equipment_resource:629,
-     equipment_resource:630,
-     equipment_resource:626 .
+     equipment_resource:627,
+     equipment_resource:626,
+     equipment_resource:625,
+     equipment_resource:630 .
 
 park_resource:P7014 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:647,
-     equipment_resource:649,
-     equipment_resource:645,
-     equipment_resource:644,
+   ic:設備 equipment_resource:645,
      equipment_resource:643,
      equipment_resource:646,
-     equipment_resource:648 .
+     equipment_resource:647,
+     equipment_resource:648,
+     equipment_resource:644,
+     equipment_resource:649 .
 
 park_resource:P7019 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:674,
-     equipment_resource:676,
-     equipment_resource:679,
-     equipment_resource:677,
-     equipment_resource:678,
+   ic:設備 equipment_resource:679,
+     equipment_resource:675,
      equipment_resource:673,
-     equipment_resource:675 .
+     equipment_resource:676,
+     equipment_resource:678,
+     equipment_resource:674,
+     equipment_resource:677 .
 
 park_resource:P7043 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:69,
-     equipment_resource:68,
+   ic:設備 equipment_resource:70,
+     equipment_resource:69,
      equipment_resource:73,
-     equipment_resource:72,
-     equipment_resource:71,
      equipment_resource:67,
-     equipment_resource:70 .
+     equipment_resource:71,
+     equipment_resource:68,
+     equipment_resource:72 .
 
 park_resource:P7047 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:94,
-     equipment_resource:91,
-     equipment_resource:90,
+   ic:設備 equipment_resource:96,
      equipment_resource:92,
-     equipment_resource:96,
+     equipment_resource:93,
      equipment_resource:95,
-     equipment_resource:93 .
+     equipment_resource:94,
+     equipment_resource:91,
+     equipment_resource:90 .
 
 park_resource:P7062 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:157,
-     equipment_resource:160,
+   ic:設備 equipment_resource:161,
      equipment_resource:156,
-     equipment_resource:159,
+     equipment_resource:160,
+     equipment_resource:157,
      equipment_resource:158,
-     equipment_resource:155,
-     equipment_resource:161 .
+     equipment_resource:159,
+     equipment_resource:155 .
 
 park_resource:P7070 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:189,
-     equipment_resource:184,
-     equipment_resource:183,
      equipment_resource:187,
-     equipment_resource:186,
+     equipment_resource:184,
+     equipment_resource:188,
+     equipment_resource:183,
      equipment_resource:185,
-     equipment_resource:188 .
+     equipment_resource:186 .
 
 park_resource:P7073 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:202,
+   ic:設備 equipment_resource:204,
      equipment_resource:201,
-     equipment_resource:206,
-     equipment_resource:200,
-     equipment_resource:203,
      equipment_resource:205,
-     equipment_resource:204 .
+     equipment_resource:206,
+     equipment_resource:202,
+     equipment_resource:200,
+     equipment_resource:203 .
 
 park_resource:P7089 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:273,
-     equipment_resource:271,
-     equipment_resource:267,
-     equipment_resource:269,
+   ic:設備 equipment_resource:267,
+     equipment_resource:272,
      equipment_resource:270,
+     equipment_resource:269,
      equipment_resource:268,
-     equipment_resource:272 .
+     equipment_resource:273,
+     equipment_resource:271 .
 
 park_resource:P7116 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:369,
-     equipment_resource:366,
+   ic:設備 equipment_resource:371,
      equipment_resource:367,
-     equipment_resource:371,
+     equipment_resource:369,
+     equipment_resource:366,
      equipment_resource:372,
-     equipment_resource:370,
-     equipment_resource:368 .
+     equipment_resource:368,
+     equipment_resource:370 .
 
 park_resource:P7150 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:495,
+   ic:設備 equipment_resource:493,
      equipment_resource:492,
      equipment_resource:494,
+     equipment_resource:495,
      equipment_resource:491,
-     equipment_resource:493,
-     equipment_resource:497,
-     equipment_resource:496 .
+     equipment_resource:496,
+     equipment_resource:497 .
 
 park_resource:P7157 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:521,
-     equipment_resource:520,
-     equipment_resource:516,
+   ic:設備 equipment_resource:522,
      equipment_resource:517,
+     equipment_resource:519,
+     equipment_resource:516,
+     equipment_resource:520,
      equipment_resource:518,
-     equipment_resource:522,
-     equipment_resource:519 .
+     equipment_resource:521 .
 
 park_resource:P7183 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:609,
-     equipment_resource:604,
-     equipment_resource:606,
+   ic:設備 equipment_resource:606,
+     equipment_resource:608,
      equipment_resource:603,
      equipment_resource:605,
-     equipment_resource:608,
-     equipment_resource:607 .
+     equipment_resource:604,
+     equipment_resource:607,
+     equipment_resource:609 .
 
 park_resource:P7184 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:610,
+   ic:設備 equipment_resource:615,
+     equipment_resource:613,
      equipment_resource:614,
      equipment_resource:612,
-     equipment_resource:611,
+     equipment_resource:610,
      equipment_resource:616,
-     equipment_resource:613,
-     equipment_resource:615 .
+     equipment_resource:611 .
 
 park_resource:P7144 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:476,
-     equipment_resource:473,
-     equipment_resource:472,
-     equipment_resource:470,
+   ic:設備 equipment_resource:471,
      equipment_resource:474,
-     equipment_resource:471,
+     equipment_resource:472,
+     equipment_resource:477,
      equipment_resource:475,
-     equipment_resource:477 .
+     equipment_resource:470,
+     equipment_resource:473,
+     equipment_resource:476 .
 
 park_resource:P7185 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:624,
+   ic:設備 equipment_resource:619,
      equipment_resource:617,
      equipment_resource:618,
      equipment_resource:621,
-     equipment_resource:619,
-     equipment_resource:620,
      equipment_resource:623,
-     equipment_resource:622 .
+     equipment_resource:620,
+     equipment_resource:622,
+     equipment_resource:624 .
 
 park_resource:P7005 ic:種別 "総合公園"@ja;
-   ic:設備 equipment_resource:712,
-     equipment_resource:710,
-     equipment_resource:713,
-     equipment_resource:717,
-     equipment_resource:718,
-     equipment_resource:711,
+   ic:設備 equipment_resource:718,
      equipment_resource:714,
+     equipment_resource:713,
+     equipment_resource:716,
+     equipment_resource:710,
+     equipment_resource:712,
      equipment_resource:715,
-     equipment_resource:716 .
+     equipment_resource:711,
+     equipment_resource:717 .
 
 park_resource:P7006 ic:種別 "総合公園"@ja;
-   ic:設備 equipment_resource:727,
-     equipment_resource:725,
+   ic:設備 equipment_resource:725,
      equipment_resource:726,
-     equipment_resource:719,
-     equipment_resource:724,
      equipment_resource:720,
-     equipment_resource:723,
+     equipment_resource:719,
+     equipment_resource:721,
      equipment_resource:722,
-     equipment_resource:721 .
+     equipment_resource:727,
+     equipment_resource:723,
+     equipment_resource:724 .
 
 park_resource:P7046 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:86,
-     equipment_resource:85,
-     equipment_resource:84,
-     equipment_resource:88,
+   ic:設備 equipment_resource:85,
      equipment_resource:83,
      equipment_resource:81,
+     equipment_resource:86,
      equipment_resource:82,
+     equipment_resource:84,
+     equipment_resource:89,
      equipment_resource:87,
-     equipment_resource:89 .
+     equipment_resource:88 .
 
 park_resource:P7056 ic:種別 "街区公園"@ja;
    ic:設備 equipment_resource:143,
-     equipment_resource:141,
      equipment_resource:140,
-     equipment_resource:136,
      equipment_resource:142,
+     equipment_resource:141,
+     equipment_resource:137,
      equipment_resource:139,
-     equipment_resource:144,
+     equipment_resource:136,
      equipment_resource:138,
-     equipment_resource:137 .
+     equipment_resource:144 .
 
 park_resource:P7091 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:280,
-     equipment_resource:279,
-     equipment_resource:278,
+   ic:設備 equipment_resource:279,
+     equipment_resource:280,
      equipment_resource:277,
      equipment_resource:284,
-     equipment_resource:281,
      equipment_resource:285,
+     equipment_resource:278,
      equipment_resource:282,
+     equipment_resource:281,
      equipment_resource:283 .
 
 park_resource:P7133 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:421,
-     equipment_resource:418,
-     equipment_resource:420,
-     equipment_resource:425,
-     equipment_resource:424,
-     equipment_resource:423,
+   ic:設備 equipment_resource:420,
+     equipment_resource:421,
      equipment_resource:419,
+     equipment_resource:425,
      equipment_resource:422,
-     equipment_resource:426 .
+     equipment_resource:426,
+     equipment_resource:418,
+     equipment_resource:424,
+     equipment_resource:423 .
 
 park_resource:P7141 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:462,
+   ic:設備 equipment_resource:461,
+     equipment_resource:462,
+     equipment_resource:458,
      equipment_resource:456,
      equipment_resource:460,
      equipment_resource:457,
-     equipment_resource:454,
      equipment_resource:455,
-     equipment_resource:461,
-     equipment_resource:458,
-     equipment_resource:459 .
+     equipment_resource:459,
+     equipment_resource:454 .
 
 park_resource:P7182 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:596,
+   ic:設備 equipment_resource:602,
+     equipment_resource:596,
      equipment_resource:594,
-     equipment_resource:600,
      equipment_resource:597,
-     equipment_resource:598,
-     equipment_resource:602,
-     equipment_resource:595,
      equipment_resource:601,
-     equipment_resource:599 .
+     equipment_resource:599,
+     equipment_resource:600,
+     equipment_resource:598,
+     equipment_resource:595 .
 
 park_resource:P7110 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:343,
-     equipment_resource:339,
+   ic:設備 equipment_resource:339,
      equipment_resource:348,
+     equipment_resource:340,
+     equipment_resource:343,
+     equipment_resource:342,
      equipment_resource:341,
      equipment_resource:346,
-     equipment_resource:342,
      equipment_resource:345,
-     equipment_resource:340,
      equipment_resource:347,
      equipment_resource:344 .
 
 park_resource:P7017 ic:種別 "近隣公園"@ja;
-   ic:設備 equipment_resource:667,
-     equipment_resource:665,
-     equipment_resource:669,
-     equipment_resource:666,
-     equipment_resource:662,
-     equipment_resource:661,
+   ic:設備 equipment_resource:669,
+     equipment_resource:664,
      equipment_resource:659,
      equipment_resource:663,
-     equipment_resource:664,
+     equipment_resource:662,
+     equipment_resource:666,
+     equipment_resource:665,
+     equipment_resource:660,
+     equipment_resource:661,
      equipment_resource:668,
-     equipment_resource:660 .
+     equipment_resource:667 .
 
 park_resource:P7003 ic:種別 "広域公園"@ja;
-   ic:設備 equipment_resource:772,
+   ic:設備 equipment_resource:770,
+     equipment_resource:768,
+     equipment_resource:765,
      equipment_resource:774,
      equipment_resource:776,
+     equipment_resource:772,
      equipment_resource:766,
-     equipment_resource:765,
      equipment_resource:771,
-     equipment_resource:777,
-     equipment_resource:767,
-     equipment_resource:770,
-     equipment_resource:768,
-     equipment_resource:773,
+     equipment_resource:769,
      equipment_resource:775,
-     equipment_resource:769 .
+     equipment_resource:777,
+     equipment_resource:773,
+     equipment_resource:767 .
 
 park_resource:P7054 ic:種別 "街区公園"@ja;
-   ic:設備 equipment_resource:122,
+   ic:設備 equipment_resource:130,
      equipment_resource:124,
+     equipment_resource:125,
+     equipment_resource:131,
+     equipment_resource:126,
+     equipment_resource:129,
+     equipment_resource:121,
+     equipment_resource:122,
      equipment_resource:120,
-     equipment_resource:130,
-     equipment_resource:127,
+     equipment_resource:132,
      equipment_resource:128,
      equipment_resource:119,
      equipment_resource:123,
-     equipment_resource:131,
-     equipment_resource:126,
-     equipment_resource:121,
-     equipment_resource:132,
-     equipment_resource:125,
-     equipment_resource:129 .
+     equipment_resource:127 .
 
 park_resource:P7008 ic:種別 "運動公園"@ja;
-   ic:設備 equipment_resource:748,
-     equipment_resource:750,
-     equipment_resource:762,
-     equipment_resource:749,
-     equipment_resource:754,
+   ic:設備 equipment_resource:749,
      equipment_resource:760,
-     equipment_resource:755,
-     equipment_resource:753,
-     equipment_resource:763,
-     equipment_resource:751,
-     equipment_resource:759,
-     equipment_resource:757,
-     equipment_resource:752,
-     equipment_resource:756,
-     equipment_resource:764,
      equipment_resource:758,
-     equipment_resource:761 .
+     equipment_resource:764,
+     equipment_resource:752,
+     equipment_resource:762,
+     equipment_resource:757,
+     equipment_resource:753,
+     equipment_resource:754,
+     equipment_resource:755,
+     equipment_resource:761,
+     equipment_resource:751,
+     equipment_resource:748,
+     equipment_resource:750,
+     equipment_resource:756,
+     equipment_resource:759,
+     equipment_resource:763 .
 
 park_resource:P7007 ic:種別 "総合公園"@ja;
-   ic:設備 equipment_resource:731,
+   ic:設備 equipment_resource:734,
      equipment_resource:736,
-     equipment_resource:733,
-     equipment_resource:743,
-     equipment_resource:728,
+     equipment_resource:741,
      equipment_resource:744,
-     equipment_resource:747,
-     equipment_resource:730,
-     equipment_resource:746,
+     equipment_resource:742,
+     equipment_resource:728,
+     equipment_resource:732,
+     equipment_resource:739,
+     equipment_resource:737,
      equipment_resource:729,
      equipment_resource:738,
-     equipment_resource:735,
-     equipment_resource:732,
-     equipment_resource:737,
-     equipment_resource:742,
-     equipment_resource:740,
-     equipment_resource:734,
+     equipment_resource:731,
+     equipment_resource:733,
+     equipment_resource:730,
+     equipment_resource:747,
      equipment_resource:745,
-     equipment_resource:739,
-     equipment_resource:741 .
+     equipment_resource:740,
+     equipment_resource:746,
+     equipment_resource:735,
+     equipment_resource:743 .
 
 organization_resource:1 a ic:組織型;
    ic:ID [

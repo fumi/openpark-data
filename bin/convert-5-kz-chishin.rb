@@ -12,7 +12,7 @@ INPUT_FILE="../data/original/14108/5-kz-chishin_utf8.csv"
 OUTPUT_FILE="../data/dumps/park/14108/5-kz-chishin.ttl"
 
 PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/parks/14108/")
-IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/rdf#")
+IC = RDF::Vocabulary.new("http://imi.go.jp/ns/core/rdf#")
 PARK = RDF::Vocabulary.new("http://openpark.jp/ns/park#")
 
 PREFIXES = {

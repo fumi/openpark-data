@@ -15,7 +15,7 @@ OUTPUT_FILE="../data/dumps/park/14108/4-kz-doboku.ttl"
 PARK_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/parks/14108/")
 EQUIPMENT_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/equipment/14108/")
 ORGANIZATION_RESOURCE = RDF::Vocabulary.new("http://openpark.jp/organizations/14108/")
-IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/rdf#")
+IC = RDF::Vocabulary.new("http://imi.go.jp/ns/core/rdf#")
 PARK = RDF::Vocabulary.new("http://openpark.jp/ns/park#")
 
 PREFIXES = {
