@@ -2,24 +2,25 @@
 # -*- coding: utf-8 -*-
 
 require 'rdf'
+require 'rdf/vocab'
 require 'rdf/turtle'
 require 'csv'
 require 'securerandom'
 
 
-INPUT_FILE="../original/flickr.csv"
-OUTPUT_FILE="../ttl/flickr.ttl"
+INPUT_FILE="../data/original/14108/flickr.csv"
+OUTPUT_FILE="../data/dumps/park/14108/flickr.ttl"
 
-PARK = RDF::Vocabulary.new("http://yokohama.openpark.jp/parks/")
+PARK = RDF::Vocabulary.new("http://openpark.jp/parks/14108/")
 OPENPARK = RDF::Vocabulary.new("http://openpark.jp/ns/openpark#")
-IC = RDF::Vocabulary.new("http://imi.ipa.go.jp/ns/core/210#")
+IC = RDF::Vocabulary.new("http://imi.go.jp/ns/core/rdf#")
 
 PREFIXES = {
   :rdf => RDF.to_s,
   :rdfs => RDF::RDFS.to_s,
-  :schema => RDF::SCHEMA.to_s,
-  :geo => RDF::GEO.to_s,
-  :dcterms => RDF::DC.to_s,
+  :schema => RDF::Vocab::SCHEMA.to_s,
+  :geo => RDF::Vocab::GEO.to_s,
+  :dcterms => RDF::Vocab::DC.to_s,
   :xsd => RDF::XSD.to_s,
   :park => PARK.to_s,
   :openpark => OPENPARK.to_s,
@@ -36,7 +37,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     end
     graph = RDF::Graph.new
     if row[10] && ! row[10].empty?
-      graph.from_ttl("park:#{row[1]} openpark:flickrID \"#{row[10]}\"@ja .", :prefixes => PREFIXES)
+      graph.from_ttl("park:#{row[1]} openpark:flickrID #{row[10]} .", :prefixes => PREFIXES)
     end
 
     writer << graph
