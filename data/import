@@ -14,6 +14,6 @@ echo "Importing dumps ..."
 echo "ld_dir_all('dumps/park/', '*.ttl', 'http://openpark.jp');" | isql-v -U $DBA_USER -P $DBA_PASSWORD
 echo "ld_dir_all('dumps/link/', '*.ttl', 'http://openpark.jp');" | isql-v -U $DBA_USER -P $DBA_PASSWORD
 echo "ld_dir_all('dumps/vocabulary/', 'park.ttl', 'http://openpark.jp/ns/park');" | isql-v -U $DBA_USER -P $DBA_PASSWORD
-echo "ld_dir_all('dumps/vocabulary/', 'Core231.ttl', 'http://imi.ipa.go.jp/ns/core/rdf');" | isql-v -U $DBA_USER -P $DBA_PASSWORD
+echo "ld_dir_all('dumps/vocabulary/', 'imicore240.ttl', 'http://imi.go.jp/ns/core/rdf');" | isql-v -U $DBA_USER -P $DBA_PASSWORD
 echo "rdf_loader_run();" | isql-v -U $DBA_USER -P $DBA_PASSWORD
 echo "Done."
