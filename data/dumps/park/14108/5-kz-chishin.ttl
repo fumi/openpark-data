@@ -2244,29 +2244,6 @@ park_resource:P7083 a park:公園型;
      ic:数値 4746.0
    ] .
 
-park_resource:P7084 a park:公園型;
-   ic:ID [
-     a ic:ID型;
-     ic:識別値 "P7084"
-   ];
-   ic:住所 [
-     a ic:住所型;
-     ic:区 "金沢区"@ja;
-     ic:市区町村 "横浜市"@ja;
-     ic:表記 "神奈川県横浜市金沢区泥亀二丁目9"@ja;
-     ic:郵便番号 "236-0021";
-     ic:都道府県 "神奈川県"@ja
-   ];
-   ic:名称 [
-     a ic:名称型;
-     ic:表記 "泥亀公園"@ja
-   ];
-   ic:地理識別子 [
-     a ic:座標型;
-     ic:経度 "139.624329";
-     ic:緯度 "35.338127"
-   ] .
-
 park_resource:P7085 a park:公園型;
    ic:ID [
      a ic:ID型;
