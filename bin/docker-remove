@@ -4,4 +4,6 @@
 
 docker rm -f `docker ps -aq --filter "name=$DOCKER_NAME"`
 cd $DATA_DIR
-rm virtuoso*
+rm -f virtuoso*
+rm -f .dba_pwd_set
+rm -f .config_set
