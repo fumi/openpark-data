@@ -53,7 +53,7 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
     ic:数値 \"#{row[5].gsub(/,/,'')}\"^^xsd:decimal ;
   ] ;"""
     end
-    turtle << """  ic:地理識別子 [ a ic:座標型 ;
+    turtle << """  ic:地理座標 [ a ic:座標型 ;
     ic:緯度 \"#{row[7]}\" ;
     ic:経度 \"#{row[6]}\" ;
   ] ."""
