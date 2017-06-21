@@ -1,4 +1,4 @@
-ISQL=/usr/local/virtuoso-opensource/bin/isql
+ISQL=/usr/local/virtuoso-opensource/bin/isql-v
 DATA_DIR=openpark-data/data
 HOSTNAME=localhost:1111
 DOCKER_IMAGE=tenforce/virtuoso
