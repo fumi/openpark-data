@@ -74,15 +74,21 @@ RDF::Writer.open(OUTPUT_FILE, :prefixes => PREFIXES) do |writer|
         ic:管理者 <#{row[12]}> ;"""
 
     turtle << "       ic:利用者 \"対象年齢: #{row[9]}\"@ja ;\n" if row[9] && !row[9].empty?
-    turtle << "        park:年齢下限 \"#{lower_age_limit}\"^^xsd:integer ;\n" if lower_age_limit
-    turtle << "        park:年齢上限 \"#{upper_age_limit}\"^^xsd:integer ;\n" if upper_age_limit
+    if lower_age_limit or upper_age_limit
+      turtle << "       park:利用対象 [ a ic:対象型 ;"
+      turtle << "         ic:制約 [ a ic:範囲制約型 ;"
+      turtle << "           ic:上限値 #{upper_age_limit} ;\n" if upper_age_limit
+      turtle << "           ic:下限値 #{lower_age_limit} ;\n" if lower_age_limit
+      turtle << "         ]  "
+      turtle << "       ];  "
+    end
     if row[6]
       turtle << "        park:設置数 [ a ic:数量型 ;"
       turtle << "          ic:数値 \"#{row[6]}\"^^xsd:decimal ;\n"
       turtle << "          ic:単位表記 \"#{row[7]}\" \n" if row[7]
       turtle << "        ] ;\n"
     end
-    turtle << "        park:仕様・規格 \"#{row[5]}\"@ja ;\n" if row[5]
+    turtle << "        park:仕様規格 \"#{row[5]}\"@ja ;\n" if row[5]
     turtle << "        park:種別 \"#{row[4]}\"@ja .\n\n"
 
     graph = RDF::Graph.new
