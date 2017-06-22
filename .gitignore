@@ -12,6 +12,8 @@
 /data/clean-logs.sh
 /data/http*
 /data/virtuoso*
+/data/.config_set
+/data/.dba_pwd_set
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
