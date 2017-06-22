@@ -13,9 +13,9 @@
   rdfs:label "公園語彙"@ja, "Park Vocabulary"@en ;
   cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
   dcterms:creator <http://fumi.me/foaf#me> ;
-  dcterms:created "2016-05-24" ;
-  rdfs:comment "公園語彙は共通語彙基盤 コア語彙を拡張して公園のデータを記述するための語彙です。"@ja ;
-  owl:versionInfo "1.0" .
+  dcterms:created "2017-06-21" ;
+  rdfs:comment "公園語彙は共通語彙基盤 コア語彙を拡張して公園施設を記述するための語彙です。"@ja ;
+  owl:versionInfo "1.1" .
 
 park:公園型 a owl:Class ;
   rdfs:label "公園型"@ja, "Park / Playground"@en ;
@@ -33,15 +33,21 @@ park:遊具型 a owl:Class ;
   rdfs:comment "遊具を表現するためのクラス用語"@ja, "A class term to express playground equipment"@en ;
   rdfs:subClassOf ic:設備型 .
 
+park:利用対象 a owl:DatatypeProperty ;
+  rdfs:label "利用対象"@ja, "Thing to be targeted"@en ;
+  rdfs:comment "利用対象となる事物を記述するためのプロパティ用語"@ja, "The thing to be targeted for playground equipment."@en ;
+  schema:domainIncludes park:遊具型 ;
+  rdfs:subPropertyOf ic:利用対象 .
+
 park:年齢上限 a owl:DatatypeProperty ;
   rdfs:label "年齢上限"@ja, "Upper age limit"@en ;
-  rdfs:comment "年齢の上限を記述するためのプロパティ用語"@ja, "The textual expression of a upper age limit. "@en ;
+  rdfs:comment "非推奨: ic:上限値の利用を推奨。年齢の上限を記述するためのプロパティ用語"@ja, "Deprecated. Use ic:上限値. The textual expression of a upper age limit. "@en ;
   schema:domainIncludes park:遊具型 ;
   rdfs:range xsd:integer .
 
 park:年齢下限 a owl:DatatypeProperty ;
   rdfs:label "年齢下限"@ja, "Lower age limit"@en ;
-  rdfs:comment "年齢の下限を記述するためのプロパティ用語"@ja, "The textual expression of a lower age limit."@en ;
+  rdfs:comment "非推奨: ic:下限値の利用を推奨。年齢の下限を記述するためのプロパティ用語"@ja, "Deprecated. Use ic:下限値. The textual expression of a lower age limit."@en ;
   schema:domainIncludes park:遊具型 ;
   rdfs:range xsd:integer .
 
