@@ -1,31 +1,18 @@
-@prefix openpark: <http://openpark.jp/ns/openpark#> .
-@prefix park: <http://openpark.jp/parks/14108/> .
+@prefix park: <http://openpark.jp/ns/park#> .
+@prefix park_resource: <http://openpark.jp/parks/14108/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-park:まつかぜ公園 openpark:flickrID 72157649448163975 .
-
-park:カメギ根公園 openpark:flickrID 72157649034637638 .
-
-park:乙舳公園 openpark:flickrID 72157649027533099 .
-
-park:城山台公園 openpark:flickrID 72157649033893058 .
-
-park:小柴浜公園 openpark:flickrID 72157647117992023 .
-
-park:平潟公園 openpark:flickrID 72157649379222056 .
-
-park:柴仲町公園 openpark:flickrID 72157649448183635 .
-
-park:柴町公園 openpark:flickrID 72157649032549200 .
-
-park:海の公園 openpark:flickrID 72157649378727176 .
-
-park:瀬ケ崎台公園 openpark:flickrID 72157649448229935 .
-
-park:走川公園 openpark:flickrID 72157649026673217 .
-
-park:野島公園 openpark:flickrID 72157649026859107 .
-
-park:金沢町公園 openpark:flickrID 72157649028385509 .
-
-park:金沢町第二公園 openpark:flickrID 72157647117741173 .
+park_resource:P7022 park:flickrID 72157649448163975 .
+park_resource:P7055 park:flickrID 72157649034637638 .
+park_resource:P7033 park:flickrID 72157649027533099 .
+park_resource:P7070 park:flickrID 72157649033893058 .
+park_resource:P7058 park:flickrID 72157647117992023 .
+park_resource:P7141 park:flickrID 72157649379222056 .
+park_resource:P7067 park:flickrID 72157649448183635 .
+park_resource:P7066 park:flickrID 72157649032549200 .
+park_resource:P7005 park:flickrID 72157649378727176 .
+park_resource:P7073 park:flickrID 72157649448229935 .
+park_resource:P7131 park:flickrID 72157649026673217 .
+park_resource:P7007 park:flickrID 72157649026859107 .
+park_resource:P7039 park:flickrID 72157649028385509 .
+park_resource:P7040 park:flickrID 72157647117741173 .
