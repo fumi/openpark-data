@@ -70,7 +70,7 @@ park:仕様規格 a owl:DatatypeProperty ;
   rdfs:range xsd:string .
 
 park:flickrID a owl:DatatypeProperty ;
-  rdfs:label "FlickrのID番号"@ja, "The ID number for Flickr""@en ;
+  rdfs:label "FlickrのID番号"@ja, "The ID number for Flickr"@en ;
   rdfs:comment "FlickrのID番号を記述するためのプロパティ用語"@ja, "The textual expression of Flickr ID."@en ;
   schema:domainIncludes park:公園型 ;
   rdfs:range xsd:integer .
